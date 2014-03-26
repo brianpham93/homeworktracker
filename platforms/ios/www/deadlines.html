@@ -1,59 +1,94 @@
 <!doctype html>
 <html>
-<head>
-      <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
-      <meta charset="utf-8">
-      <title>Deadlines</title>
-      <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
-      <link rel="stylesheet" type="text/css" href="css/jqm-demos.css">
-      <script src="js/jquery.js"></script>
-      <script src="js/index.js"></script>
-      <script src="js/jquery.mobile-1.4.2.min.js"></script>
-      <style id="inset-tablist">
-	  	.tablist-left {
-			width: 25%;
-			display: inline-block;
-		}
-		.tablist-content {
-			width: 60%;
-			display: inline-block;
-			vertical-align: top;
-			margin-left: 5%;
-		}
+  <head>
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>
+      Deadlines
+    </title>
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jqm-demos.css">
+    <script src="js/jquery.js">
+    </script>
+    
+    </script>
+    <script src="js/jquery.mobile-1.4.2.min.js">
+    </script>
+    <style id="inset-tablist">
+      .tablist-left {
+        width: 25%;
+        display: inline-block;
+      }
+      .tablist-content {
+        width: 60%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 5%;
+      }
 	</style>
-</head>
-   <body>
-      <div id="deadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
-         <div id="headerDeadlines" class="jqm-header">
-            <input type="button" value="Back">
-            <h1>Deadlines</h1>
-            <input type="button" value="Add">
-         </div>
-         <div id="content" class="ui-content jqm-content">
-         	<div data-demo-html="true">
-            <div data-role="tabs" id="tabs">
-            	<div data-role="navbar">
-                <ul>
-                	<li>
-                    <a href="#one" data-ajax="false">One</a>
-                    </li>
-                    <li>
-                    <a href="#true" data-ajax="true">True</a>
-                    </li>
-                </ul>
-         </div>
-         <div id="one" class="ui-body-dui-content">
-         	<h1>First tab content</h1>
-         </div>
-         <div id="two">
-         	<ul data-role="list-view" data-inset="true">
-            	<li><a href="#">Acura</a></li>
-		            <li><a href="#">Audi</a></li>
-		            <li><a href="#">BMW</a></li>
-		            <li><a href="#">Cadillac</a></li>
-		            <li><a href="#">Ferrari</a></li>
-            </ul>
-         </div>
+  </head>
+  <body>
+    <div id="deadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
+      <div id="headerDeadlines" class="jqm-header">
+        <input type="button" value="Back">
+        <h1>
+          Deadlines
+        </h1>
+        <input type="button" value="Add">
       </div>
-   </body>
-</html>
+      <div id="content" class="ui-content jqm-content">
+        <div data-demo-html="true">
+          <div data-role="tabs" id="tabs">
+            <div data-role="navbar">
+              <ul>
+                <li>
+                  <a href="#one" data-ajax="false">
+                    One
+                  </a>
+                </li>
+                <li>
+                  <a href="#true" data-ajax="true">
+                    True
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="one" class="ui-body-dui-content">
+              <h1>
+                First tab content
+              </h1>
+            </div>
+            <div id="two">
+              <ul data-role="list-view" data-inset="true">
+            	<li>
+                  <a href="#">
+                    Acura
+                  </a>
+              </li>
+              <li>
+                <a href="#">
+                  Audi
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  BMW
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Cadillac
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Ferrari
+                </a>
+              </li>
+           </ul>
+              </div>
+              </div>
+           </div>
+        </div>
+     </body>
+  </html>
