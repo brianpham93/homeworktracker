@@ -1,94 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta charset="utf-8">
-    <title>
-      Deadlines
-    </title>
-    <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
-    <link rel="stylesheet" type="text/css" href="css/jqm-demos.css">
-    <script src="js/jquery.js">
-    </script>
-    
-    </script>
-    <script src="js/jquery.mobile-1.4.2.min.js">
-    </script>
-    <style id="inset-tablist">
-      .tablist-left {
-        width: 25%;
-        display: inline-block;
-      }
-      .tablist-content {
-        width: 60%;
-        display: inline-block;
-        vertical-align: top;
-        margin-left: 5%;
-      }
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tabs - jQuery Mobile Demos</title>
+	<link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.2.min.css">
+	<link href="_assets/css/jqm-demos.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<style id="inset-tablist">
+		.tablist-left {
+			width: 25%;
+			display: inline-block;
+		}
+		.tablist-content {
+			width: 60%;
+			display: inline-block;
+			vertical-align: top;
+			margin-left: 5%;
+		}
 	</style>
-  </head>
-  <body>
-    <div id="deadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
-      <div id="headerDeadlines" class="jqm-header">
-        <input type="button" value="Back">
-        <h1>
-          Deadlines
-        </h1>
-        <input type="button" value="Add">
-      </div>
-      <div id="content" class="ui-content jqm-content">
-        <div data-demo-html="true">
-          <div data-role="tabs" id="tabs">
-            <div data-role="navbar">
-              <ul>
-                <li>
-                  <a href="#one" data-ajax="false">
-                    One
-                  </a>
-                </li>
-                <li>
-                  <a href="#true" data-ajax="true">
-                    True
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div id="one" class="ui-body-dui-content">
-              <h1>
-                First tab content
-              </h1>
-            </div>
-            <div id="two">
-              <ul data-role="list-view" data-inset="true">
-            	<li>
-                  <a href="#">
-                    Acura
-                  </a>
-              </li>
-              <li>
-                <a href="#">
-                  Audi
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  BMW
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Cadillac
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Ferrari
-                </a>
-              </li>
-           </ul>
-              </div>
-              </div>
-           </div>
-        </div>
-     </body>
-  </html>
+</head>
+<body>
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
+
+	<div data-role="header" class="jqm-header">
+		<h2>Deadlines</h2>
+		
+        <!-- left menu button -->
+		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <!-- right search button-->
+		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-search ui-nodisc-icon ui-alt-icon ui-btn-right">Search</a>
+	</div><!-- /header -->
+
+	<div role="main" class="ui-content jqm-content">
+
+		<div data-demo-html="true">
+			<div data-role="tabs">
+    <div data-role="navbar">
+        <ul>
+          <li><a href="#one" data-theme="a" data-ajax="false">one</a></li>
+          <li><a href="#two" data-theme="a" data-ajax="false">two</a></li>
+          <li><a href="ajax-content.html" data-theme="a" data-ajax="false">three</a></li>
+        </ul>
+    </div>
+    <div id="one" class="ui-content">
+    <h1>First tab contents</h1>
+    </div>
+    <div id="two" class="ui-content">
+        <ul data-role="listview">
+            <li><a href="#">Acura</a></li>
+            <li><a href="#">Audi</a></li>
+            <li><a href="#">BMW</a></li>
+            <li><a href="#">Cadillac</a></li>
+            <li><a href="#">Ferrari</a></li>
+        </ul>
+    </div>
+</div>
+<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
+    <p>jQuery Mobile Demos version <span class="jqm-version"></span></p>
+    <p>Copyright 2013 The jQuery Foundation</p>
+</div><!-- /footer -->		
+		</div>
+	</div>
+		
+
+	</div><!-- /content -->
+	    <!-- /panel -->
+
+
+</div><!-- /page -->
+
+</body>
+</html>
