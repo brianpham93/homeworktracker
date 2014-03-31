@@ -3,22 +3,27 @@
 <head>
 <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
         <meta charset="utf-8">
-        <title>Add new class
+        <title>Add new class</title>
+        <link rel="stylesheet" href="css/jqm-demos.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/deadlines.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
 </head>
 
 <body>
 <div id="addNewClass" data-role="page">
-    	<div id="headerAddNewClass">
-        	<input type="button" value="back">
-            <h1>Add new class</h1>
-            <input type="button" value="Delete">
+    	<div id="headerAddNewClass" class="jqm-header" data-role="header">
+        	<h1>Add new class</h1>
+        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Save</a>
         </div>
-        <div id="content">
+        <div id="content" class="jqm-content" data-role="content">
         	<label for="className">Name</label>
-            <input id="className" type="text">
+            <input id="className" type="text" class="ui-input-text">
             <br>
             <label for="classLocation">Location</label>
-            <input id="classLocation" type="text">
+            <input id="classLocation" type="text" class="ui-input-text">
             <br>
             <label for="classDate">Class Date</label>
             <input id="classDate" type="date">
@@ -35,7 +40,7 @@
             <label for="classTeacherPhone">Phone</label>
             <input id="classTeacherPhone" type="tel">
             <br>
-            <input id="btnSave" type="button" value="Save">
+            <input id="btnSave" type="button" value="Save" class="ui-input-btn">
         </div>
     </div>
 </body>

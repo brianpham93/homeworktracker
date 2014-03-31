@@ -4,22 +4,27 @@
 <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
         <meta charset="utf-8">
         <title>Deadline detail</title>
+        <link rel="stylesheet" href="css/jqm-demos.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/deadlines.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
 </head>
 
 <body>
-<div id="DeadlineDetail" data-role="page">
-	<div id="headerDeadlineDetail">
-    	<input id="btnBack" type="button" value="Back">
-    	<h1>Deadline Detail</h1>
-        <input id="btnDelete" type="button" value="Delete">
+<div id="DeadlineDetail" data-role="page"  class="ui-page">
+	<div id="headerDeadlineDetail" class="jqm-header" data-role="header">
+    	<h1>Add new class</h1>
+        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-right">Delete</a>
     </div>
-    <div id="contentDeadlineDetail">
+    <div id="contentDeadlineDetail" class="jqm-content" data-role="content">
     	<form id="formDeadlineInfo">
         	<label for="shortDescription">Short Description</label>
-            <input id="shortDescription" type="text">
+            <input id="shortDescription" type="text" class="ui-input-text">
             <br>
             <label for="class">Class</label>
-            <select id="class">
+            <select id="class" class="ui-selectmenu-list">
               <option value="HCI">HCI</option>
               <option value="DataMining">Data Mining</option>
               <option value="MobileDev">Mobile Dev</option>
@@ -27,22 +32,22 @@
             </select>
             <br>
             <label for="dueDate">Due Date</label>
-            <input id="dueDate" type="text">
+            <input id="dueDate" type="date">
             <br>
             <label for="dueTime">Due Time</label>
-            <input id="shortDescription" type="text">
+            <input id="shortDescription" type="time">
             <br>
             <label for="type">Type</label>
-            <select id="type">
+            <select id="type" class="ui-selectmenu">
               <option value="Homework">Homework</option>
               <option value="Test">Test</option>
             </select>
             <br>
             <label for="additionalInfo">Additional Info</label>
-            <input id="additionalInfo" type="text">
+            <input id="additionalInfo" type="text" class="input ui-textinput-autogrow-resize">
             <br>
             <label for="finished">Finished</label>
-            <input type="checkbox">
+            <input type="checkbox" class="ui-checkbox">
             <br>
             <input id="btnSave" type="button" value="Save">
         </form>
