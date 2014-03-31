@@ -204,10 +204,6 @@ if ( location.protocol.substr(0,4)  === 'file' ||
 				'data-ajax-warning': true
 			});
 
-			message
-			.append( "<h3>Note: Navigation may not work if viewed locally</h3>" )
-			.append( "<p>The Ajax-based navigation used throughout the jQuery Mobile docs may need to be viewed on a web server to work in certain browsers. If you see an error message when you click a link, please try a different browser.</p>" );
-
 			$( document ).on( "pagecreate", function( event ) {
 				$( event.target ).append( message );
 			});
@@ -588,16 +584,7 @@ $( document ).bind( "pagebeforechange", function( e, data ) {
 function makeButton() {
 	var d = document.createElement( "div" )
 		a = document.createElement( "a" ),
-		txt = document.createTextNode( "View Source" );
-
-	a.className = "jqm-view-source-link ui-btn ui-corner-all ui-btn-inline ui-mini";
-
-	a.setAttribute( "href", "#popupDemo" );
-	a.setAttribute( "data-rel", "popup" );
-	a.appendChild( txt );
-
-	d.appendChild( a );
-
+		txt = document.createTextNode( "" );
 	return $( d );
 }
 
