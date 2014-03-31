@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Deadlines</title>
-	<link rel="stylesheet" href="css/jqm-demos.css">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/deadlines.js"></script>
-	<script src="js/jquery.mobile-1.4.2.min.js"></script>
-	<style id="inset-tablist">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deadlines</title>
+<link rel="stylesheet" href="css/jqm-demos.css">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+<script src="js/jquery.js"></script>
+<script src="js/deadlines.js"></script>
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<style id="inset-tablist">
 		.tablist-left {
 			width: 25%;
 			display: inline-block;
@@ -20,81 +20,91 @@
 			vertical-align: top;
 			margin-left: 5%;
 		}
-	</style>
+</style>
 </head>
 <body>
 <div data-role="page" class="jqm-demos" data-quicklinks="true">
-
 	<div data-role="header" class="jqm-header">
 		<h2>Deadlines</h2>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
-	</div><!-- /header -->
-
+	</div>
+	<!-- /header -->
 	<div role="main" class="ui-content jqm-content">
-
 		<div data-demo-html="true">
 			<div data-role="tabs" id="tabs">
-		      <div data-role="navbar">
-			    <ul>
-			      <li><a href="#all" data-ajax="false">All</a></li>
-			      <li><a href="#homework" data-ajax="false">Homework</a></li>
-                 <li><a href="#test" data-ajax="false">Test</a></li>
-			      <li><a href="#finished" data-ajax="false">Finished</a></li>
-                 <li><a href="#missed" data-ajax="false">Missed</a></li> 
-			    </ul>
-		      </div>
-		      <div id="all" class="ui-body-d ui-content">
-		        <ul data-role="listview" data-inset="true">
-		            <li><a href="#">1Data Mining</a></li>
-		            <li><a href="#">1Ethics</a></li>
-		            <li><a href="#">1HCI</a></li>
-		            <li><a href="#">1Mobile Dev</a></li>
-		            <li><a href="#">1Software Testing</a></li>
-		        </ul>
-		      </div>
-		      <div id="homework" class="ui-body-d ui-content" >
-		        <ul data-role="listview" data-inset="true">
-		            <li><a href="#">2Data Mining</a></li>
-		            <li><a href="#">2Ethics</a></li>
-		            <li><a href="#">2HCI</a></li>
-		            <li><a href="#">2Mobile Dev</a></li>
-		            <li><a href="#">2Software Testing</a></li>
-		        </ul>
-		      </div>
-              <div id="test" class="ui-body-d ui-content">
-		        <ul data-role="listview" data-inset="true">
-		            <li><a href="#">3Data Mining</a></li>
-		            <li><a href="#">3Ethics</a></li>
-		            <li><a href="#">3HCI</a></li>
-		            <li><a href="#">3Mobile Dev</a></li>
-		            <li><a href="#">3Software Testing</a></li>
-		        </ul>
-		      </div>
-              <div id="finished" class="ui-body-d ui-content">
-		        <ul data-role="listview" data-inset="true">
-		            <li><a href="#">4Data Mining</a></li>
-		            <li><a href="#">4Ethics</a></li>
-		            <li><a href="#">4HCI</a></li>
-		            <li><a href="#">4Mobile Dev</a></li>
-		            <li><a href="#">4Software Testing</a></li>
-		        </ul>
-		      </div>
-              <div id="missed" class="ui-body-d ui-content">
-		        <ul data-role="listview" data-inset="true">
-		            <li><a href="#">5Data Mining</a></li>
-		            <li><a href="#">5Ethics</a></li>
-		            <li><a href="#">5HCI</a></li>
-		            <li><a href="#">5Mobile Dev</a></li>
-		            <li><a href="#">5Software Testing</a></li>
-		        </ul>
-		      </div>
-		    </div>
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#all" data-ajax="false">All</a></li>
+						<li><a href="#homework" data-ajax="false">Homework</a></li>
+						<li><a href="#test" data-ajax="false">Test</a></li>
+						<li><a href="#finished" data-ajax="false">Finished</a></li>
+						<li><a href="#missed" data-ajax="false">Missed</a></li>
+					</ul>
+				</div>
+				<div id="all" class="ui-body-d ui-content">
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">1Data Mining</a></li>
+						<li><a href="#">1Ethics</a></li>
+						<li><a href="#">1HCI</a></li>
+						<li><a href="#">1Mobile Dev</a></li>
+						<li><a href="#">1Software Testing</a></li>
+					</ul>
+				</div>
+				<div id="homework" class="ui-body-d ui-content">
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">2Data Mining</a></li>
+						<li><a href="#">2Ethics</a></li>
+						<li><a href="#">2HCI</a></li>
+						<li><a href="#">2Mobile Dev</a></li>
+						<li><a href="#">2Software Testing</a></li>
+					</ul>
+				</div>
+				<div id="test" class="ui-body-d ui-content">
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">3Data Mining</a></li>
+						<li><a href="#">3Ethics</a></li>
+						<li><a href="#">3HCI</a></li>
+						<li><a href="#">3Mobile Dev</a></li>
+						<li><a href="#">3Software Testing</a></li>
+					</ul>
+				</div>
+				<div id="finished" class="ui-body-d ui-content">
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">4Data Mining</a></li>
+						<li><a href="#">4Ethics</a></li>
+						<li><a href="#">4HCI</a></li>
+						<li><a href="#">4Mobile Dev</a></li>
+						<li><a href="#">4Software Testing</a></li>
+					</ul>
+				</div>
+				<div id="missed" class="ui-body-d ui-content">
+					<ul data-role="listview" data-inset="true">
+						<li><a href="#">5Data Mining</a></li>
+						<li><a href="#">5Ethics</a></li>
+						<li><a href="#">5HCI</a></li>
+						<li><a href="#">5Mobile Dev</a></li>
+						<li><a href="#">5Software Testing</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		
-		</div>
-	</div><!-- /panel -->
-
-
-</body>
-</html>
+	</div>
+	<!-- tab content -->
+	<div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+			<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Home</a></li>
+			<li data-filtertext="introduction overview getting started"><a href="../intro/" data-ajax="false">Introduction</a></li>
+			<li data-filtertext="buttons button markup buttonmarkup method anchor link button element"><a href="../button-markup/" data-ajax="false">Buttons</a></li>
+			<li data-filtertext="form button widget input button submit reset"><a href="../button/" data-ajax="false">Button widget</a></li>
+			<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
+			<h3>Checkboxradio widget</h3>
+			<ul>
+				<li data-filtertext="form checkboxradio widget checkbox input checkboxes controlgroups"><a href="../checkboxradio-checkbox/" data-ajax="false">Checkboxes</a></li>
+				<li data-filtertext="form checkboxradio widget radio input radio buttons controlgroups"><a href="../checkboxradio-radio/" data-ajax="false">Radio buttons</a></li>
+			</ul>
+			</li>
+		</ul>
+	</div>
+	</body>
+	</html>
