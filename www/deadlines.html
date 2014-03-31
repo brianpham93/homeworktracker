@@ -9,6 +9,8 @@
 <script src="js/jquery.js"></script>
 <script src="js/deadlines.js"></script>
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
+<script src="js/iscroll.js"></script>
+
 <style id="inset-tablist">
 		.tablist-left {
 			width: 25%;
@@ -24,13 +26,13 @@
 </head>
 <body>
 <div data-role="page" class="jqm-demos" data-quicklinks="true">
-	<div data-role="header" class="jqm-header">
+	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Deadlines</h2>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
 	</div>
 	<!-- /header -->
-	<div role="main" class="ui-content jqm-content">
+	<div role="main" class="ui-content jqm-content" >
 		<div data-demo-html="true">
 			<div data-role="tabs" id="tabs">
 				<div data-role="navbar">
@@ -90,21 +92,18 @@
 			</div>
 		</div>
 	</div>
-	<!-- tab content -->
+	<!-- end tab content -->
 	<div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
 		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
-			<li data-filtertext="demos homepage" data-icon="home"><a href=".././">Home</a></li>
-			<li data-filtertext="introduction overview getting started"><a href="../intro/" data-ajax="false">Introduction</a></li>
-			<li data-filtertext="buttons button markup buttonmarkup method anchor link button element"><a href="../button-markup/" data-ajax="false">Buttons</a></li>
-			<li data-filtertext="form button widget input button submit reset"><a href="../button/" data-ajax="false">Button widget</a></li>
-			<li data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u" data-iconpos="right" data-inset="false">
-			<h3>Checkboxradio widget</h3>
-			<ul>
-				<li data-filtertext="form checkboxradio widget checkbox input checkboxes controlgroups"><a href="../checkboxradio-checkbox/" data-ajax="false">Checkboxes</a></li>
-				<li data-filtertext="form checkboxradio widget radio input radio buttons controlgroups"><a href="../checkboxradio-radio/" data-ajax="false">Radio buttons</a></li>
-			</ul>
-			</li>
+			<li data-filtertext="deadlines" data-icon="home"><a href="deadlines.html">Deadlines</a></li>
+			<li data-filtertext="finished tasks"><a href="deadlines.html" data-ajax="false">Finished tasks</a></li>
+			<li data-filtertext="Missed tasks"><a href="deadlines.html" data-ajax="false">Missed tasks</a></li>
+			<li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
+			<li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
+			<li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>			
 		</ul>
 	</div>
-	</body>
-	</html>
+ </div>
+	<!-- end left panel -->
+</body>
+</html>

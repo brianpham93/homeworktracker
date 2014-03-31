@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<div id="classList" data-role="page">
+<div id="classList" data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div id="headerClassList" class="jqm-header" data-role="header">
     	<h1>Class Manager</h1>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
@@ -40,6 +40,18 @@
             </li>
         </ul>
     </div>
+    <!-- end tab content -->
+    <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+        <ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <li data-filtertext="deadlines" data-icon="home"><a href="deadlines.html">Deadlines</a></li>
+            <li data-filtertext="finished tasks"><a href="deadlines.html" data-ajax="false">Finished tasks</a></li>
+            <li data-filtertext="Missed tasks"><a href="deadlines.html" data-ajax="false">Missed tasks</a></li>
+            <li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
+            <li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
+            <li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>            
+        </ul>
+    </div>
+    <!-- end left panel -->
 </div>
 </body>
 </html>
