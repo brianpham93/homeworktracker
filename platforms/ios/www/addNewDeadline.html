@@ -10,6 +10,7 @@
 	<script src="js/deadlines.js"></script>
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>
     <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+    <script src="js/database.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,6 @@
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Add new deadlines</h2>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-        <a href="deadlines.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Add new</a>
     </div>
     <!-- end head -->
     <div id="contentAddNewDeadline" class="ui-content" data-iscroll>
@@ -37,7 +37,7 @@
             <input id="dueDate" type="date">
             <br>
             <label for="dueTime">Due Time</label>
-            <input id="shortDescription" type="time">
+            <input id="dueTime" type="time">
             <br>
             <label for="type">Type</label>
             <select id="type">
@@ -48,10 +48,13 @@
             <label for="additionalInfo">Additional Info</label>
             <input id="additionalInfo" type="text">
             <br>
+            <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center">
             
         </form>
     </div>
     <!-- end tab content -->
+    
+    <!-- end of footer-->
     <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
 		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
 			<li data-filtertext="deadlines" data-icon="home"><a href="deadlines.html">Deadlines</a></li>
