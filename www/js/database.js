@@ -8,11 +8,8 @@ var category = "";
 // PhoneGap is ready
 //
 function onDeviceReady() {
-	alert('on device ready');
-	db = window.openDatabase("HomeworkTracker", "1.0", "HomeworkTracker", 2000);
-	alert('before pop');
+	db = window.openDatabase("HomeworkTracker2", "2.0", "HomeworkTracker2", 2000);
 	db.transaction(populateDB, errorCB, successCB);
-	alert('before get');
 }
 
 
@@ -49,6 +46,7 @@ function saveDeadlineToDB(){
 	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
 	alert(dbAdditionalInfo);
 	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo);
+	//window.location.href = 'deadlines.html'; 
 	
 }
 
@@ -83,9 +81,7 @@ function successCB() {
 
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo) {
 	//alert('insert called');
-	alert('insert called');
-	db = window.openDatabase("HomeworkTracker", "1.0", "HomeworkTracker", 2000);
-	alert('before pop');
+	alert('before populate');
 	db.transaction(populateDB, errorCB, successCB);
 	alert('before insert');
 	db.transaction(function(tx){		 		
@@ -93,6 +89,7 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
 		alert(tx);
    });
 }
+
 
 
 // JavaScript Document
