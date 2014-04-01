@@ -46,10 +46,8 @@ function saveDeadlineToDB(){
 	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
 	alert(dbAdditionalInfo);
 	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo);
-	//window.location.href = 'deadlines.html'; 
 	
 }
-
 
 function getAlcohol_success(tx, results){
 	//alert('get alcohol success');
@@ -88,6 +86,7 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
 		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo) VALUES (?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo],successCB, errorCB);
 		alert(tx);
    });
+   window.location.replace("index.html");
 }
 
 
