@@ -21,6 +21,38 @@ function getDeadlines(tx){
 	tx.executeSql(sql, [] , getAlcohol_success);
 }
 
+function randomString(L){
+    var s= '';
+    var randomchar=function(){
+    	var n= Math.floor(Math.random()*62);
+    	if(n<10) return n; //1-10
+    	if(n<36) return String.fromCharCode(n+55); //A-Z
+    	return String.fromCharCode(n+61); //a-z
+    }
+    while(s.length< L) s+= randomchar();
+    return s;
+}
+
+function saveDeadlineToDB(){
+	var dbId = randomString(5);
+	alert(dbId);
+	var dbDescription = document.getElementById("shortDescription").value;
+	alert(dbDescription);
+	var dbClass = document.getElementById("class").value;
+	alert(dbClass);
+	var dbDueDate = document.getElementById("dueDate").value;
+	alert(dbDueDate);
+	var dbDueTime = document.getElementById("dueTime").value;
+	alert(dbDueTime);
+	var dbType = document.getElementById("type").value;
+	alert(dbType);
+	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
+	alert(dbAdditionalInfo);
+	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo);
+	
+}
+
+
 function getAlcohol_success(tx, results){
 	//alert('get alcohol success');
 	var len = results.rows.length;
@@ -37,7 +69,6 @@ function getAlcohol_success(tx, results){
 //
 function populateDB(tx) {
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS deadlines (id varchar(10) primary key, description varchar(500), class varchar(50), duedate date, duetime time, type varchar(50), additionalInfo varchar(200))');
-	 dbCreated = true;
 }
 
 // Transaction error callback
@@ -50,27 +81,14 @@ function successCB() {
 	alert('success');	
 }
 
-function insertDeadlineToDB() {
+function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo) {
 	//alert('insert called');
 	alert('insert called');
 	db = window.openDatabase("HomeworkTracker", "1.0", "HomeworkTracker", 2000);
 	alert('before pop');
 	db.transaction(populateDB, errorCB, successCB);
-	db.transaction(function(tx){		 
-		var dbId = randomString(5);
-		alert(dbId);
-		var dbDescription = document.getElementById("shortDescription").value;
-		alert(dbDescription);
-		var dbClass = document.getElementById("class").value;
-		alert(dbClass);
-		var dbDueDate = document.getElementById("dueDate").value;
-		alert(dbDueDate);
-		var dbDueTime = document.getElementById("dueTime").value;
-		alert(dbDueTime);
-		var dbType = document.getElementById("type").value;
-		alert(dbType);
-		var dbAdditionalInfo = document.getElementById("additionalInfo").value;
-		alert(dbAdditionalInfo);
+	alert('before insert');
+	db.transaction(function(tx){		 		
 		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo) VALUES (?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo],successCB, errorCB);
 		alert(tx);
    });
