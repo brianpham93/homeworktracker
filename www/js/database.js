@@ -46,7 +46,7 @@ function saveDeadlineToDB(){
 	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
 	alert(dbAdditionalInfo);
 	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo);
-	
+
 }
 
 function getAlcohol_success(tx, results){
@@ -58,10 +58,10 @@ function getAlcohol_success(tx, results){
 		//alert('before append');
 		$('#itemList').append('<li><a href="location.html?name=' + alcohol.cName + '&category='+category+'"><p>' + alcohol.cName + '</p></li>');
 	}
-	
+
 	alert('before append');
 }
-// Populate the database 
+// Populate the database
 //
 function populateDB(tx) {
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS deadlines (id varchar(10) primary key, description varchar(500), class varchar(50), duedate date, duetime time, type varchar(50), additionalInfo varchar(200))');
@@ -74,7 +74,7 @@ function errorCB(tx, err) {
 
 // Transaction success callback
 function successCB() {
-	alert('success');	
+	alert('success');
 }
 
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo) {
@@ -82,11 +82,11 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
 	alert('before populate');
 	db.transaction(populateDB, errorCB, successCB);
 	alert('before insert');
-	db.transaction(function(tx){		 		
+	db.transaction(function(tx){
 		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo) VALUES (?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo],successCB, errorCB);
 		alert(tx);
    });
-   window.location.replace("index.html");
+   window.location.replace("deadlines.html");
 }
 
 

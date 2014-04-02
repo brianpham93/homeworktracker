@@ -9,8 +9,14 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/deadlines.js"></script>
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>
-    <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
     <script src="js/database.js"></script>
+    <script>
+		window.onload = function () {
+			 alert('Before on device ready');
+            if (!window.device)
+                onDeviceReady();
+        }
+    </script>
 </head>
 
 <body>
@@ -48,7 +54,7 @@
             <label for="additionalInfo">Additional Info</label>
             <input id="additionalInfo" type="text">
             <br>
-            <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center">
+            <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center" onClick="saveDeadlineToDB()">
             
         </form>
     </div>
