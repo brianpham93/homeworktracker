@@ -14,3 +14,15 @@
 2014-03-31 14:13:42.118 HomeworkTracker[8548:70b] Multi-tasking -> Device: YES, App: YES
 2014-03-31 14:13:45.158 HomeworkTracker[8548:70b] Resetting plugins due to page load.
 2014-03-31 14:13:46.911 HomeworkTracker[8548:70b] Finished load of: file:///Users/thangpq/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/9DD4B7F7-23CF-4183-B6AE-F079C150CAA4/HomeworkTracker.app/www/index.html
+2014-04-02 16:30:06.581 HomeworkTracker[3858:70b] Multi-tasking -> Device: YES, App: YES
+2014-04-02 16:30:08.929 HomeworkTracker[3858:70b] Resetting plugins due to page load.
+2014-04-02 16:30:09.168 HomeworkTracker[3858:4403] ERROR whitelist rejection: url='http://158.108.140.129:8080/target/target-script-min.js#anonymous'
+2014-04-02 16:30:09.169 HomeworkTracker[3858:4403] ERROR whitelist rejection: url='http://158.108.140.129:8080/target/target-script-min.js#anonymous'
+2014-04-02 16:30:09.170 HomeworkTracker[3858:4403] ERROR whitelist rejection: url='http://158.108.140.129:8080/target/target-script-min.js#anonymous'
+2014-04-02 16:30:09.581 HomeworkTracker[3858:70b] Finished load of: file:///Users/thangpq/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/50B19CB9-90E9-4DCC-A4CC-62F80E53F30B/HomeworkTracker.app/www/index.html
+2014-04-02 16:30:24.383 HomeworkTracker[3858:70b] Resetting plugins due to page load.
+2014-04-02 16:30:24.703 HomeworkTracker[3858:70b] Finished load of: file:///Users/thangpq/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/50B19CB9-90E9-4DCC-A4CC-62F80E53F30B/HomeworkTracker.app/www/deadlines.html
+2014-04-02 16:30:32.035 HomeworkTracker[3858:70b] Resetting plugins due to page load.
+2014-04-02 16:30:33.650 HomeworkTracker[3858:70b] Finished load of: file:///Users/thangpq/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/50B19CB9-90E9-4DCC-A4CC-62F80E53F30B/HomeworkTracker.app/www/addNewDeadline.html
+2014-04-02 16:30:49.411 HomeworkTracker[3858:70b] Resetting plugins due to page load.
+2014-04-02 16:30:50.943 HomeworkTracker[3858:70b] Finished load of: file:///Users/thangpq/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/50B19CB9-90E9-4DCC-A4CC-62F80E53F30B/HomeworkTracker.app/www/addNewDeadline.html
