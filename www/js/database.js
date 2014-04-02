@@ -25,21 +25,21 @@ function randomString(L){
 
 function saveDeadlineToDB(){
 	var dbId = randomString(5);
-	alert(dbId);
+	//alert(dbId);
 	var dbDescription = document.getElementById("shortDescription").value;
-	alert(dbDescription);
+	//alert(dbDescription);
 	var dbClass = document.getElementById("class").value;
-	alert(dbClass);
+	//alert(dbClass);
 	var dbDueDate = document.getElementById("dueDate").value;
-	alert(dbDueDate);
+	//alert(dbDueDate);
 	var dbDueTime = document.getElementById("dueTime").value;
-	alert(dbDueTime);
+	//alert(dbDueTime);
 	var dbType = document.getElementById("type").value;
-	alert(dbType);
+	//alert(dbType);
 	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
-	alert(dbAdditionalInfo);
+	//alert(dbAdditionalInfo);
 	var dbFinished = document.getElementById("finished").value;
-	alert(dbFinished);
+	//alert(dbFinished);
 	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
 
 }
@@ -47,9 +47,9 @@ function saveDeadlineToDB(){
 // Populate the database
 
 function populateDB(tx) {
-	alert('starting populate');
+	//alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS deadlines (id varchar(10) primary key, description varchar(500), class varchar(50), duedate date, duetime time, type varchar(50), additionalInfo varchar(200), finished varchar(10))');
-	 alert(tx);
+	 //alert(tx);
 }
 
 // Transaction error callback
@@ -59,17 +59,17 @@ function errorCB(tx, err) {
 
 // Transaction success callback
 function successCB() {
-	alert('success');
+	//alert('success');
 }
 
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
 	//alert('insert called');
-	alert('before populate');
+	//alert('before populate');
 	db.transaction(populateDB, errorCB, successCB);
-	alert('before insert');
+	//alert('before insert');
 	db.transaction(function(tx){
 		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished],successCB, errorCB);
-		alert(tx);
+		//alert(tx);
    });
 }
 
