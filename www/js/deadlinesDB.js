@@ -28,7 +28,7 @@ function getAllDeadlines_success(tx, results){
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
 			
-		$('#allList').append('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+		$('#allList').prepend('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 	}
 	$("#allList").listview('refresh');
 		//alert('before append');
@@ -40,7 +40,7 @@ function getHomeworkDeadlines_success(tx, results){
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
 			
-		$('#homeworkList').append('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'"><p>'+ homeworkDeadline.class+'</p><p>'+ homeworkDeadline.duedate+'</p><p>'+ homeworkDeadline.duetime+'</p></a></li>');
+		$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		
 	}
 	$("#homeworkList").listview('refresh');
@@ -53,7 +53,7 @@ function getTestDeadlines_success(tx, results){
 	for (var i=0; i<len; i++){
 		var testDeadline = results.rows.item(i);
 			
-		$('#testList').append('<li><a href="deadlineDetail.html?id='+ testDeadline.id+'"><p>'+ testDeadline.class+'</p><p>'+ testDeadline.duedate+'</p><p>'+ testDeadline.duetime+'</p></a></li>');
+		$('#testList').prepend('<li><a href="deadlineDetail.html?id='+ testDeadline.id+'">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
 	}
 	$("#testList").listview('refresh');
 		//alert('before append');
