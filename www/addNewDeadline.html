@@ -62,20 +62,20 @@
              
             </select>
             <br>
-           <!--	<button class="ui-btn ui-btn-b" onClick="saveDeadlineToDB()">Save</button>-->
+           	<button class="ui-btn ui-btn-b" onClick="saveDeadlineToDB()">Save</button>
 
-            <input type="submit" class="ui-btn ui-btn-inline" value="Save" style="text-align:center" onClick="saveDeadlineToDB()">
+            <!--<input type="submit" class="ui-btn ui-btn-inline" value="Save" style="text-align:center" onClick="saveDeadlineToDB()">-->
             
         </form>
     </div>
     <!-- end tab content -->
     
     <!-- end of footer-->
-   <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+    <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
 		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
 			<li data-filtertext="deadlines" data-icon="home"><a href="deadlines.html">Deadlines</a></li>
-			<li data-filtertext="finished tasks"><a href="finished.html" data-ajax="false">Finished tasks</a></li>
-			<li data-filtertext="finished tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li>
+			<li data-filtertext="finished tasks"><a href="deadlines.html" data-ajax="false" data-transition="slide">Finished tasks</a></li>
+			<li data-filtertext="Missed tasks"><a href="deadlines.html" data-ajax="false">Missed tasks</a></li>
 			<li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
 			<li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
 			<li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>			
