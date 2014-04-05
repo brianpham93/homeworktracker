@@ -75,13 +75,13 @@ function getHomeworkDeadlines_success(tx, results){
 	var len = results.rows.length;
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
-		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime);
+		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
 		alert('result: ' + result);
 		if ( result == "true" ){
 			alert('prepend');				
 			$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		} 
-		else continue;
+		else continue;;
 	}
 	$("#homeworkList").listview('refresh');
 		//alert('before append');
