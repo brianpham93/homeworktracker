@@ -55,9 +55,10 @@
             <input id="additionalInfo" type="text">
             <br>
             <label for="finished">Finished</label>
-            <select id="finished" class="ui-selectmenu" >
-              <option value="yes">Yes</option>
+            <select data-role="flipswitch" id="finished" class="ui-selectmenu" >
               <option value="no" selected>No</option>
+              <option value="yes">Yes</option>
+              
             </select>
             
             <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center" onClick="saveDeadlineToDB()">
