@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deadlines</title>
+<title>Finished tasks</title>
 <link rel="stylesheet" href="css/jqm-demos.css">
 <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
 <script src="js/jquery.js"></script>
@@ -33,9 +33,9 @@
 <body>
 <div data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
-		<h2>Deadlines</h2>
+		<h2>Finished Tasks</h2>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+		<!--<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>-->
 	</div>
 	<!-- /header -->
 	<div role="main" class="ui-content jqm-content" >
@@ -44,26 +44,27 @@
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#all" data-ajax="false">All</a></li>
-						<li><a href="#homework" data-ajax="false">Homework</a></li>
-						<li><a href="#test" data-ajax="false">Test</a></li>
+                        <li><a href="#homework" data-ajax="false">Homework</a></li>
+                        <li><a href="#test" data-ajax="false">Test</a></li>
 					</ul>
 				</div>
              
-				<div id="all" class="ui-body-d ui-content">
-					<ul id="allList" data-role="listview" data-inset="true">
+				<div id="allfinished" class="ui-body-d ui-content">
+					<ul id="allfinishedList" data-role="listview" data-inset="true">
 						<!--List will go here-->
 					</ul>
 				</div>
-				<div id="homework" class="ui-body-d ui-content">
-					<ul id="homeworkList" data-role="listview" data-inset="true">					
-                    	<!--List will go here-->
-					</ul>
-				</div>
-				<div id="test" class="ui-body-d ui-content">
-					<ul id="testList" data-role="listview" data-inset="true">
+                <div id="homeworkfinished" class="ui-body-d ui-content">
+					<ul id="homeworkfinishedList" data-role="listview" data-inset="true">
 						<!--List will go here-->
 					</ul>
 				</div>
+                <div id="testfinished" class="ui-body-d ui-content">
+					<ul id="testfinishedList" data-role="listview" data-inset="true">
+						<!--List will go here-->
+					</ul>
+				</div>
+                
 			</div>
 		</div>
 	</div>

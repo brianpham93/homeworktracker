@@ -25,12 +25,36 @@ function getAllDeadlines_success(tx, results){
 
 	var len = results.rows.length;
 	//var s = "";
+	var now = new Date();
+	var currentYear = now.getFullYear();
+	alert('current year:' + currentYear);
+	var currentMonth = now.getMonth() + 1;
+	alert('current month:' + currentMonth);
+	var currentDay = now.getDate();
+	alert('current day:' + currentDay);
+	
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
-			
+		var parts = allDeadline.duedate.split('-');
+		alert(parts[0]);
+		alert(parts[1]);
+		alert(parts[2]);
+		if ( parts[0] < currentYear){
+			alert('case year');
+			continue;
+		}
+		if (( parts[0] = currentYear) && (parts[1] < currentMonth)){
+			alert('case month');
+			continue;
+		}
+		if (( parts[0] = currentYear) && (parts[1] = currentMonth) && (parts[2] < currentDay)){
+			alert('case date');
+			continue;
+		}
+					
 		$('#allList').prepend('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 	}
-	$("#allList").listview('refresh');
+		$("#allList").listview('refresh');
 		//alert('before append');
 }
 function getHomeworkDeadlines_success(tx, results){
@@ -39,9 +63,7 @@ function getHomeworkDeadlines_success(tx, results){
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
-			
-		$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
-		
+		$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');			
 	}
 	$("#homeworkList").listview('refresh');
 		//alert('before append');
