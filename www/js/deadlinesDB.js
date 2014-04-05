@@ -5,12 +5,13 @@ function onDeviceReady() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
 
-	db.transaction(getDeadlines, errorCB);		
+	db.transaction(getDeadlines, errorCB);
 }
 
 function populateDB(tx) {
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS deadlines (id varchar(10) primary key, description varchar(500), class varchar(50), duedate date, duetime time, type varchar(50), additionalInfo varchar(200), finished varchar(10))');
 }
+
 
 function getDeadlines(tx){
 	alert('get deadline');
@@ -49,12 +50,6 @@ function isLate(deadlineDate, deadlineTime){
 	var parts = deadlineDate.split('-');
 	var time = deadlineTime.split(':');
 	
-	/*alert('deadline year: '+ parts[0]);
-	alert('deadline month: ' + parts[1]);
-	alert('deadline date: ' + parts[2]);
-	alert('deadline hour: ' + time[0]);
-	alert('deadline minute: ' + time[1]);*/
-	
 	if ( parts[0] < year ){// previous year
 		return false;
 	} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
@@ -67,8 +62,7 @@ function isLate(deadlineDate, deadlineTime){
 		return false;
 	} else {
 		return true;
-	}
-	
+	}	
 }
 
 function getHomeworkDeadlines_success(tx, results){
@@ -88,6 +82,8 @@ function getHomeworkDeadlines_success(tx, results){
 	$("#homeworkList").listview('refresh');
 		//alert('before append');
 }
+
+
 function getTestDeadlines_success(tx, results){
 
 	var len = results.rows.length;
