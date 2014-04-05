@@ -73,6 +73,57 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
    });
 }
 
+function updateDeadlineToDB(){
+	var id = GET.id;
+	var sql = "select * from deadlines where id = '"+ id +"'";
+	tx.executeSql(sql, [] , getDeadlineDetail_success);
+}
+
+function getDeadlineDetail_success(tx, results){
+	var len = results.rows.length;
+	//var s = "";
+	for (var i=0; i<len; i++){
+		var deadlineDetail = results.rows.item(i);
+		var description = deadlineDetail.description;
+		var class = deadlineDetail.class;
+		var dueDate = deadlineDetail.duedate;
+		var dueTime = deadlineDetail.duetime;
+		var additionalInfo = deadlineDetail.additionalInfo;
+		var finished = deadlineDetail.finished;
+		
+		document.getElementById('shortDescription').innerHTML = description;
+		
+	}
+}
+
+GET = (function () {
+    var get = {
+        push:function (key,value){
+            var cur = this[key];
+            if (cur.isArray){
+                this[key].push(value);
+            }else {
+                this[key] = [];
+                this[key].push(cur);
+                this[key].push(value);
+            }
+        }
+    },
+    search = document.location.search,
+    decode = function (s,boo) {
+        var a = decodeURIComponent(s.split("+").join(" "));
+        return boo? a.replace(/\s+/g,''):a;
+    };
+    search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function (a,b,c) {
+        if (get[decode(b,true)]){
+            get.push(decode(b,true),decode(c));
+        }else {
+            get[decode(b,true)] = decode(c);
+        }
+    });
+    return get;
+})();
+// JavaScript Document
 
 
 // JavaScript Document
