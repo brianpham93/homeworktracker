@@ -35,47 +35,53 @@ function getAllDeadlines_success(tx, results){
 	$("#allList").listview('refresh');
 		//alert('before append');
 }
-function getHomeworkDeadlines_success(tx, results){
-	
-	alert('get homework deadlines');
-	var len = results.rows.length;
-	//var s = "";
+
+function isLate(deadlineDate, deadlineTime){
 	var now = new Date();
 	var year = now.getFullYear();
 	var month = now.getMonth() + 1;
 	var date = now.getDate();
 	var hour = now.getHours();
 	var minute = now.getMinutes();
-	alert ('Today: ' + year + ' ' + month + ' ' + date );
 	
+	var parts = deadlineDate.split('-');
+	var time = deadlineTime.split(':');
+	
+	/*alert('deadline year: '+ parts[0]);
+	alert('deadline month: ' + parts[1]);
+	alert('deadline date: ' + parts[2]);
+	alert('deadline hour: ' + time[0]);
+	alert('deadline minute: ' + time[1]);*/
+	
+	if ( parts[0] < year ){// previous year
+		return false;
+	} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] < date)){// previous date
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] < hour)){ // previous hour
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] == hour) && (time[1] < minute)) { // previous minute
+		return false;
+	} else {
+		return true;
+	}
+	
+}
+
+function getHomeworkDeadlines_success(tx, results){
+	
+	alert('get homework deadlines');
+	var len = results.rows.length;
 	for (var i=0; i<len; i++){
-		
 		var homeworkDeadline = results.rows.item(i);
-		var parts = homeworkDeadline.duedate.split('-');
-		var time = homeworkDeadline.duetime.split(':');
-		
-		alert('deadline year: '+ parts[0]);
-		alert('deadline month: ' + parts[1]);
-		alert('deadline date: ' + parts[2]);
-		alert('deadline hour: ' + time[0]);
-		alert('deadline minute: ' + time[1]);
-		
-		if ( parts[0] < year ){// previous year
-			continue;
-		} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
-			continue;
-		} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] < date)){// previous date
-			continue;
-		} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] < hour)){ // previous hour
-			continue;
-		} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] == hour) && (time[1] < minute)) { // previous minute
-			continue;
-		}
-				
-		alert('prepend');		
-		
-		$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
-		
+		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime);
+		alert('result: ' + result);
+		if ( result == "true" ){
+			alert('prepend');				
+			$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
+		} 
+		else continue;
 	}
 	$("#homeworkList").listview('refresh');
 		//alert('before append');
