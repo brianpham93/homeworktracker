@@ -29,8 +29,10 @@ function getAllDeadlines_success(tx, results){
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
-			
-		$('#allList').prepend('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
+		if ( result == "true"){
+			$('#allList').prepend('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+		}
 	}
 	$("#allList").listview('refresh');
 		//alert('before append');
@@ -92,8 +94,10 @@ function getTestDeadlines_success(tx, results){
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var testDeadline = results.rows.item(i);
-			
-		$('#testList').prepend('<li><a href="deadlineDetail.html?id='+ testDeadline.id+'">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+		var result = isLate(testDeadline.duedate, testDeadline.duetime).toString();
+		if ( result == "true"){
+			$('#testList').prepend('<li><a href="deadlineDetail.html?id='+ testDeadline.id+'">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+		}		
 	}
 	$("#testList").listview('refresh');
 		//alert('before append');
