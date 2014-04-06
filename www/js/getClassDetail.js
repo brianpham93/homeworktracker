@@ -1,4 +1,5 @@
 var db = null;
+var id = "";
 document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 //
@@ -17,7 +18,7 @@ function populateDB(tx) {
 
 function getClassDetail(tx){
 	////alert('classes');
-	var id = GET.id;
+	id = GET.id;
 	var sql = "select * from classes where id ='"+ id +"'";
 	tx.executeSql(sql, [] , getClassDetail_success);	
 }
@@ -73,6 +74,33 @@ GET = (function () {
     });
     return get;
 })();
+
+
+function getFormInfo(){
+	alert(id);
+	var name = document.getElementById("className").value;
+	alert(name);
+	var location = document.getElementById("classLocation").value;
+	alert(location);
+	var date = document.getElementById("classDate").value;
+	alert(date);
+	var time = document.getElementById("classTime").value;
+	alert(time);
+	var teacher = document.getElementById("classTeacher").value;
+	alert(teacher);
+	var email = document.getElementById("classTeacherEmail").value;
+	alert(email);
+	var phone = document.getElementById("classTeacherPhone").value;	
+	alert(phone);
+	updateClassToDB(name,location,date,time,teacher,email,phone);
+}
+
+function updateClassToDB(name,location,date,time,teacher,email,phone){
+	db.transaction(function(tx){
+		tx.executeSql("UPDATE classes SET name = ?, location = ?, classdate = ?, classtime =?, teacher = ?, email = ?, phone = ? WHERE id = ?",[name,location,date,time,teacher,email,phone, id], successCB, errorCB);
+		//tx.executeSql('UPDATE deadlines SET description = "' + description + '" WHERE id = "'+ id +'"');
+		});
+}
 
 function errorCB(tx, err) {
 	alert("Error processing SQL: "+err);
