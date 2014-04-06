@@ -20,12 +20,12 @@
 </script>
 <body>
 <div id="classDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
-    <div id="headerClassDetail" class="jqm-header ui-header" data-role="header">
+    <div id="headerClassDetail" class="jqm-header ui-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h1>Class Detail</h1>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-        <a href="classList.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</a>
+       <button onClick="updateClassToDB()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
-    <div id="content" class="ui-content jqm-content">
+    <div id="content" data-role="content" data-iscroll class="ui-content jqm-content">
         <label for="className">Name</label>
         <input id="className" type="text">
         <br>
@@ -47,7 +47,7 @@
         <label for="classTeacherPhone">Phone</label>
         <input id="classTeacherPhone" type="tel">
         <br>
-        <input id="btnSave" type="button" value="Save">
+     
     </div>
     <!-- end tab content -->
     <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">

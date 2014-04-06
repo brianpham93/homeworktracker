@@ -24,9 +24,10 @@
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Deadline Detail</h2>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <button onClick="updateDeadlineToDB()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
     <!-- end head -->
-    <div id="contentAddNewDeadline" class="ui-content" data-iscroll>
+    <div data-role="content" id="contentAddNewDeadline" class="ui-content" data-iscroll>
     	<form id="formDeadlineInfo">
         	<label for="shortDescription">Short Description</label>
             <input id="shortDescription"  type="text">
@@ -57,8 +58,6 @@
               <option value="yes">yes</option>
               
             </select>
-            
-            <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center" onClick="updateDeadlineToDB()">
             
         </form>
     </div>
