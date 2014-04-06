@@ -10,7 +10,14 @@
 <script src="js/jquery.js"></script>
 <script src="js/deadlines.js"></script>
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
-<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+<script src="js/getClassDetail.js"></script>
+<script>
+	window.onload = function () {
+			 //alert('Before on device ready');
+            if (!window.device)
+                onDeviceReady();
+        }
+</script>
 <body>
 <div id="classDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
     <div id="headerClassDetail" class="jqm-header ui-header" data-role="header">
@@ -26,7 +33,7 @@
         <input id="classLocation" type="text">
         <br>
         <label for="classDate">Class Date</label>
-        <input id="classDate" type="date">
+        <input id="classDate" type="text">
         <br>
         <label for="classTime">Class Time</label>
         <input id="classTime" type="time">
