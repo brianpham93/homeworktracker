@@ -9,7 +9,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/deadlines.js"></script>
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>
-    <script src="js/database.js"></script>
+    <script src="js/getDeadlineDetail.js"></script>
     <script>
 		window.onload = function () {
 			 //alert('Before on device ready');
@@ -24,19 +24,17 @@
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Deadline Detail</h2>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <button onClick="getFormInfo()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
     <!-- end head -->
-    <div id="contentAddNewDeadline" class="ui-content" data-iscroll>
+    <div data-role="content" id="contentAddNewDeadline" class="ui-content" data-iscroll>
     	<form id="formDeadlineInfo">
         	<label for="shortDescription">Short Description</label>
             <input id="shortDescription"  type="text">
             <br>
             <label for="class">Class</label>
             <select id="class" class="ui-selectmenu" >
-              <option value="HCI">HCI</option>
-              <option value="DataMining">Data Mining</option>
-              <option value="MobileDev">Mobile Dev</option>
-              <option value="Ethics">Ethics</option>
+           
             </select>
             <br>
             <label for="dueDate">Due Date</label>
@@ -56,12 +54,10 @@
             <br>
             <label for="finished">Finished</label>
             <select data-role="flipswitch" id="finished" class="ui-selectmenu" >
-              <option value="no" selected>No</option>
-              <option value="yes">Yes</option>
+              <option value="no" selected>no</option>
+              <option value="yes">yes</option>
               
             </select>
-            
-            <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center" onClick="updateDeadlineToDB()">
             
         </form>
     </div>

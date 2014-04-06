@@ -10,7 +10,7 @@ function populateDB(tx) {
 }
 
 function getMissedDeadlines(tx){
-	alert('get missed deadlines');
+	//alert('get missed deadlines');
 	var sql = "select * from deadlines where finished = 'no'";
 	tx.executeSql(sql, [] , getAllMissedDeadlines_success);
 	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
@@ -30,7 +30,7 @@ function getAllMissedDeadlines_success(tx, results){
 		}
 	}
 	$("#allMissedList").listview('refresh');
-		//alert('before append');
+		////alert('before append');
 }
 
 function getHomeworkMissedDeadlines_success(tx, results){
@@ -39,15 +39,15 @@ function getHomeworkMissedDeadlines_success(tx, results){
 	for (var i=0; i<len; i++){
 		var homeworkMissedDeadline = results.rows.item(i);
 		var result = isLate(homeworkMissedDeadline.duedate, homeworkMissedDeadline.duetime).toString();
-		alert('result: ' + result);
+		//alert('result: ' + result);
 		if ( result == "false" ){
-			alert('prepend');				
+			//alert('prepend');				
 			$('#homeworkMissedList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkMissedDeadline.id+'">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
 		} 
 		else continue;;
 	}
 	$("#homeworkMissedList").listview('refresh');
-		//alert('before append');
+		////alert('before append');
 }
 
 function getTestMissedDeadlines_success(tx, results){
@@ -62,7 +62,7 @@ function getTestMissedDeadlines_success(tx, results){
 		}		
 	}
 	$("#testMissedList").listview('refresh');
-		//alert('before append');
+		////alert('before append');
 }
 
 function errorCB(tx, err) {

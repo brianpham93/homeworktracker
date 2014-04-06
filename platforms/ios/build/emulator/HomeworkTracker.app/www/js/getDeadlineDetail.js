@@ -108,18 +108,26 @@ function getFormInfo(){
 	alert(additionalInfo);
 	var finished = document.getElementById("finished").value;	
 	alert(finished);
-	updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished);
+	updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished)
+/*	var strings = "UPDATE table_name SET column1 = value1, column2 =value2...., columnN = valueN WHERE [condition];"*/
+
+	//db.transaction(function(tx){
+		
+		/*tx.executeSql('UPDATE deadlines SET description = "'+ description +'", class = "'+ classDeadline +'", duedate = "'+ duedate +'", duetime = "'+ duetime +'", type = "'+ type +'", additionalInfo = "'+ additionalInfo +'", finished = "'+ finished +'" WHERE id = "'+ id +'"',successCB, errorCB);
+		alert(tx);*/
+		
+   //});
 	
 }
 
 function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
-	db.transaction(populateDB, errorCB, successCB);
 	db.transaction(function(tx){
-		tx.executeSql("UPDATE deadlines SET description = ?, class = ?, duedate = ?, duetime =?, type = ?, additionalInfo = ?, finished = ? WHERE id = ?",[description,classDeadline,duedate, duetime, type, additionalInfo, finished, id], successCB, errorCB);
-		//tx.executeSql('UPDATE deadlines SET description = "' + description + '" WHERE id = "'+ id +'"');
-		});
+		alert('before exe');
+		tx.executeSql('UPDATE deadlines SET description = "' + description + '",class = "' + classDeadline + '",duedate = "' + duedate + '" duetime = "' + duetime +'" type = "'+type+'" additionalInfo = "'+additionalInfo+'" finished = "'+ finished +'" WHERE id = "'+id+'"');
+		alert(tx);
+   },successCB, errorCB);
+	
 }
-
 
 
 GET = (function () {

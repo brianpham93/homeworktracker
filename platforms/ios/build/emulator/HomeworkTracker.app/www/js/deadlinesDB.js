@@ -14,12 +14,12 @@ function populateDB(tx) {
 
 
 function getDeadlines(tx){
-	alert('get deadline');
+	//alert('get deadline');
 	var sql = "select * from deadlines where finished = 'no'";
 	tx.executeSql(sql, [] , getAllDeadlines_success);
 	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
 	tx.executeSql(sql2, [] , getHomeworkDeadlines_success);
-	alert('get test deadline');
+	//alert('get test deadline');
 	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
 	tx.executeSql(sql3, [] , getTestDeadlines_success);
 }
@@ -36,7 +36,7 @@ function getAllDeadlines_success(tx, results){
 		}
 	}
 	$("#allList").listview('refresh');
-		//alert('before append');
+		////alert('before append');
 }
 
 function isLate(deadlineDate, deadlineTime){
@@ -67,20 +67,20 @@ function isLate(deadlineDate, deadlineTime){
 
 function getHomeworkDeadlines_success(tx, results){
 	
-	alert('get homework deadlines');
+	//alert('get homework deadlines');
 	var len = results.rows.length;
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
 		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
-		alert('result: ' + result);
+		//alert('result: ' + result);
 		if ( result == "true" ){
-			alert('prepend');				
+			//alert('prepend');				
 			$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		} 
 		else continue;;
 	}
 	$("#homeworkList").listview('refresh');
-		//alert('before append');
+		////alert('before append');
 }
 
 
@@ -96,7 +96,7 @@ function getTestDeadlines_success(tx, results){
 		}		
 	}
 	$("#testList").listview('refresh');
-		//alert('before append');
+		////alert('before append');
 }
 
 function errorCB(tx, err) {

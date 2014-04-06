@@ -10,7 +10,7 @@ function populateDB(tx) {
 }
 
 function getFinishedDeadlines(tx) {
-    alert('get finished deadlines');
+   
     var sql = "select * from deadlines where finished = 'yes'";
     tx.executeSql(sql, [], getAllFinishedDeadlines_success);
     var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework'";
@@ -51,7 +51,7 @@ function getTestFinishedDeadlines_success(tx, results) {
     for (var i = 0; i < len; i++) {
         var testFinishedDeadline = results.rows.item(i);
 
-        $('#testFinishedList').prepend('<li><a href="deadlineDetail.html?id=' + testFinishedDeadline.id + '">' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</a></li>');
+        $('#testFinishedList').prepend('<li><a href="deadlineDetail.html?id=' + testFinishedDeadline.id + '"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#testFinishedList").listview('refresh');
