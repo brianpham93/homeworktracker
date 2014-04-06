@@ -97,11 +97,14 @@ function getFormInfo(){
 
 function updateClassToDB(name,location,date,time,teacher,email,phone){
 	db.transaction(function(tx){
-		tx.executeSql("UPDATE classes SET name = ?, location = ?, classdate = ?, classtime =?, teacher = ?, email = ?, phone = ? WHERE id = ?",[name,location,date,time,teacher,email,phone, id], successCB, errorCB);
+		tx.executeSql("UPDATE classes SET name = ?, location = ?, classdate = ?, classtime =?, teacher = ?, email = ?, phone = ? WHERE id = ?",[name,location,date,time,teacher,email,phone, id], updateSuccessCB, errorCB);
 		//tx.executeSql('UPDATE deadlines SET description = "' + description + '" WHERE id = "'+ id +'"');
 		});
 }
 
+function updateSuccessCB(tx){
+	window.location.href ="classList.html";
+}
 function errorCB(tx, err) {
 	alert("Error processing SQL: "+err);
 }

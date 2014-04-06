@@ -115,9 +115,13 @@ function getFormInfo(){
 function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
 	db.transaction(populateDB, errorCB, successCB);
 	db.transaction(function(tx){
-		tx.executeSql("UPDATE deadlines SET description = ?, class = ?, duedate = ?, duetime =?, type = ?, additionalInfo = ?, finished = ? WHERE id = ?",[description,classDeadline,duedate, duetime, type, additionalInfo, finished, id], successCB, errorCB);
+		tx.executeSql("UPDATE deadlines SET description = ?, class = ?, duedate = ?, duetime =?, type = ?, additionalInfo = ?, finished = ? WHERE id = ?",[description,classDeadline,duedate, duetime, type, additionalInfo, finished, id], updateSuccessCB, errorCB);
 		//tx.executeSql('UPDATE deadlines SET description = "' + description + '" WHERE id = "'+ id +'"');
 		});
+}
+
+function updateSuccessCB(tx){
+	window.location.href ="deadlines.html";
 }
 
 

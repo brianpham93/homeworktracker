@@ -90,15 +90,18 @@ function successCB() {
 	alert('success');
 }
 
+function insertSuccessCB(){
+	window.location.href ="deadlines.html";
+}
+
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
 	//alert('insert called');
 	
 	//alert('before insert');
 	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished],successCB, errorCB);
+		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished], insertSuccessCB, errorCB);
 		////alert(tx);
    });
-   window.href.location = "deadlines.html";
 }
 
 function updateDeadlineToDB(){
