@@ -5,9 +5,9 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
-	alert('populate db done');
+	//alert('populate db done');
 	db.transaction(populateClassDB, errorCB, successCB);
-	alert('populate class db done');
+	//alert('populate class db done');
 	db.transaction(getClasses, errorCB);
 	db.transaction(getDeadlineDetail, errorCB);
 	
@@ -18,14 +18,14 @@ function populateDB(tx) {
 }
 
 function populateClassDB(tx) {
-	//alert('starting populate');
+	////alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
-	 alert('populate done');
-	 //alert(tx);
+	 //alert('populate done');
+	 ////alert(tx);
 }
 
 function getClasses(tx){
-	alert('classes');
+	//alert('classes');
 	var sql = "select * from classes";
 	tx.executeSql(sql, [] , getClasses_success);
 	
@@ -34,19 +34,19 @@ function getClasses(tx){
 function getClasses_success(tx, results){
 
 	var len = results.rows.length;
-	alert('len: ' + len);
+	//alert('len: ' + len);
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var classDB = results.rows.item(i);
 		$('#class').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
 	}
-		//alert('before append');
+		////alert('before append');
 }
 
 function getDeadlineDetail(tx){
-	alert('get deadline detail');
+	//alert('get deadline detail');
 	var id = GET.id;
-	alert(id);
+	//alert(id);
 	var sql = "select * from deadlines where id = '" + id +"'";
 	tx.executeSql(sql, [] , getDeadlineDetail_success);
 }
@@ -59,23 +59,36 @@ function getDeadlineDetail_success(tx, results){
 		var deadline = results.rows.item(i);
 		var description = deadline.description;
 		var classDeadline = deadline.class;
+		alert(classDeadline);
+		console.log(classDeadline);
 		var duedate = deadline.duedate;
 		var duetime = deadline.duetime;
 		var type = deadline.type;
 		var additionalInfo = deadline.additionalInfo;
 		var finished = deadline.finished;
-		
+		alert(finished);
 		document.getElementById("shortDescription").value = description;
 		document.getElementById("dueDate").value = duedate;
 		document.getElementById("dueTime").value = duetime;
 		document.getElementById("additionalInfo").value = additionalInfo;
-		$("#class").val(classDeadline);
+		//$("#class").val(classDeadline);
 		//document.getElementById("class").selected = classDeadline;
-		document.getElementById("type").selected = type;
-		document.getElementById("finished").selected = finished;
-	
+		//$("#class").val(classDeadline).attr('selected', true);
+		var selectClass = $("#class"); 
+		$("#class").val(classDeadline);
+		selectClass.selectmenu("refresh");
+
+		var selectType = $("#type");
+		$("#type").val(type);
+		selectType.selectmenu("refresh");
+		
+		alert('before select finished');
+		var selectFinished = $("#finished");
+		$("#finished").val(finished);
+		selectFinished.flipswitch("refresh");
+			
 	}
-		//alert('before append');
+		////alert('before append');
 }
 
 GET = (function () {
