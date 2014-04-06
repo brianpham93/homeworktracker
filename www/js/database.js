@@ -8,16 +8,16 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
-	alert('populate done');
+	//alert('populate done');
 	db.transaction(populateClassDB, errorCB, successCB);
 	db.transaction(getClasses, errorCB);
 }
 
 function populateClassDB(tx) {
-	//alert('starting populate');
+	////alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
-	 alert('populate done');
-	 //alert(tx);
+	 //alert('populate done');
+	 ////alert(tx);
 }
 
 function getClasses(tx){
@@ -28,14 +28,14 @@ function getClasses(tx){
 function getClasses_success(tx, results){
 
 	var len = results.rows.length;
-	alert('len: ' + len);
+	//alert('len: ' + len);
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var classDB = results.rows.item(i);
 		$('#class').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
 		//$("#classList").listview().listview('refresh');
 	}
-		//alert('before append');
+		////alert('before append');
 }
 
 function randomString(L){
@@ -51,23 +51,23 @@ function randomString(L){
 }
 
 function saveDeadlineToDB(){
-	alert('save deadline to db');
+	//alert('save deadline to db');
 	var dbId = randomString(5);
-	//alert(dbId);
+	////alert(dbId);
 	var dbDescription = document.getElementById("shortDescription").value;
-	//alert(dbDescription);
+	////alert(dbDescription);
 	var dbClass = document.getElementById("class").value;
-	//alert(dbClass);
+	////alert(dbClass);
 	var dbDueDate = document.getElementById("dueDate").value;
-	//alert(dbDueDate);
+	////alert(dbDueDate);
 	var dbDueTime = document.getElementById("dueTime").value;
-	//alert(dbDueTime);
+	////alert(dbDueTime);
 	var dbType = document.getElementById("type").value;
-	//alert(dbType);
+	////alert(dbType);
 	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
-	//alert(dbAdditionalInfo);
+	////alert(dbAdditionalInfo);
 	var dbFinished = document.getElementById("finished").value;
-	//alert(dbFinished);
+	////alert(dbFinished);
 	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
 
 }
@@ -75,29 +75,29 @@ function saveDeadlineToDB(){
 // Populate the database
 
 function populateDB(tx) {
-	alert('starting populate');
+	//alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS deadlines (id varchar(10) primary key, description varchar(500), class varchar(50), duedate date, duetime time, type varchar(50), additionalInfo varchar(200), finished varchar(10))');
-	 //alert(tx);
+	 ////alert(tx);
 }
 
 // Transaction error callback
 function errorCB(tx, err) {
-	alert("Error processing SQL: "+err);
+	//alert("Error processing SQL: "+err);
 }
 
 // Transaction success callback
 function successCB() {
-	//alert('success');
+	alert('success');
 }
 
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
-	alert('insert called');
+	//alert('insert called');
 	
-	alert('before insert');
+	//alert('before insert');
 	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished],successCB, errorCB);
-		//alert(tx);
-   });
+		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished]);
+		////alert(tx);
+   },successCB, errorCB);
 }
 
 function updateDeadlineToDB(){
@@ -106,23 +106,6 @@ function updateDeadlineToDB(){
 	tx.executeSql(sql, [] , getDeadlineDetail_success);
 }
 
-/*function getDeadlineDetail_success(tx, results){
-	var len = results.rows.length;
-	//var s = "";
-	for (var i=0; i<len; i++){
-		var deadlineDetail = results.rows.item(i);
-		var description = deadlineDetail.description;
-		var class = deadlineDetail.class;
-		var dueDate = deadlineDetail.duedate;
-		var dueTime = deadlineDetail.duetime;
-		var additionalInfo = deadlineDetail.additionalInfo;
-		var finished = deadlineDetail.finished;
-		
-		document.getElementById('shortDescription').innerHTML = description;
-		
-	}
-}
-*/
 GET = (function () {
     var get = {
         push:function (key,value){

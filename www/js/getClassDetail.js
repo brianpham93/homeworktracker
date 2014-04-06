@@ -5,8 +5,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
-	//alert('populate db done');
-	//alert('populate class db done');
+	////alert('populate db done');
+	////alert('populate class db done');
 	db.transaction(getClassDetail, errorCB);
 	
 }
@@ -16,7 +16,7 @@ function populateDB(tx) {
 }
 
 function getClassDetail(tx){
-	//alert('classes');
+	////alert('classes');
 	var id = GET.id;
 	var sql = "select * from classes where id ='"+ id +"'";
 	tx.executeSql(sql, [] , getClassDetail_success);	
@@ -25,7 +25,7 @@ function getClassDetail(tx){
 function getClassDetail_success(tx, results){
 
 	var len = results.rows.length;
-	//alert('len: ' + len);
+	////alert('len: ' + len);
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var classDB = results.rows.item(i);
@@ -44,7 +44,7 @@ function getClassDetail_success(tx, results){
 		document.getElementById("classTeacherEmail").value = email;
 		document.getElementById("classTeacherPhone").value = phone;
 	}
-		////alert('before append');
+		//////alert('before append');
 }
 GET = (function () {
     var get = {
