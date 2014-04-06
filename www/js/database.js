@@ -9,8 +9,34 @@ function onDeviceReady() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
 	alert('populate done');
+	db.transaction(populateClassDB, errorCB, successCB);
+	db.transaction(getClasses, errorCB);
 }
 
+function populateClassDB(tx) {
+	//alert('starting populate');
+	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
+	 alert('populate done');
+	 //alert(tx);
+}
+
+function getClasses(tx){
+	var sql = "select * from classes";
+	tx.executeSql(sql, [] , getClasses_success);
+}
+
+function getClasses_success(tx, results){
+
+	var len = results.rows.length;
+	alert('len: ' + len);
+	//var s = "";
+	for (var i=0; i<len; i++){
+		var classDB = results.rows.item(i);
+		$('#class').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
+		//$("#classList").listview().listview('refresh');
+	}
+		//alert('before append');
+}
 
 function randomString(L){
     var s= '';
