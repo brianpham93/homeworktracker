@@ -6,11 +6,17 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 //
 function onDeviceReady() {
+	alert('on device ready');
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
-	alert('populate done');
 }
 
+function populateDB(tx) {
+	//alert('starting populate');
+	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
+	 alert('populate done');
+	 //alert(tx);
+}
 
 function randomString(L){
     var s= '';
@@ -24,35 +30,30 @@ function randomString(L){
     return s;
 }
 
-function saveDeadlineToDB(){
-	alert('save deadline to db');
+function saveClassToDB(){
 	var dbId = randomString(5);
-	//alert(dbId);
-	var dbDescription = document.getElementById("shortDescription").value;
-	//alert(dbDescription);
-	var dbClass = document.getElementById("class").value;
-	//alert(dbClass);
-	var dbDueDate = document.getElementById("dueDate").value;
-	//alert(dbDueDate);
-	var dbDueTime = document.getElementById("dueTime").value;
-	//alert(dbDueTime);
-	var dbType = document.getElementById("type").value;
-	//alert(dbType);
-	var dbAdditionalInfo = document.getElementById("additionalInfo").value;
-	//alert(dbAdditionalInfo);
-	var dbFinished = document.getElementById("finished").value;
-	//alert(dbFinished);
-	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
+	alert(dbId);
+	var dbName = document.getElementById("className").value;
+	alert(dbName);
+	var dbLocation = document.getElementById("classLocation").value;
+	alert(dbLocation);
+	var dbDate = document.getElementById("classDate").value;
+	alert(dbDate);
+	var dbTime = document.getElementById("classTime").value;
+	alert(dbTime);
+	var dbTeacher = document.getElementById("classTeacher").value;
+	alert(dbTeacher);
+	var dbEmail = document.getElementById("classTeacherEmail").value;
+	alert(dbEmail);
+	var dbPhone = document.getElementById("classTeacherPhone").value;
+	alert(dbPhone);
+	insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone);
 
 }
 
 // Populate the database
 
-function populateDB(tx) {
-	alert('starting populate');
-	 tx.executeSql('CREATE TABLE IF NOT EXISTS deadlines (id varchar(10) primary key, description varchar(500), class varchar(50), duedate date, duetime time, type varchar(50), additionalInfo varchar(200), finished varchar(10))');
-	 //alert(tx);
-}
+
 
 // Transaction error callback
 function errorCB(tx, err) {
@@ -61,26 +62,24 @@ function errorCB(tx, err) {
 
 // Transaction success callback
 function successCB() {
-	//alert('success');
+	alert('success');
 }
 
-function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
-	alert('insert called');
-	
+function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone) {
 	alert('before insert');
 	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished],successCB, errorCB);
-		//alert(tx);
+		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],successCB, errorCB);
+		alert(tx);
    });
 }
 
-function updateDeadlineToDB(){
+function updateClassToDB(){
 	var id = GET.id;
 	var sql = "select * from deadlines where id = '"+ id +"'";
 	tx.executeSql(sql, [] , getDeadlineDetail_success);
 }
 
-/*function getDeadlineDetail_success(tx, results){
+/*function getClassDetail_success(tx, results){
 	var len = results.rows.length;
 	//var s = "";
 	for (var i=0; i<len; i++){
@@ -96,7 +95,7 @@ function updateDeadlineToDB(){
 		
 	}
 }
-*/
+
 GET = (function () {
     var get = {
         push:function (key,value){
@@ -123,8 +122,9 @@ GET = (function () {
         }
     });
     return get;
-})();
+})();*/
 // JavaScript Document
 
 
+// JavaScript Document
 // JavaScript Document

@@ -12,7 +12,7 @@
     <script src="js/database.js"></script>
     <script>
 		window.onload = function () {
-			 //alert('Before on device ready');
+			 alert('Before on device ready');
             if (!window.device)
                 onDeviceReady();
         }
@@ -24,6 +24,7 @@
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Add new deadlines</h2>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <button onClick="saveDeadlineToDB()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
     <!-- end head -->
     <div id="contentAddNewDeadline" class="ui-content" data-iscroll>
@@ -61,7 +62,7 @@
               
             </select>
             
-            <input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center" onClick="saveDeadlineToDB()">
+            <!--<input type="button" class="ui-btn ui-btn-active ui-btn-icon-bottom" data-role="button" value="Save" style="text-align:center" onClick="saveDeadlineToDB()">-->
             
         </form>
     </div>

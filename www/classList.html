@@ -9,7 +9,13 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/deadlines.js"></script>
 	<script src="js/jquery.mobile-1.4.2.min.js"></script>
-    <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+    <script src="js/classDB.js"></script>
+    <script>
+		window.onload = function () {
+            if (!window.device)
+                onDeviceReady();
+        }
+    </script>
 </head>
 
 <body>
@@ -20,26 +26,12 @@
 		<a href="addNewClass.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
     </div>
     <div id="content" class="jqm-content" data-role="content">
-    	<ul id="classListUL" class="ui-listview" data-role="listview" data-inset="true">
-        	<li>
-            	<a href="classDetail.html">HCI</a>
-            </li>
-            <li>
-            	<a href="classDetail.html">DataMining</a>
-            </li>
-            <li>
-            	<a href="classDetail.html">Mobile Software Dev</a>
-            </li>
-            <li>
-            	<a href="classDetail.html">Ethics</a>
-            </li>
-            <li>
-            	<a href="classDetail.html">Network</a>
-            </li>
-            <li>
-            	<a href="classDetail.html">Software Testing</a>
-            </li>
-        </ul>
+    	<div class="ui-body-d ui-content">
+        	<ul id="classList" class="ui-listview" data-role="listview" data-inset="true">
+        	
+        	</ul>
+        </div>
+    	
     </div>
     <!-- end tab content -->
     <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
