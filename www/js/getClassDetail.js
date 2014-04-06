@@ -6,8 +6,8 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
-	////alert('populate db done');
-	////alert('populate class db done');
+	//////alert('populate db done');
+	//////alert('populate class db done');
 	db.transaction(getClassDetail, errorCB);
 	
 }
@@ -17,7 +17,7 @@ function populateDB(tx) {
 }
 
 function getClassDetail(tx){
-	////alert('classes');
+	//////alert('classes');
 	id = GET.id;
 	var sql = "select * from classes where id ='"+ id +"'";
 	tx.executeSql(sql, [] , getClassDetail_success);	
@@ -26,7 +26,7 @@ function getClassDetail(tx){
 function getClassDetail_success(tx, results){
 
 	var len = results.rows.length;
-	////alert('len: ' + len);
+	//////alert('len: ' + len);
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var classDB = results.rows.item(i);
@@ -45,7 +45,7 @@ function getClassDetail_success(tx, results){
 		document.getElementById("classTeacherEmail").value = email;
 		document.getElementById("classTeacherPhone").value = phone;
 	}
-		//////alert('before append');
+		////////alert('before append');
 }
 GET = (function () {
     var get = {
@@ -77,21 +77,21 @@ GET = (function () {
 
 
 function getFormInfo(){
-	alert(id);
+	//alert(id);
 	var name = document.getElementById("className").value;
-	alert(name);
+	//alert(name);
 	var location = document.getElementById("classLocation").value;
-	alert(location);
+	//alert(location);
 	var date = document.getElementById("classDate").value;
-	alert(date);
+	//alert(date);
 	var time = document.getElementById("classTime").value;
-	alert(time);
+	//alert(time);
 	var teacher = document.getElementById("classTeacher").value;
-	alert(teacher);
+	//alert(teacher);
 	var email = document.getElementById("classTeacherEmail").value;
-	alert(email);
+	//alert(email);
 	var phone = document.getElementById("classTeacherPhone").value;	
-	alert(phone);
+	//alert(phone);
 	updateClassToDB(name,location,date,time,teacher,email,phone);
 }
 
