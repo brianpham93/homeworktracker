@@ -1,0 +1,1131 @@
+THomeworkTracker
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Info.plist /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist
+cCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist build/device/HomeworkTracker.app/ResourceRules.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76.png HomeworkTracker/Resources/icons/icon-76.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40@2x.png HomeworkTracker/Resources/icons/icon-40@2x.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72.png HomeworkTracker/Resources/icons/icon-72.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon.png HomeworkTracker/Resources/icons/icon.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon@2x.png HomeworkTracker/Resources/icons/icon@2x.png
+cCopyStringsFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/en.lproj/Localizable.strings HomeworkTracker/Resources/en.lproj/Localizable.strings
+cCompileXIB /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50.png HomeworkTracker/Resources/icons/icon-50.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60@2x.png HomeworkTracker/Resources/icons/icon-60@2x.png
+cCopyStringsFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/de.lproj/Localizable.strings HomeworkTracker/Resources/de.lproj/Localizable.strings
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small.png HomeworkTracker/Resources/icons/icon-small.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape~ipad.png HomeworkTracker/Resources/splash/Default-Landscape~ipad.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small@2x.png HomeworkTracker/Resources/icons/icon-small@2x.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait~ipad.png HomeworkTracker/Resources/splash/Default-Portrait~ipad.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40.png HomeworkTracker/Resources/icons/icon-40.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default@2x~iphone.png HomeworkTracker/Resources/splash/Default@2x~iphone.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60.png HomeworkTracker/Resources/icons/icon-60.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default~iphone.png HomeworkTracker/Resources/splash/Default~iphone.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-568h@2x~iphone.png HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50@2x.png HomeworkTracker/Resources/icons/icon-50@2x.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76@2x.png HomeworkTracker/Resources/icons/icon-76@2x.png
+cCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72@2x.png HomeworkTracker/Resources/icons/icon-72@2x.png
+cProcessPCH /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch HomeworkTracker/HomeworkTracker-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker normal armv7
+cGenerateDSYMFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker
+cProcessProductPackaging /Users/thangpq/Library/MobileDevice/Provisioning\ Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/embedded.mobileprovision
+cTouch /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+cProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent
+cCodeSign /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk
+c0000000053119F860000000000000132
+t1393663878
+s306
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+c00000000532DACBD0000000000000094
+t1395502269
+s148
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+c00000000532DACBE0000000000000096
+t1395502270
+s150
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/SDKSettings.plist
+c00000000532DACBE000000000000036B
+t1395502270
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532DACBF000000000000019E
+t1395502271
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c00000000532DACC30000000000632990
+t1395502275
+s6498704
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+c00000000532DACC100000000000D6100
+t1395502273
+s876800
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c00000000532DACC00000000000075BA0
+t1395502272
+s482208
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c00000000532DACC5000000000079C660
+t1395502277
+s7980640
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000532DACC400000000004D7BC0
+t1395502276
+s5077952
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c00000000532DACC40000000000152370
+t1395502276
+s1385328
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+c00000000532DACC500000000002CB700
+t1395502277
+s2930432
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000532DACC90000000000A90C10
+t1395502281
+s11078672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000532DACC80000000000210E90
+t1395502280
+s2166416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c00000000532DACD90000000002759920
+t1395502297
+s41261344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+c00000000532DACE40000000000385D50
+t1395502308
+s3693904
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/crt1.3.1.o
+c00000000532DACE800000000000142B0
+t1395502312
+s82608
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+c00000000532DACEC000000000001E300
+t1395502316
+s123648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+c00000000532DACEB000000000055EFE0
+t1395502315
+s5631968
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+c00000000532DACED000000000002A880
+t1395502317
+s174208
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+c00000000532DACED00000000000458C0
+t1395502317
+s284864
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+c00000000532DACED000000000003E3E0
+t1395502317
+s254944
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+c00000000532DACED000000000002B130
+t1395502317
+s176432
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+c00000000532DACED00000000000E1FD0
+t1395502317
+s925648
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+c00000000532DACED00000000000A2A70
+t1395502317
+s666224
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+c00000000532DACED000000000001E8A0
+t1395502317
+s125088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+c00000000532DACED000000000000BF00
+t1395502317
+s48896
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+c00000000532DACED0000000000034380
+t1395502317
+s213888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+c00000000532DACED0000000000022F30
+t1395502317
+s143152
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+c00000000532DACED000000000001E2A0
+t1395502317
+s123552
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+c00000000532DACED0000000000052520
+t1395502317
+s337184
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+c00000000532DACED0000000000015F20
+t1395502317
+s89888
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+c00000000532DACEE00000000001B90D0
+t1395502318
+s1806544
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+c00000000532DACED000000000001F170
+t1395502317
+s127344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+c00000000532DACED000000000002FCF0
+t1395502317
+s195824
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+c00000000532DACED000000000008A150
+t1395502317
+s565584
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+c00000000532DACED00000000000B60E0
+t1395502317
+s745696
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+c00000000532DACED0000000000078720
+t1395502317
+s493344
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+c00000000532DACED00000000000621F0
+t1395502317
+s401904
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+c00000000532DACED00000000000BDAE0
+t1395502317
+s776928
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+c00000000532DACED0000000000039080
+t1395502317
+s233600
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+c00000000532DACED000000000003CBC0
+t1395502317
+s248768
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+c00000000532DACED000000000002CFE0
+t1395502317
+s184288
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+c00000000532DACED000000000001EB50
+t1395502317
+s125776
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+c00000000532DACED000000000001EED0
+t1395502317
+s126672
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+c00000000532DACED00000000000236B0
+t1395502317
+s145072
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+c00000000532DACED00000000000AC500
+t1395502317
+s705792
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphoneos.a
+c00000000532DAD5300000000000159DC
+t1395502419
+s88540
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+c00000000532DAD53000000000000514C
+t1395502419
+s20812
+
+N/Users/thangpq/Library/MobileDevice/Provisioning Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision
+c00000000534051A7000000000000F305
+t1396724135
+s62213
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.h
+c000000005343C53D00000000000005C3
+t1396950333
+s1475
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m
+c000000005343C53D00000000000013B5
+t1396950333
+s5045
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.h
+c000000005343C53D00000000000004D5
+t1396950333
+s1237
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m
+c000000005343CA180000000000001378
+t1396951576
+s4984
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib
+c000000005343C53D0000000000001759
+t1396950333
+s5977
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist
+c000000005343CA310000000000000A09
+t1396951601
+s2569
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Prefix.pch
+c000000005343C53D00000000000003CF
+t1396950333
+s975
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/de.lproj/Localizable.strings
+c000000005343C53D00000000000004C0
+t1396950333
+s1216
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/en.lproj/Localizable.strings
+c000000005343C53D00000000000004AB
+t1396950333
+s1195
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-40.png
+c000000005343C53D0000000000000FF2
+t1396950333
+s4082
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-40@2x.png
+c000000005343C53D0000000000001CF3
+t1396950333
+s7411
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-50.png
+c000000005343C53D000000000000130A
+t1396950333
+s4874
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-50@2x.png
+c000000005343C53D000000000000258B
+t1396950333
+s9611
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-60.png
+c000000005343C53D00000000000016B3
+t1396950333
+s5811
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-60@2x.png
+c000000005343C53D0000000000002E94
+t1396950333
+s11924
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-72.png
+c000000005343C53D0000000000001350
+t1396950333
+s4944
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-72@2x.png
+c000000005343C53D0000000000002DBA
+t1396950333
+s11706
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-76.png
+c000000005343C53D0000000000001B71
+t1396950333
+s7025
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-76@2x.png
+c000000005343C53D0000000000003B9E
+t1396950333
+s15262
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-small.png
+c000000005343C53D0000000000000CDE
+t1396950333
+s3294
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-small@2x.png
+c000000005343C53D00000000000015E8
+t1396950333
+s5608
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon.png
+c000000005343C53D0000000000000F3E
+t1396950333
+s3902
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon@2x.png
+c000000005343C53D0000000000001EBD
+t1396950333
+s7869
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png
+c000000005343C53D00000000000085B1
+t1396950333
+s34225
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png
+c000000005343C53D0000000000033D0A
+t1396950333
+s212234
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Landscape~ipad.png
+c000000005343C53D00000000000166A2
+t1396950333
+s91810
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png
+c000000005343C53D0000000000033F7C
+t1396950333
+s212860
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Portrait~ipad.png
+c000000005343C53D0000000000016641
+t1396950333
+s91713
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default@2x~iphone.png
+c000000005343C53D0000000000007323
+t1396950333
+s29475
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default~iphone.png
+c000000005343C53D000000000000289A
+t1396950333
+s10394
+
+N/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m
+c000000005343C53D0000000000000461
+t1396950333
+s1121
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent
+t1396951607
+s400
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o
+t1396950370
+s74456
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/HomeworkTracker.LinkFileList
+c000000005343C55F00000000000001B3
+t1396950367
+s435
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o
+t1396951607
+s51884
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o
+t1396950370
+s3048
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh
+c000000005343C55F000000000000002D
+t1396950367
+s45
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+t1396951607
+s1088
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM
+t1396950370
+s102
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-568h@2x~iphone.png
+t1396950369
+s61990
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png
+t1396950369
+s161722
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape~ipad.png
+t1396950369
+s76512
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png
+t1396950369
+s154923
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait~ipad.png
+t1396950369
+s74890
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default@2x~iphone.png
+t1396950369
+s55319
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default~iphone.png
+t1396950369
+s20021
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker
+t1396951607
+s281684
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Info.plist
+t1396951604
+s1569
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/MainViewController.nib
+t1396950368
+s1332
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/PkgInfo
+t2
+s0
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/ResourceRules.plist
+t1396950367
+s150
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/de.lproj/Localizable.strings
+t1396950368
+s280
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/embedded.mobileprovision
+t1396951607
+s62213
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/en.lproj/Localizable.strings
+t1396950368
+s166
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40.png
+t1396950369
+s4450
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40@2x.png
+t1396950368
+s8883
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50.png
+t1396950368
+s5557
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50@2x.png
+t1396950369
+s11331
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60.png
+t1396950369
+s6838
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60@2x.png
+t1396950368
+s14152
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72.png
+t1396950368
+s8045
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72@2x.png
+t1396950369
+s17926
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76.png
+t1396950368
+s8463
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76@2x.png
+t1396950369
+s16629
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small.png
+t1396950368
+s3349
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small@2x.png
+t1396950368
+s6585
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon.png
+t1396950368
+s5977
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon@2x.png
+t1396950368
+s13012
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+c000000005343C55A0000000000000CDD
+t1396950362
+s3293
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+c000000005343C55A00000000000008BA
+t1396950362
+s2234
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+c000000005343C55A00000000000004B5
+t1396950362
+s1205
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+c000000005343C55A0000000000000503
+t1396950362
+s1283
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+c000000005343C55A00000000000007E6
+t1396950362
+s2022
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+c000000005343C55A0000000000000892
+t1396950362
+s2194
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+c000000005343C55A0000000000000C13
+t1396950362
+s3091
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+c000000005343C55A0000000000000408
+t1396950362
+s1032
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVViewController.h
+c000000005343C55A0000000000000ACC
+t1396950362
+s2764
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+c000000005343C55A00000000000004B4
+t1396950362
+s1204
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+c000000005343C55A00000000000003A0
+t1396950362
+s928
+
+N/Users/thangpq/homeworktracker/platforms/ios/build/device/libCordova.a
+c000000005343CA3300000000000D9F28
+t1396951603
+s892712
+
+N/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch
+t1396950370
+s5307012
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies5af579b301f4b841^8bfdedb401f4b841^---0#1#1#--18"Check dependencies36"6B3DEEE1-B9A3-412F-8E62-B79D17CCB64B-
+
+CCodeSign /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+s418644407.727789
+e418644408.605281
+r1
+xCodeSign
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"[1mCodeSign[0m [1mbuild/device/HomeworkTracker.app[0m57"[1mCodeSign[0m [1mbuild/device/HomeworkTracker.app[0me3fec3b701f4b841^3e069bb801f4b841^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/0000000000000000^1192"[1mCodeSign[0m [1mbuild/device/HomeworkTracker.app[0m    cd /Users/thangpq/homeworktracker/platforms/ios    export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    Using code signing identity "iPhone Developer: Thang PQ (KKVTXEW3AD)" and provisioning profile "iOS Team Provisioning Profile: ThangPhamQuoc" (3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65)    /usr/bin/codesign --force --sign 49D47EE366B5A25F5BAF491A9A631B904C682817 --resource-rules=/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/ResourceRules.plist --entitlements /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app36"D31B03BE-2EA0-4C52-8B2C-723437A5BD30-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CCompileC build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418643170.149324
+e418643170.260479
+r1
+xCompileC
+xbuild/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o
+x/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m231"[1mCompileC[0m build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o [1mHomeworkTracker/Classes/AppDelegate.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler8c6526e2fcf3b841^d1ae42e2fcf3b841^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m0000000000000000^3813"[1mCompileC[0m build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o [1mHomeworkTracker/Classes/AppDelegate.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/device/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device/usr/local/lib/include -I/Users/thangpq/homeworktracker/platforms/ios/build/UninstalledProducts/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources/armv7 -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/device -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.dia -c /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/AppDelegate.m -o /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o36"03CD3176-8FFD-4B45-99FF-DE0C5A509BA1-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCompileC build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418644406.028703
+e418644407.186830
+r1
+xCompileC
+xbuild/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o
+x/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVViewController.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVAvailability.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandDelegate.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandQueue.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVWhitelist.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVPlugin.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVPluginResult.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m245"[1mCompileC[0m build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o [1mHomeworkTracker/Classes/MainViewController.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler9e7b07b601f4b841^b3d32fb701f4b841^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m0000000000000000^3855"[1mCompileC[0m build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o [1mHomeworkTracker/Classes/MainViewController.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/device/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device/usr/local/lib/include -I/Users/thangpq/homeworktracker/platforms/ios/build/UninstalledProducts/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources/armv7 -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/device -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.dia -c /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.m -o /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o36"ED08416B-3439-43B0-878D-650BA432C241-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CCompileC build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418643170.148733
+e418643170.187396
+r1
+xCompileC
+xbuild/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o
+x/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m209"[1mCompileC[0m build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o [1mHomeworkTracker/main.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler205f26e2fcf3b841^f91430e2fcf3b841^---0#0#1#-19%DVTDocumentLocation2@74"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m0000000000000000^3755"[1mCompileC[0m build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o [1mHomeworkTracker/main.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/device/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device/usr/local/lib/include -I/Users/thangpq/homeworktracker/platforms/ios/build/UninstalledProducts/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources/armv7 -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/device -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.dia -c /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/main.m -o /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o36"8BF311A6-8E29-4FED-B174-5197D7453310-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCompileXIB /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib
+s418643168.695867
+e418643168.734110
+r1
+xCompileXIB
+x/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Compiling /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib73"[1mCompileXIB[0m [1mHomeworkTracker/Classes/MainViewController.xib[0m8254b2e0fcf3b841^48fbbbe0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib0000000000000000^924"[1mCompileXIB[0m [1mHomeworkTracker/Classes/MainViewController.xib[0m    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/MainViewController.nib /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Classes/MainViewController.xib36"A7B51B83-874A-457B-8917-87DB0B5E26A3-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-568h@2x~iphone.png HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png
+s418643169.271609
+e418643169.500849
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-568h@2x~iphone.png
+xHomeworkTracker/Resources/splash/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-568h@2x~iphone.png HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png139"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-568h@2x~iphone.png HomeworkTracker/Resources/splash/Default-568h@2x~iphone.pngb40346e1fcf3b841^5e4b80e1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png0000000000000000^858"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-568h@2x~iphone.png HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-568h@2x~iphone.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-568h@2x~iphone.png36"7F6C98CA-12C0-4CFC-97C3-846DA234A6C5-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png
+s418643168.763571
+e418643169.612893
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png
+xHomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection145"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png145"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png38bdc3e0fcf3b841^8cf29ce1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png0000000000000000^870"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Landscape@2x~ipad.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape@2x~ipad.png36"E5A13B80-2679-43BE-9D80-FEB1911A5E2D-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape~ipad.png HomeworkTracker/Resources/splash/Default-Landscape~ipad.png
+s418643168.768557
+e418643169.062903
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape~ipad.png
+xHomeworkTracker/Resources/splash/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection139"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Landscape~ipad.png HomeworkTracker/Resources/splash/Default-Landscape~ipad.png139"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Landscape~ipad.png HomeworkTracker/Resources/splash/Default-Landscape~ipad.pngd61bc5e0fcf3b841^ca1b10e1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@111"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Landscape~ipad.png0000000000000000^858"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Landscape~ipad.png HomeworkTracker/Resources/splash/Default-Landscape~ipad.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Landscape~ipad.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Landscape~ipad.png36"4BB71F51-0588-4BA0-841D-4181EE2D7B02-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png
+s418643168.784706
+e418643169.586854
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png
+xHomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection143"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png143"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png5f9bc9e0fcf3b841^d54196e1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png0000000000000000^866"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Portrait@2x~ipad.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait@2x~ipad.png36"2016CDC6-66BC-4EB7-B2DC-8FEEEFB09423-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait~ipad.png HomeworkTracker/Resources/splash/Default-Portrait~ipad.png
+s418643168.851657
+e418643169.106513
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait~ipad.png
+xHomeworkTracker/Resources/splash/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection137"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Portrait~ipad.png HomeworkTracker/Resources/splash/Default-Portrait~ipad.png137"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Portrait~ipad.png HomeworkTracker/Resources/splash/Default-Portrait~ipad.png5628dae0fcf3b841^664a1be1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Portrait~ipad.png0000000000000000^854"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default-Portrait~ipad.png HomeworkTracker/Resources/splash/Default-Portrait~ipad.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default-Portrait~ipad.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default-Portrait~ipad.png36"8B37D348-9861-4C09-B028-903CB10F292D-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default@2x~iphone.png HomeworkTracker/Resources/splash/Default@2x~iphone.png
+s418643169.107499
+e418643169.298076
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default@2x~iphone.png
+xHomeworkTracker/Resources/splash/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection129"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default@2x~iphone.png HomeworkTracker/Resources/splash/Default@2x~iphone.png129"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default@2x~iphone.png HomeworkTracker/Resources/splash/Default@2x~iphone.png09a51be1fcf3b841^520e4ee1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default@2x~iphone.png0000000000000000^838"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default@2x~iphone.png HomeworkTracker/Resources/splash/Default@2x~iphone.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default@2x~iphone.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default@2x~iphone.png36"D838C838-B1F5-4394-8849-24ACE0E4379E-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default~iphone.png HomeworkTracker/Resources/splash/Default~iphone.png
+s418643169.182714
+e418643169.271151
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default~iphone.png
+xHomeworkTracker/Resources/splash/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection123"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default~iphone.png HomeworkTracker/Resources/splash/Default~iphone.png123"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default~iphone.png HomeworkTracker/Resources/splash/Default~iphone.pngdae62ee1fcf3b841^808045e1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default~iphone.png0000000000000000^826"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/Default~iphone.png HomeworkTracker/Resources/splash/Default~iphone.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/splash/Default~iphone.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Default~iphone.png36"16EAB6D8-3C02-407F-8880-85F8FBF0D8F5-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40.png HomeworkTracker/Resources/icons/icon-40.png
+s418643169.063188
+e418643169.118701
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40.png
+xHomeworkTracker/Resources/icons/icon-40.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-40.png HomeworkTracker/Resources/icons/icon-40.png108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-40.png HomeworkTracker/Resources/icons/icon-40.png846510e1fcf3b841^616f1ee1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-40.png0000000000000000^796"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-40.png HomeworkTracker/Resources/icons/icon-40.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-40.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40.png36"9F589914-8537-44AF-8D64-61D6599EDDC8-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40@2x.png HomeworkTracker/Resources/icons/icon-40@2x.png
+s418643168.407337
+e418643168.705306
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40@2x.png
+xHomeworkTracker/Resources/icons/icon-40@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-40@2x.png HomeworkTracker/Resources/icons/icon-40@2x.png114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-40@2x.png HomeworkTracker/Resources/icons/icon-40@2x.png9d0d69e0fcf3b841^bcccb4e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-40@2x.png0000000000000000^808"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-40@2x.png HomeworkTracker/Resources/icons/icon-40@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-40@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-40@2x.png36"4AE6901B-247A-402E-B3AB-B36C9316F50F-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50.png HomeworkTracker/Resources/icons/icon-50.png
+s418643168.699967
+e418643168.767346
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50.png
+xHomeworkTracker/Resources/icons/icon-50.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-50.png HomeworkTracker/Resources/icons/icon-50.png108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-50.png HomeworkTracker/Resources/icons/icon-50.png0052b3e0fcf3b841^ef8ec4e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-50.png0000000000000000^796"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-50.png HomeworkTracker/Resources/icons/icon-50.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-50.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50.png36"C2141C99-C43A-484D-9472-A9384005A006-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50@2x.png HomeworkTracker/Resources/icons/icon-50@2x.png
+s418643169.298389
+e418643169.370343
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50@2x.png
+xHomeworkTracker/Resources/icons/icon-50@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-50@2x.png HomeworkTracker/Resources/icons/icon-50@2x.png114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-50@2x.png HomeworkTracker/Resources/icons/icon-50@2x.pnge95f4ee1fcf3b841^96ea5ee1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-50@2x.png0000000000000000^808"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-50@2x.png HomeworkTracker/Resources/icons/icon-50@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-50@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-50@2x.png36"C731AB2E-F0B3-40F8-97A4-068C4B9EA272-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60.png HomeworkTracker/Resources/icons/icon-60.png
+s418643169.119161
+e418643169.181514
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60.png
+xHomeworkTracker/Resources/icons/icon-60.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-60.png HomeworkTracker/Resources/icons/icon-60.png108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-60.png HomeworkTracker/Resources/icons/icon-60.png63ee1ee1fcf3b841^c0782ee1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-60.png0000000000000000^796"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-60.png HomeworkTracker/Resources/icons/icon-60.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-60.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60.png36"FB4204DF-2698-47E8-A1E1-882A4D78B831-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60@2x.png HomeworkTracker/Resources/icons/icon-60@2x.png
+s418643168.705611
+e418643168.784340
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60@2x.png
+xHomeworkTracker/Resources/icons/icon-60@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-60@2x.png HomeworkTracker/Resources/icons/icon-60@2x.png114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-60@2x.png HomeworkTracker/Resources/icons/icon-60@2x.pnga9c1b4e0fcf3b841^10e8c8e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-60@2x.png0000000000000000^808"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-60@2x.png HomeworkTracker/Resources/icons/icon-60@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-60@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-60@2x.png36"DA4ED16C-C277-498B-8C73-217367D7E22E-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72.png HomeworkTracker/Resources/icons/icon-72.png
+s418643168.406640
+e418643168.693272
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72.png
+xHomeworkTracker/Resources/icons/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-72.png HomeworkTracker/Resources/icons/icon-72.png108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-72.png HomeworkTracker/Resources/icons/icon-72.pngf27a68e0fcf3b841^1781b1e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-72.png0000000000000000^796"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-72.png HomeworkTracker/Resources/icons/icon-72.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-72.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72.png36"E526930F-7ADB-4617-B7F8-973BECCC8FAF-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72@2x.png HomeworkTracker/Resources/icons/icon-72@2x.png
+s418643169.443996
+e418643169.509503
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72@2x.png
+xHomeworkTracker/Resources/icons/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-72@2x.png HomeworkTracker/Resources/icons/icon-72@2x.png114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-72@2x.png HomeworkTracker/Resources/icons/icon-72@2x.pngc5c971e1fcf3b841^217682e1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-72@2x.png0000000000000000^808"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-72@2x.png HomeworkTracker/Resources/icons/icon-72@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-72@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-72@2x.png36"318FD8D0-B5CE-468A-A22B-E3B411E7D3BE-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76.png HomeworkTracker/Resources/icons/icon-76.png
+s418643168.404994
+e418643168.695617
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76.png
+xHomeworkTracker/Resources/icons/icon-76.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-76.png HomeworkTracker/Resources/icons/icon-76.png108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-76.png HomeworkTracker/Resources/icons/icon-76.png67d567e0fcf3b841^7b4ab2e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-76.png0000000000000000^796"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-76.png HomeworkTracker/Resources/icons/icon-76.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-76.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76.png36"C600B474-BF94-4FE0-A973-3B0E64D7D665-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76@2x.png HomeworkTracker/Resources/icons/icon-76@2x.png
+s418643169.370670
+e418643169.443639
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76@2x.png
+xHomeworkTracker/Resources/icons/icon-76@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-76@2x.png HomeworkTracker/Resources/icons/icon-76@2x.png114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-76@2x.png HomeworkTracker/Resources/icons/icon-76@2x.png6c075fe1fcf3b841^649671e1fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-76@2x.png0000000000000000^808"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-76@2x.png HomeworkTracker/Resources/icons/icon-76@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-76@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-76@2x.png36"E55F8D1F-F8F2-4F7C-834C-D5D08CE004BF-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small.png HomeworkTracker/Resources/icons/icon-small.png
+s418643168.737765
+e418643168.790059
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small.png
+xHomeworkTracker/Resources/icons/icon-small.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-small.png HomeworkTracker/Resources/icons/icon-small.png114"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-small.png HomeworkTracker/Resources/icons/icon-small.png04febce0fcf3b841^629dcae0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-small.png0000000000000000^808"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-small.png HomeworkTracker/Resources/icons/icon-small.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-small.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small.png36"96C616E8-E3D8-4BCC-A626-E4B206699AE6-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small@2x.png HomeworkTracker/Resources/icons/icon-small@2x.png
+s418643168.790401
+e418643168.851293
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small@2x.png
+xHomeworkTracker/Resources/icons/icon-small@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-small@2x.png HomeworkTracker/Resources/icons/icon-small@2x.png120"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-small@2x.png HomeworkTracker/Resources/icons/icon-small@2x.pngdd79cae0fcf3b841^7bf9d9e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-small@2x.png0000000000000000^820"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon-small@2x.png HomeworkTracker/Resources/icons/icon-small@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon-small@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon-small@2x.png36"679A20AD-A10C-4F29-BF96-43EB80E1517C-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon.png HomeworkTracker/Resources/icons/icon.png
+s418643168.407567
+e418643168.691207
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon.png
+xHomeworkTracker/Resources/icons/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon.png HomeworkTracker/Resources/icons/icon.png102"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon.png HomeworkTracker/Resources/icons/icon.pngbd1969e0fcf3b841^7efdb0e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon.png0000000000000000^784"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon.png HomeworkTracker/Resources/icons/icon.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon.png36"92DB624F-04A0-421F-A35B-566385542FAF-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyPNGFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon@2x.png HomeworkTracker/Resources/icons/icon@2x.png
+s418643168.691936
+e418643168.763244
+r1
+xCopyPNGFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon@2x.png
+xHomeworkTracker/Resources/icons/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon@2x.png HomeworkTracker/Resources/icons/icon@2x.png108"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon@2x.png HomeworkTracker/Resources/icons/icon@2x.pngf147b1e0fcf3b841^04c9c3e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon@2x.png0000000000000000^796"[1mCopyPNGFile[0m build/device/HomeworkTracker.app/icon@2x.png HomeworkTracker/Resources/icons/icon@2x.png    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/copypng -compress /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/icons/icon@2x.png /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/icon@2x.png36"1CA8C2E5-65B6-4086-9F0F-A7F8CBABD707-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyStringsFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/de.lproj/Localizable.strings HomeworkTracker/Resources/de.lproj/Localizable.strings
+s418643168.734738
+e418643168.737503
+r1
+xCopyStringsFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/de.lproj/Localizable.strings
+xHomeworkTracker/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy HomeworkTracker/Resources/de.lproj/Localizable.strings140"[1mCopyStringsFile[0m build/device/HomeworkTracker.app/de.lproj/Localizable.strings HomeworkTracker/Resources/de.lproj/Localizable.stringsb83abce0fcf3b841^e31cbde0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/de.lproj/Localizable.strings0000000000000000^773"[1mCopyStringsFile[0m build/device/HomeworkTracker.app/de.lproj/Localizable.strings HomeworkTracker/Resources/de.lproj/Localizable.strings    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/de.lproj -- HomeworkTracker/Resources/de.lproj/Localizable.strings36"6357E083-A518-4144-B2D4-F56BC4157E81-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCopyStringsFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/en.lproj/Localizable.strings HomeworkTracker/Resources/en.lproj/Localizable.strings
+s418643168.693682
+e418643168.697720
+r1
+xCopyStringsFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/en.lproj/Localizable.strings
+xHomeworkTracker/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection59"Copy HomeworkTracker/Resources/en.lproj/Localizable.strings140"[1mCopyStringsFile[0m build/device/HomeworkTracker.app/en.lproj/Localizable.strings HomeworkTracker/Resources/en.lproj/Localizable.strings6bbbb1e0fcf3b841^1095b2e0fcf3b841^---0#0#1#-19%DVTDocumentLocation2@106"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/Resources/en.lproj/Localizable.strings0000000000000000^773"[1mCopyStringsFile[0m build/device/HomeworkTracker.app/en.lproj/Localizable.strings HomeworkTracker/Resources/en.lproj/Localizable.strings    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/en.lproj -- HomeworkTracker/Resources/en.lproj/Localizable.strings36"B74A7716-23A8-49AB-A531-8725B39CE335-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CCpResource /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist build/device/HomeworkTracker.app/ResourceRules.plist
+s418643167.238281
+e418643167.239496
+r1
+xCpResource
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist
+xbuild/device/HomeworkTracker.app/ResourceRules.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Copy build/device/HomeworkTracker.app/ResourceRules.plist193"[1mCpResource[0m /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist build/device/HomeworkTracker.app/ResourceRules.plist83133ddffcf3b841^65503ddffcf3b841^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/ResourceRules.plist0034bc38dfffdf42^903"[1mCpResource[0m /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist build/device/HomeworkTracker.app/ResourceRules.plist    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/ResourceRules.plist /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app36"86451FBB-CEE5-43DD-8389-14CE14A38D0C-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CGenerateDSYMFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker
+s418644407.630018
+e418644407.714406
+r1
+xGenerateDSYMFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Generate /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM119"[1mGenerateDSYMFile[0m [1mbuild/device/HomeworkTracker.app.dSYM[0m build/device/HomeworkTracker.app/HomeworkTracker785fa1b701f4b841^03e9b6b701f4b841^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM/0000000000000000^797"[1mGenerateDSYMFile[0m [1mbuild/device/HomeworkTracker.app.dSYM[0m build/device/HomeworkTracker.app/HomeworkTracker    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker -o /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app.dSYM36"DB4ADF93-D0C4-4157-95CD-467482E81D7A-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CLd /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker normal armv7
+s418644407.231539
+e418644407.629042
+r1
+xLd
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker
+xnormal
+xarmv7
+d/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/HomeworkTracker.LinkFileList
+d/Users/thangpq/homeworktracker/platforms/ios/build/device/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/crt1.3.1.o
+d/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/main.o
+d/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/AppDelegate.o
+d/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/MainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphoneos.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libsystem_stats.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Link /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker72"[1mLd[0m build/device/HomeworkTracker.app/HomeworkTracker normal armv7fe613bb701f4b841^020ea1b701f4b841^---0#0#1#--1777"[1mLd[0m build/device/HomeworkTracker.app/HomeworkTracker normal armv7    cd /Users/thangpq/homeworktracker/platforms/ios    export IPHONEOS_DEPLOYMENT_TARGET=5.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch armv7 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -L/Users/thangpq/homeworktracker/platforms/ios/build/device -F/Users/thangpq/homeworktracker/platforms/ios/build/device -filelist /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/HomeworkTracker.LinkFileList -dead_strip -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/thangpq/homeworktracker/platforms/ios/build/device/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -miphoneos-version-min=5.0 -framework AssetsLibrary /Users/thangpq/homeworktracker/platforms/ios/build/device/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Objects-normal/armv7/HomeworkTracker_dependency_info.dat -o /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/HomeworkTracker36"8745EDC2-67ED-45BF-9361-3CC66A08DD4A-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CPhaseScriptExecution Copy\ www\ directory /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh
+s418644404.934390
+e418644406.023066
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m1.062s
+ouser	0m0.406s
+osys	0m0.589s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'149"[1mPhaseScriptExecution[0m Copy\ www\ directory build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh46b2efb401f4b841^13f205b601f4b841^-42"real	0m1.062suser	0m0.406ssys	0m0.589s3(21%IDEActivityLogMessage2@14"real	0m1.062s-418644406#1#14#-0#-----2@14"user	0m0.406s-418644406#15#14#-0#-----2@13"sys	0m0.589s-418644406#29#13#-0#-----0#0#1#--362"[1mPhaseScriptExecution[0m Copy\ www\ directory build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh    cd /Users/thangpq/homeworktracker/platforms/ios    /bin/sh -c /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/Script-304B58A110DAC018002A0835.sh36"1BD48CCE-A94F-487F-B43E-7072995E4BEE-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CProcessInfoPlistFile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Info.plist /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist
+s418644404.930365
+e418644404.932763
+r1
+xProcessInfoPlistFile
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Info.plist
+x/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Process /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist123"[1mProcessInfoPlistFile[0m build/device/HomeworkTracker.app/Info.plist [1mHomeworkTracker/HomeworkTracker-Info.plist[0m4148eeb401f4b841^9fc9eeb401f4b841^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist0000000000000000^1000"[1mProcessInfoPlistFile[0m build/device/HomeworkTracker.app/Info.plist [1mHomeworkTracker/HomeworkTracker-Info.plist[0m    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-infoPlistUtility /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Info.plist -genpkginfo /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/ResourceRules.plist -o /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/Info.plist36"F627BD06-002D-43B2-985E-35521AA4B861-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CProcessPCH /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch HomeworkTracker/HomeworkTracker-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s418643169.615539
+e418643170.147349
+r1
+xProcessPCH
+x/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch
+xHomeworkTracker/HomeworkTracker-Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Precompile HomeworkTracker/HomeworkTracker-Prefix.pch329"[1mProcessPCH[0m /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch HomeworkTracker/HomeworkTracker-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerb7b59de1fcf3b841^67b825e2fcf3b841^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Prefix.pch0000000000000000^3877"[1mProcessPCH[0m /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch HomeworkTracker/HomeworkTracker-Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch armv7 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/device/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device/usr/local/lib/include -I/Users/thangpq/homeworktracker/platforms/ios/build/UninstalledProducts/include -I/Users/thangpq/homeworktracker/platforms/ios/build/device -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources/armv7 -I/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/device --serialize-diagnostics /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.d -c /Users/thangpq/homeworktracker/platforms/ios/HomeworkTracker/HomeworkTracker-Prefix.pch -o /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1-5B130a/Xcode/SharedPrecompiledHeaders/HomeworkTracker-Prefix-ccjujlxlxzmzyrempjhqmtessjoa/HomeworkTracker-Prefix.pch.pch36"ED998E23-DFBC-41B9-8441-48E0E0F37D42-
+bE420F4AB-F36D-4711-994E-350E9A306926
+
+CProcessProductPackaging /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent
+s418644407.724931
+e418644407.727012
+r1
+xProcessProductPackaging
+x/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist
+x/Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection247"[1mProcessProductPackaging[0m /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist [1mbuild/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent[0m247"[1mProcessProductPackaging[0m /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist [1mbuild/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent[0m0bb6b9b701f4b841^bc20bab701f4b841^---0#0#1#-19%DVTDocumentLocation2@138"file:///Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent0000000000000000^963"[1mProcessProductPackaging[0m /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist [1mbuild/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent[0m    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-productPackagingUtility /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/thangpq/homeworktracker/platforms/ios/build/HomeworkTracker.build/Debug-iphoneos/HomeworkTracker.build/HomeworkTracker.xcent36"E2615293-6D2E-4E1A-97DF-1C6AF56E9E73-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CProcessProductPackaging /Users/thangpq/Library/MobileDevice/Provisioning\ Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/embedded.mobileprovision
+s418644407.715089
+e418644407.716641
+r1
+xProcessProductPackaging
+x/Users/thangpq/Library/MobileDevice/Provisioning Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/embedded.mobileprovision
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection209"[1mProcessProductPackaging[0m /Users/thangpq/Library/MobileDevice/Provisioning\ Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision [1mbuild/device/HomeworkTracker.app/embedded.mobileprovision[0m209"[1mProcessProductPackaging[0m /Users/thangpq/Library/MobileDevice/Provisioning\ Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision [1mbuild/device/HomeworkTracker.app/embedded.mobileprovision[0mb728b7b701f4b841^0c76b7b701f4b841^---0#0#1#-19%DVTDocumentLocation2@109"file:///Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/embedded.mobileprovision0034bc38dfffdf42^861"[1mProcessProductPackaging[0m /Users/thangpq/Library/MobileDevice/Provisioning\ Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision [1mbuild/device/HomeworkTracker.app/embedded.mobileprovision[0m    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-productPackagingUtility /Users/thangpq/Library/MobileDevice/Provisioning\ Profiles/3D3C6BEA-F9A9-4A77-A9DD-55B71E86CF65.mobileprovision -o /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app/embedded.mobileprovision36"764AC212-D81B-4A53-9F2A-6A62DC9F6703-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+
+CTouch /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+s418644407.717855
+e418644407.724203
+r1
+xTouch
+x/Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Touch /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app46"[1mTouch[0m build/device/HomeworkTracker.app88d9b7b701f4b841^8065b9b701f4b841^---0#0#1#--544"[1mTouch[0m build/device/HomeworkTracker.app    cd /Users/thangpq/homeworktracker/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /usr/bin/touch -c /Users/thangpq/homeworktracker/platforms/ios/build/device/HomeworkTracker.app36"29D2B35F-D793-41CB-9DB3-F81EE733B88F-
+bD2676446-87EE-4BA4-BDEA-3832FC949EDA
+

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <meta charset="utf-8">
+        <title>Add new deadlines</title>
+        <link rel="stylesheet" href="css/jqm-demos.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/deadlines.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+    <script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+</head>
+
+<body>
+<div id="AddNewDeadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
+	<div data-role="header" class="jqm-header">
+        <h2>Statistics</h2>
+        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <a href="deadlines.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+    </div>
+    <!-- end head -->
+    
+    <!-- end tab content -->
+    <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
+        <ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+            <li data-filtertext="deadlines" data-icon="home"><a href="deadlines.html">Deadlines</a></li>
+            <li data-filtertext="finished tasks"><a href="deadlines.html" data-ajax="false">Finished tasks</a></li>
+            <li data-filtertext="Missed tasks"><a href="deadlines.html" data-ajax="false">Missed tasks</a></li>
+            <li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
+            <li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
+            <li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>            
+        </ul>
+    </div>
+    <!-- end left panel -->
+</div>
+</body>
+</html>
