@@ -10,23 +10,30 @@
 <script src="js/jquery.js"></script>
 <script src="js/deadlines.js"></script>
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
-<script src="http://localhost:8080/target/target-script-min.js#anonymous"></script>
+<script src="js/getClassDetail.js"></script>
+<script>
+	window.onload = function () {
+			 //alert('Before on device ready');
+            if (!window.device)
+                onDeviceReady();
+        }
+</script>
 <body>
 <div id="classDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
-    <div id="headerClassDetail" class="jqm-header ui-header" data-role="header">
+    <div id="headerClassDetail" class="jqm-header ui-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h1>Class Detail</h1>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-        <a href="classList.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</a>
+       <button onClick="getFormInfo()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
-    <div id="content" class="ui-content jqm-content">
+    <div id="content" data-role="content" data-iscroll class="ui-content jqm-content">
         <label for="className">Name</label>
-        <input id="className" type="text">
+        <input id="className" type="text" readonly>
         <br>
         <label for="classLocation">Location</label>
         <input id="classLocation" type="text">
         <br>
         <label for="classDate">Class Date</label>
-        <input id="classDate" type="date">
+        <input id="classDate" type="text">
         <br>
         <label for="classTime">Class Time</label>
         <input id="classTime" type="time">
@@ -40,7 +47,7 @@
         <label for="classTeacherPhone">Phone</label>
         <input id="classTeacherPhone" type="tel">
         <br>
-        <input id="btnSave" type="button" value="Save">
+     
     </div>
     <!-- end tab content -->
     <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">

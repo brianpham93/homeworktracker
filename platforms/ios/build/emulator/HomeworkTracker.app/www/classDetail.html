@@ -23,11 +23,11 @@
     <div id="headerClassDetail" class="jqm-header ui-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h1>Class Detail</h1>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-       <button onClick="updateClassToDB()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
+       <button onClick="getFormInfo()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
     <div id="content" data-role="content" data-iscroll class="ui-content jqm-content">
         <label for="className">Name</label>
-        <input id="className" type="text">
+        <input id="className" type="text" readonly>
         <br>
         <label for="classLocation">Location</label>
         <input id="classLocation" type="text">

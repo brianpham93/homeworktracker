@@ -110,15 +110,15 @@
 		</data>
 		<key>www/addNewClass.html</key>
 		<data>
-		S4Grouaxe49boSB6JiGk4qp+IY4=
+		9rj88PxvN7b3xQUTgJ7w0KK7S5A=
 		</data>
 		<key>www/addNewDeadline.html</key>
 		<data>
-		/WD2RrUziOk1Vlc8U+UpmBPA+bU=
+		Tjnv8YFhGyYHhO2JvoYjUIb4duw=
 		</data>
 		<key>www/classDetail.html</key>
 		<data>
-		93vVlUwFgnbxIDTa0Vy+BmWBO2c=
+		xDHuvOxAlN4bz/hFREUaBR58dfY=
 		</data>
 		<key>www/classList.html</key>
 		<data>
@@ -982,7 +982,7 @@
 		</data>
 		<key>www/deadlineDetail.html</key>
 		<data>
-		PdjjGfRO37L3NTj4ETbrfR2y43g=
+		DI6SZAkzcqetJv0NmadPV6F8cgc=
 		</data>
 		<key>www/deadlines.html</key>
 		<data>
@@ -1002,19 +1002,19 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		A1jZOD9QWXud0m/P657u5DvJXzA=
+		/7o5YFSV/pVWYMVgFwkreWGChSw=
 		</data>
 		<key>www/js/addNewClass.js</key>
 		<data>
-		gUPVLzS0qoChYoA9STfI37ABbNI=
+		2AlwSyXW2hMg3whE1E7EWHTSBXg=
 		</data>
 		<key>www/js/classDB.js</key>
 		<data>
-		pyLb4ac9U0jV2lNXGHAhYfJnwVE=
+		+pAMaSpnOzmiQvoHpJJjDZkiqAE=
 		</data>
 		<key>www/js/database.js</key>
 		<data>
-		0GdY6CHG3ijlE0CpDMb5pRV6b+Y=
+		uGcereu0KfXz7V6yxazcxNqiU0I=
 		</data>
 		<key>www/js/deadlines.js</key>
 		<data>
@@ -1022,11 +1022,19 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		/6+WSh1bISdgIlV2gtPwel61F0Q=
+		iwBftfiLgn0qlRUkIQq3XqA0X1A=
 		</data>
 		<key>www/js/finishedDB.js</key>
 		<data>
-		V3c52DMpoblkHV8UJZTWBBZNc2k=
+		kyz2SE5S/NKB4wWlR6B4M3W/z9M=
+		</data>
+		<key>www/js/getClassDetail.js</key>
+		<data>
+		VRqlnunpMKtBPLcD1VlTepZc7GY=
+		</data>
+		<key>www/js/getDeadlineDetail.js</key>
+		<data>
+		vUwUheECwh4y196raqLyZ83d6UQ=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -1046,7 +1054,7 @@
 		</data>
 		<key>www/js/missedDB.js</key>
 		<data>
-		s1jXTT7JpeLlZnoHOuobrK3A2js=
+		qZTsc8U42EhXZ5gGJ17MjU96Qwk=
 		</data>
 		<key>www/missed.html</key>
 		<data>
@@ -1365,15 +1373,15 @@
 		</data>
 		<key>www/addNewClass.html</key>
 		<data>
-		S4Grouaxe49boSB6JiGk4qp+IY4=
+		9rj88PxvN7b3xQUTgJ7w0KK7S5A=
 		</data>
 		<key>www/addNewDeadline.html</key>
 		<data>
-		/WD2RrUziOk1Vlc8U+UpmBPA+bU=
+		Tjnv8YFhGyYHhO2JvoYjUIb4duw=
 		</data>
 		<key>www/classDetail.html</key>
 		<data>
-		93vVlUwFgnbxIDTa0Vy+BmWBO2c=
+		xDHuvOxAlN4bz/hFREUaBR58dfY=
 		</data>
 		<key>www/classList.html</key>
 		<data>
@@ -2237,7 +2245,7 @@
 		</data>
 		<key>www/deadlineDetail.html</key>
 		<data>
-		PdjjGfRO37L3NTj4ETbrfR2y43g=
+		DI6SZAkzcqetJv0NmadPV6F8cgc=
 		</data>
 		<key>www/deadlines.html</key>
 		<data>
@@ -2257,19 +2265,19 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		A1jZOD9QWXud0m/P657u5DvJXzA=
+		/7o5YFSV/pVWYMVgFwkreWGChSw=
 		</data>
 		<key>www/js/addNewClass.js</key>
 		<data>
-		gUPVLzS0qoChYoA9STfI37ABbNI=
+		2AlwSyXW2hMg3whE1E7EWHTSBXg=
 		</data>
 		<key>www/js/classDB.js</key>
 		<data>
-		pyLb4ac9U0jV2lNXGHAhYfJnwVE=
+		+pAMaSpnOzmiQvoHpJJjDZkiqAE=
 		</data>
 		<key>www/js/database.js</key>
 		<data>
-		0GdY6CHG3ijlE0CpDMb5pRV6b+Y=
+		uGcereu0KfXz7V6yxazcxNqiU0I=
 		</data>
 		<key>www/js/deadlines.js</key>
 		<data>
@@ -2277,11 +2285,19 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		/6+WSh1bISdgIlV2gtPwel61F0Q=
+		iwBftfiLgn0qlRUkIQq3XqA0X1A=
 		</data>
 		<key>www/js/finishedDB.js</key>
 		<data>
-		V3c52DMpoblkHV8UJZTWBBZNc2k=
+		kyz2SE5S/NKB4wWlR6B4M3W/z9M=
+		</data>
+		<key>www/js/getClassDetail.js</key>
+		<data>
+		VRqlnunpMKtBPLcD1VlTepZc7GY=
+		</data>
+		<key>www/js/getDeadlineDetail.js</key>
+		<data>
+		vUwUheECwh4y196raqLyZ83d6UQ=
 		</data>
 		<key>www/js/index.js</key>
 		<data>
@@ -2301,7 +2317,7 @@
 		</data>
 		<key>www/js/missedDB.js</key>
 		<data>
-		s1jXTT7JpeLlZnoHOuobrK3A2js=
+		qZTsc8U42EhXZ5gGJ17MjU96Qwk=
 		</data>
 		<key>www/missed.html</key>
 		<data>

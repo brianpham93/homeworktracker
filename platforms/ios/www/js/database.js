@@ -87,7 +87,11 @@ function errorCB(tx, err) {
 
 // Transaction success callback
 function successCB() {
-	alert('success');
+	//alert('success');
+}
+
+function insertSuccessCB(){
+	window.location.href ="deadlines.html";
 }
 
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
@@ -95,9 +99,9 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
 	
 	//alert('before insert');
 	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished]);
+		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished], insertSuccessCB, errorCB);
 		////alert(tx);
-   },successCB, errorCB);
+   });
 }
 
 function updateDeadlineToDB(){

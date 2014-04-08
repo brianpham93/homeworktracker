@@ -6,16 +6,16 @@ document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 //
 function onDeviceReady() {
-	alert('on device ready');
+	////alert('on device ready');
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
 }
 
 function populateDB(tx) {
-	//alert('starting populate');
+	////alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
-	 alert('populate done');
-	 //alert(tx);
+	 ////alert('populate done');
+	 ////alert(tx);
 }
 
 function randomString(L){
@@ -32,21 +32,21 @@ function randomString(L){
 
 function saveClassToDB(){
 	var dbId = randomString(5);
-	alert(dbId);
+	//alert(dbId);
 	var dbName = document.getElementById("className").value;
-	alert(dbName);
+	//alert(dbName);
 	var dbLocation = document.getElementById("classLocation").value;
-	alert(dbLocation);
+	//alert(dbLocation);
 	var dbDate = document.getElementById("classDate").value;
-	alert(dbDate);
+	//alert(dbDate);
 	var dbTime = document.getElementById("classTime").value;
-	alert(dbTime);
+	//alert(dbTime);
 	var dbTeacher = document.getElementById("classTeacher").value;
-	alert(dbTeacher);
+	//alert(dbTeacher);
 	var dbEmail = document.getElementById("classTeacherEmail").value;
-	alert(dbEmail);
+	//alert(dbEmail);
 	var dbPhone = document.getElementById("classTeacherPhone").value;
-	alert(dbPhone);
+	//alert(dbPhone);
 	insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone);
 
 }
@@ -57,19 +57,19 @@ function saveClassToDB(){
 
 // Transaction error callback
 function errorCB(tx, err) {
-	alert("Error processing SQL: "+err);
+	//alert("Error processing SQL: "+err);
 }
 
 // Transaction success callback
 function successCB() {
-	alert('success');
+	//alert('success');
 }
 
 function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone) {
-	alert('before insert');
+	//alert('before insert');
 	db.transaction(function(tx){
 		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],successCB, errorCB);
-		alert(tx);
+		//alert(tx);
    });
 }
 
