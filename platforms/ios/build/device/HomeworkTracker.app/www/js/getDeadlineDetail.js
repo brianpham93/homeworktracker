@@ -61,7 +61,6 @@ function getDeadlineDetail_success(tx, results){
 		var description = deadline.description;
 		var classDeadline = deadline.class;
 		////alert(classDeadline);
-		console.log(classDeadline);
 		var duedate = deadline.duedate;
 		var duetime = deadline.duetime;
 		var type = deadline.type;
@@ -112,6 +111,17 @@ function getFormInfo(){
 	
 }
 
+function deleteDeadline(){
+	db.transaction(function(tx){
+		tx.executeSql("DELETE FROM deadlines WHERE id = ? ",[id], deleteSuccessCB, errorCB);
+	});
+}
+
+function deleteSuccessCB(tx){
+	alert("Deleted successfully");
+	window.location.href ="deadlines.html";
+}
+
 function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
 	db.transaction(populateDB, errorCB, successCB);
 	db.transaction(function(tx){
@@ -121,6 +131,7 @@ function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, ad
 }
 
 function updateSuccessCB(tx){
+	alert("Saved successfully");
 	window.location.href ="deadlines.html";
 }
 
