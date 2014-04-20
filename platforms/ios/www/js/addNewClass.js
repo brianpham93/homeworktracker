@@ -68,7 +68,7 @@ function successCB() {
 function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone) {
 	//alert('before insert');
 	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],successCB, errorCB);
+		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],insertSuccessCB, errorCB);
 		//alert(tx);
    });
 }
@@ -77,6 +77,10 @@ function updateClassToDB(){
 	var id = GET.id;
 	var sql = "select * from deadlines where id = '"+ id +"'";
 	tx.executeSql(sql, [] , getDeadlineDetail_success);
+}
+
+function insertSuccessCB(){
+	window.location.href ="classList.html";
 }
 
 /*function getClassDetail_success(tx, results){

@@ -6,6 +6,7 @@ function onDeviceReady() {
 	db.transaction(populateDB, errorCB, successCB);
 
 	db.transaction(getDeadlines, errorCB);
+	
 }
 
 function populateDB(tx) {
@@ -32,7 +33,7 @@ function getAllDeadlines_success(tx, results){
 		var allDeadline = results.rows.item(i);
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#allList').prepend('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			$('#allList').append('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 		}
 	}
 	$("#allList").listview('refresh');
@@ -75,7 +76,7 @@ function getHomeworkDeadlines_success(tx, results){
 		//alert('result: ' + result);
 		if ( result == "true" ){
 			//alert('prepend');				
-			$('#homeworkList').prepend('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
+			$('#homeworkList').append('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		} 
 		else continue;;
 	}
@@ -92,7 +93,7 @@ function getTestDeadlines_success(tx, results){
 		var testDeadline = results.rows.item(i);
 		var result = isLate(testDeadline.duedate, testDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#testList').prepend('<li><a href="deadlineDetail.html?id='+ testDeadline.id+'">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+			$('#testList').append('<li><a href="deadlineDetail.html?id='+ testDeadline.id+'">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
 		}		
 	}
 	$("#testList").listview('refresh');

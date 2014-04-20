@@ -3,7 +3,17 @@
         "installed": [],
         "uninstalled": []
     },
-    "config_munge": {},
-    "installed_plugins": {},
+    "config_munge": {
+        "config.xml": {
+            "/*": {
+                "<feature name=\"NativeTransitions\"><param name=\"ios-package\" value=\"NativeTransitions\" /><param name=\"onload\" value=\"true\" /></feature>": 1
+            }
+        }
+    },
+    "installed_plugins": {
+        "uk.co.ilee.nativetransitions": {
+            "PACKAGE_NAME": "ThangPhamQuoc"
+        }
+    },
     "dependent_plugins": {}
 }
