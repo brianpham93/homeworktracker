@@ -28,12 +28,12 @@ function getDeadlines(tx){
 function getAllDeadlines_success(tx, results){
 
 	var len = results.rows.length;
-	//var s = "";
+	
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#allList').append('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			$('#allList').append('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'" data-transition="slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 		}
 	}
 	$("#allList").listview('refresh');
