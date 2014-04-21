@@ -3,7 +3,7 @@ var id = "";
 document.addEventListener("deviceready", onDeviceReady, false);
 // PhoneGap is ready
 //
-function onDeviceReady() {
+function onDeviceReadyDeadlineDetail() {
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	db.transaction(populateDB, errorCB, successCB);
 	//////alert('populate db done');

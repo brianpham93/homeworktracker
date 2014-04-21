@@ -11,27 +11,10 @@
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
 <script src="js/iscroll.js"></script>
 <script src="js/deadlinesDB.js"></script>
-<script src="js/nativetransitions.js"></script>
 <script>
 		window.onload = function () {
             if (!window.device)
                 onDeviceReady();
-        }
-</script>
-<script type="text/javascript">
-        function sortList(ul){
-            var new_ul = ul.cloneNode(false);
-            var lis = [];
-            for(var i = ul.childNodes.length; i--;){
-                if(ul.childNodes[i].nodeName === 'LI')
-                    lis.push(ul.childNodes[i]);
-            }
-            lis.sort(function(a, b){
-               return parseInt(b.childNodes[0].data , 10) - parseInt(a.childNodes[0].data , 10);
-            });
-            for(var i = 0; i < lis.length; i++)
-                new_ul.appendChild(lis[i]);
-            ul.parentNode.replaceChild(new_ul, ul);
         }
 </script>
 <style id="inset-tablist">
@@ -49,15 +32,18 @@
 </head>
 <body>
 <div data-role="page" class="jqm-demos" data-quicklinks="true">
+	<!-- header -->
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Deadlines</h2>
 		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
 	</div>
 	<!-- /header -->
+    <!-- body -->
 	<div role="main" class="ui-content jqm-content" >
 		<div data-demo-html="true">
 			<div data-role="tabs" id="tabs">
+            	<!-- tab bar -->
 				<div data-role="navbar">
 					<ul>
 						<li><a href="#all" data-ajax="false">All</a></li>
@@ -65,7 +51,8 @@
 						<li><a href="#test" data-ajax="false">Test</a></li>
 					</ul>
 				</div>
-             
+             <!-- tab bar -->
+             <!-- tab content -->
 				<div id="all" class="ui-body-d ui-content">
 					<ul id="allList" data-role="listview" data-inset="true">
 						<!--List will go here-->
@@ -81,10 +68,12 @@
 						<!--List will go here-->
 					</ul>
 				</div>
+             <!-- tab content -->
 			</div>
 		</div>
 	</div>
 	<!-- end tab content -->
+    <!-- left panel -->
 	<div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
 		<ul class="jqm-list ui-alt-icon ui-nodisc-icon list">
 			<li data-filtertext="deadlines" data-icon="home"><a href="index.html">Deadlines</a></li>
@@ -94,11 +83,10 @@
 			<li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
 			<li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>			
 		</ul>
-        <script type="text/javascript">
-        	sortList(document.getElementsByClassName('jqm-list')[0]);
-    </script>
 	</div>
- </div>
-	<!-- end left panel -->
+    <!-- end left panel -->
+ </div>	
+ 
+ 
 </body>
 </html>

@@ -16,12 +16,12 @@ function populateDB(tx) {
 
 function getDeadlines(tx){
 	//alert('get deadline');
-	var sql = "select * from deadlines where finished = 'no'";
+	var sql = "select * from deadlines where finished = 'no' order by duedate";
 	tx.executeSql(sql, [] , getAllDeadlines_success);
-	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
+	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' order by duedate";
 	tx.executeSql(sql2, [] , getHomeworkDeadlines_success);
 	//alert('get test deadline');
-	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
+	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' orderby duedate";
 	tx.executeSql(sql3, [] , getTestDeadlines_success);
 }
 
