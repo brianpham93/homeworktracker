@@ -91,7 +91,7 @@ function successCB() {
 }
 
 function insertSuccessCB(){
-	window.location.href ="deadlines.html";
+	window.location.href ="index.html";
 }
 
 function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {

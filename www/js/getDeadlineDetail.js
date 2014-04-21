@@ -119,7 +119,7 @@ function deleteDeadline(){
 
 function deleteSuccessCB(tx){
 	alert("Deleted successfully");
-	window.location.href ="deadlines.html";
+	window.location.href ="index.html";
 }
 
 function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
@@ -132,7 +132,7 @@ function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, ad
 
 function updateSuccessCB(tx){
 	alert("Saved successfully");
-	window.location.href ="deadlines.html";
+	window.location.href ="index.html";
 }
 
 
