@@ -16,12 +16,12 @@ function populateDB(tx) {
 
 function getDeadlines(tx){
 	//alert('get deadline');
-	var sql = "select * from deadlines where finished = 'no'";
+	var sql = "select * from deadlines where finished = 'no' ORDER BY duedate";
 	tx.executeSql(sql, [] , getAllDeadlines_success);
-	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
+	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
 	tx.executeSql(sql2, [] , getHomeworkDeadlines_success);
 	//alert('get test deadline');
-	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
+	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' ORDER BY duedate";
 	tx.executeSql(sql3, [] , getTestDeadlines_success);
 }
 
@@ -33,7 +33,7 @@ function getAllDeadlines_success(tx, results){
 		var allDeadline = results.rows.item(i);
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#allList').append('<li><a href="deadlineDetail.html?id='+ allDeadline.id+'">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			$('#allList').append('<li><a href="#DeadlineDetail?id='+ allDeadline.id+'" data-transition="slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 		}
 	}
 	$("#allList").listview('refresh');
