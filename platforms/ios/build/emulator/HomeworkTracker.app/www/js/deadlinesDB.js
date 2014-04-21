@@ -16,12 +16,12 @@ function populateDB(tx) {
 
 function getDeadlines(tx){
 	//alert('get deadline');
-	var sql = "select * from deadlines where finished = 'no' ORDER BY duedate";
+	var sql = "select * from deadlines where finished = 'no'";
 	tx.executeSql(sql, [] , getAllDeadlines_success);
-	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
+	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
 	tx.executeSql(sql2, [] , getHomeworkDeadlines_success);
 	//alert('get test deadline');
-	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' ORDER BY duedate";
+	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
 	tx.executeSql(sql3, [] , getTestDeadlines_success);
 }
 
@@ -38,6 +38,32 @@ function getAllDeadlines_success(tx, results){
 	}
 	$("#allList").listview('refresh');
 		////alert('before append');
+}
+
+function isLate(deadlineDate, deadlineTime){
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth() + 1;
+	var date = now.getDate();
+	var hour = now.getHours();
+	var minute = now.getMinutes();
+	
+	var parts = deadlineDate.split('-');
+	var time = deadlineTime.split(':');
+	
+	if ( parts[0] < year ){// previous year
+		return false;
+	} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] < date)){// previous date
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] < hour)){ // previous hour
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] == hour) && (time[1] < minute)) { // previous minute
+		return false;
+	} else {
+		return true;
+	}	
 }
 
 function getHomeworkDeadlines_success(tx, results){
@@ -73,34 +99,6 @@ function getTestDeadlines_success(tx, results){
 	$("#testList").listview('refresh');
 		////alert('before append');
 }
-
-
-function isLate(deadlineDate, deadlineTime){
-	var now = new Date();
-	var year = now.getFullYear();
-	var month = now.getMonth() + 1;
-	var date = now.getDate();
-	var hour = now.getHours();
-	var minute = now.getMinutes();
-	
-	var parts = deadlineDate.split('-');
-	var time = deadlineTime.split(':');
-	
-	if ( parts[0] < year ){// previous year
-		return false;
-	} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
-		return false;
-	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] < date)){// previous date
-		return false;
-	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] < hour)){ // previous hour
-		return false;
-	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] == hour) && (time[1] < minute)) { // previous minute
-		return false;
-	} else {
-		return true;
-	}	
-}
-
 
 function errorCB(tx, err) {
 	alert("Error processing SQL: "+err);
