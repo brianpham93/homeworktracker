@@ -40,32 +40,6 @@ function getAllDeadlines_success(tx, results){
 		////alert('before append');
 }
 
-function isLate(deadlineDate, deadlineTime){
-	var now = new Date();
-	var year = now.getFullYear();
-	var month = now.getMonth() + 1;
-	var date = now.getDate();
-	var hour = now.getHours();
-	var minute = now.getMinutes();
-	
-	var parts = deadlineDate.split('-');
-	var time = deadlineTime.split(':');
-	
-	if ( parts[0] < year ){// previous year
-		return false;
-	} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
-		return false;
-	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] < date)){// previous date
-		return false;
-	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] < hour)){ // previous hour
-		return false;
-	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] == hour) && (time[1] < minute)) { // previous minute
-		return false;
-	} else {
-		return true;
-	}	
-}
-
 function getHomeworkDeadlines_success(tx, results){
 	
 	//alert('get homework deadlines');
@@ -99,6 +73,34 @@ function getTestDeadlines_success(tx, results){
 	$("#testList").listview('refresh');
 		////alert('before append');
 }
+
+
+function isLate(deadlineDate, deadlineTime){
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth() + 1;
+	var date = now.getDate();
+	var hour = now.getHours();
+	var minute = now.getMinutes();
+	
+	var parts = deadlineDate.split('-');
+	var time = deadlineTime.split(':');
+	
+	if ( parts[0] < year ){// previous year
+		return false;
+	} else if ( ( parts[0] == year ) && ( parts[1] < month)){ // previous month
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] < date)){// previous date
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] < hour)){ // previous hour
+		return false;
+	} else if (( parts[0] == year ) && ( parts[1] == month) && (parts[2] == date) && (time[0] == hour) && (time[1] < minute)) { // previous minute
+		return false;
+	} else {
+		return true;
+	}	
+}
+
 
 function errorCB(tx, err) {
 	alert("Error processing SQL: "+err);
