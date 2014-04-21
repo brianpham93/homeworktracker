@@ -11,7 +11,6 @@ function onDeviceReadyDeadlineDetail() {
 	//////alert('populate class db done');
 	db.transaction(getClasses, errorCB);
 	db.transaction(getDeadlineDetail, errorCB);
-	
 }
 
 function populateDB(tx) {
@@ -33,7 +32,7 @@ function getClasses(tx){
 }
 
 function getClasses_success(tx, results){
-
+    
 	var len = results.rows.length;
 	//////alert('len: ' + len);
 	//var s = "";
@@ -132,7 +131,7 @@ function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, ad
 
 function updateSuccessCB(tx){
 	alert("Saved successfully");
-	window.location.href ="index.html";
+	window.location.href ="#deadlineList";
 }
 
 
