@@ -17,12 +17,12 @@ function populateDB(tx) {
 
 
 function getDeadlinesList(tx){
-	//alert('get deadline');
+	////alert('get deadline');
 	var sql = "select * from deadlines where finished = 'no' ORDER BY duedate";
 	tx.executeSql(sql, [] , getAllDeadlines_success);
 	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
 	tx.executeSql(sql2, [] , getHomeworkDeadlines_success);
-	//alert('get test deadline');
+	////alert('get test deadline');
 	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' ORDER BY duedate";
 	tx.executeSql(sql3, [] , getTestDeadlines_success);
 }
@@ -40,27 +40,27 @@ function getAllDeadlines_success(tx, results){
 		}
 	}
 	$("#allList").listview().listview('refresh');
-		////alert('before append');
+		//////alert('before append');
 }
 
 
 
 function getHomeworkDeadlines_success(tx, results){
 	
-	//alert('get homework deadlines');
+	////alert('get homework deadlines');
 	var len = results.rows.length;
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
 		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
-		//alert('result: ' + result);
+		////alert('result: ' + result);
 		if ( result == "true" ){
-			//alert('prepend');				
-			$('#homeworkList').append('<li><a href="deadlineDetail.html?id='+ homeworkDeadline.id+'">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
+			////alert('prepend');				
+			$('#homeworkList').append('<li><a href="?id='+homeworkDeadline.id+'#DeadlineDetail">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		} 
-		else continue;;
+		
 	}
 	$("#homeworkList").listview().listview('refresh');
-		////alert('before append');
+		//////alert('before append');
 }
 
 
@@ -72,16 +72,16 @@ function getTestDeadlines_success(tx, results){
 		var testDeadline = results.rows.item(i);
 		var result = isLate(testDeadline.duedate, testDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#testList').append('<li><a href="#deadlineDetail">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+			$('#testList').append('<li><a href="?id='+testDeadline.id+'#DeadlineDetail">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
 		}
 				
 	}
 	$("#testList").listview().listview('refresh');
-		////alert('before append');
+		//////alert('before append');
 }
 
 function doSomething(id){
-	alert(id);
+	//alert(id);
 }
 
 
@@ -112,21 +112,21 @@ function isLate(deadlineDate, deadlineTime){
 }
 
 function errorCB(tx, err) {
-	alert("Error processing SQL: "+err);
+	//alert("Error processing SQL: "+err);
 }
 
 function successCB(tx){
 }
 
 function populateClassDB(tx) {
-	////////alert('starting populate');
+	//////////alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
-	 //////alert('populate done');
-	 ////////alert(tx);
+	 ////////alert('populate done');
+	 //////////alert(tx);
 }
 
 function getClasses(tx){
-	//////alert('classes');
+	////////alert('classes');
 	var sql = "select * from classes";
 	tx.executeSql(sql, [] , getClasses_success);
 	
@@ -134,19 +134,19 @@ function getClasses(tx){
 function getClasses_success(tx, results){
 	
 	var len = results.rows.length;
-	//////alert('len: ' + len);
+	////////alert('len: ' + len);
 	//var s = "";
 	for (var i=0; i<len; i++){
 		var classDB = results.rows.item(i);
 		$('#class').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
 	}
-		////////alert('before append');
+		//////////alert('before append');
 }
 
 function getDeadlineDetail(tx){
-	//////alert('get deadline detail');
+	////////alert('get deadline detail');
 	id = GET.id;
-	//////alert(id);
+	////////alert(id);
 	var sql = "select * from deadlines where id = '" + id +"'";
 	tx.executeSql(sql, [] , getDeadlineDetail_success);
 }
@@ -159,35 +159,66 @@ function getDeadlineDetail_success(tx, results){
 		var deadline = results.rows.item(i);
 		var description = deadline.description;
 		var classDeadline = deadline.class;
-		////alert(classDeadline);
+		//////alert(classDeadline);
 		var duedate = deadline.duedate;
 		var duetime = deadline.duetime;
 		var type = deadline.type;
 		var additionalInfo = deadline.additionalInfo;
 		var finished = deadline.finished;
-		////alert(finished);
+		//////alert(finished);
 		document.getElementById("shortDescription").value = description;
 		document.getElementById("dueDate").value = duedate;
 		document.getElementById("dueTime").value = duetime;
 		document.getElementById("additionalInfo").value = additionalInfo;
-		//$("#class").val(classDeadline);
-		//document.getElementById("class").selected = classDeadline;
-		//$("#class").val(classDeadline).attr('selected', true);
+		
 		var selectClass = $("#class"); 
 		$("#class").val(classDeadline);
-		selectClass.selectmenu("refresh");
+		selectClass.selectmenu().selectmenu("refresh");
 
 		var selectType = $("#type");
 		$("#type").val(type);
-		selectType.selectmenu("refresh");
+		selectType.selectmenu().selectmenu("refresh");
 		
-		////alert('before select finished');
+		//////alert('before select finished');
 		var selectFinished = $("#finished");
 		$("#finished").val(finished);
-		selectFinished.flipswitch("refresh");
+		selectFinished.flipswitch().flipswitch("refresh");
 			
 	}
-		////////alert('before append');
+		//////////alert('before append');
+}
+
+function getFormInfo(){
+	//alert(id);
+	var description = document.getElementById("shortDescription").value;
+	//alert(description);
+	var classDeadline = document.getElementById("class").value;
+	//alert(classDeadline);
+	var duedate = document.getElementById("dueDate").value;
+	//alert(duedate);
+	var duetime = document.getElementById("dueTime").value;
+	//alert(duetime);
+	var type = document.getElementById("type").value;
+	//alert(type);
+	var additionalInfo = document.getElementById("additionalInfo").value;
+	//alert(additionalInfo);
+	var finished = document.getElementById("finished").value;	
+	//alert(finished);
+	updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished);
+	
+}
+
+function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
+	db.transaction(populateDB, errorCB, successCB);
+	db.transaction(function(tx){
+		tx.executeSql("UPDATE deadlines SET description = ?, class = ?, duedate = ?, duetime =?, type = ?, additionalInfo = ?, finished = ? WHERE id = ?",[description,classDeadline,duedate, duetime, type, additionalInfo, finished, id], updateSuccessCB, errorCB);
+		});
+}
+
+function updateSuccessCB(tx){
+	//alert("Saved successfully");
+	
+	window.location.href = "index.html";
 }
 
 
