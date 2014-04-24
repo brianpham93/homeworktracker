@@ -63,7 +63,7 @@ function getHomeworkDeadlines_success(tx, results){
 		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
 		//////alert('result: ' + result);
 		if ( result == "true" ){
-			//////alert('prepend');				
+			//////alert('append');				
 			$('#homeworkList').append('<li><a href="#DeadlineDetail" id = "'+homeworkDeadline.id+'" data-transition = "slide">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		} 
 		
@@ -107,6 +107,54 @@ function getTestDeadlines_success(tx, results){
 		////////alert('before append');
 }
 
+function getFinishedDeadlines(tx) {
+    
+    var sql = "select * from deadlines where finished = 'yes'";
+    tx.executeSql(sql, [], getAllFinishedDeadlines_success);
+    var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework'";
+    tx.executeSql(sql2, [], getHomeworkFinishedDeadlines_success);
+    var sql3 = "select * from deadlines where finished = 'yes' and type = 'Test'";
+    tx.executeSql(sql3, [], getTestFinishedDeadlines_success);
+}
+
+function getAllFinishedDeadlines_success(tx, results) {
+    var len = results.rows.length;
+    //var s = "";
+    for (var i = 0; i < len; i++) {
+        var allFinishedDeadline = results.rows.item(i);
+        $('#allFinishedList').append('<li><a href="deadlineDetail.html?id=' + allFinishedDeadline.id + '"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
+
+    }
+    $("#allFinishedList").listview('refresh');
+    //alert('before append');
+}
+
+function getHomeworkFinishedDeadlines_success(tx, results) {
+
+    var len = results.rows.length;
+    for (var i = 0; i < len; i++) {
+        var homeworkFinishedDeadline = results.rows.item(i);
+
+        $('#homeworkFinishedList').append('<li><a href="deadlineDetail.html?id=' + homeworkFinishedDeadline.id + '"><del>' + homeworkFinishedDeadline.class + '<br>' + homeworkFinishedDeadline.duedate + '    ' + homeworkFinishedDeadline.duetime + '<br>' + homeworkFinishedDeadline.description + '</del></a></li>');
+
+    }
+    $("#homeworkFinishedList").listview('refresh');
+    //alert('before append');
+}
+
+function getTestFinishedDeadlines_success(tx, results) {
+
+    var len = results.rows.length;
+    //var s = "";
+    for (var i = 0; i < len; i++) {
+        var testFinishedDeadline = results.rows.item(i);
+
+        $('#testFinishedList').append('<li><a href="deadlineDetail.html?id=' + testFinishedDeadline.id + '"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
+
+    }
+    $("#testFinishedList").listview('refresh');
+    //alert('before append');
+}
 
 function isLate(deadlineDate, deadlineTime){
 	var now = new Date();
@@ -243,8 +291,14 @@ function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, ad
 
 function updateSuccessCB(tx){
 	////alert("Saved successfully");
+		
+	$.mobile.changePage($("#deadlineList"));
 	
-	window.location.hash = "#deadlineList";
+	$("#deadlineList").load(".ui-content");
+	
+	
+	
+	
 }
 
 function getParameterByName(name) {

@@ -13,6 +13,14 @@
 <script src="js/iscroll.js"></script>
 <script src="js/deadlinesDB.js"></script>
 <script>
+var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finished.html" data-ajax="false">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li></ul></div>';
+
+$(document).one('pagebeforecreate', function () {
+    $.mobile.pageContainer.prepend(panel);
+    $("#mypanel").panel().enhanceWithin();
+});
+</script>
+<script>
 		window.onload = function () {
             if (!window.device){
                 onDeviceReady();
@@ -38,7 +46,7 @@
 	<!-- header -->
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Deadlines</h2>
-		<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
 		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
 	</div>
 	<!-- /header -->
@@ -77,23 +85,13 @@
 	</div>
 	<!-- end tab content -->
     <!-- left panel -->
-	<div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
-		<ul class="jqm-list ui-alt-icon ui-nodisc-icon list">
-			<li data-filtertext="deadlines" data-icon="home"><a href="index.html">Deadlines</a></li>
-			<li data-filtertext="finished tasks"><a href="finished.html" data-ajax="false">Finished tasks</a></li>
-			<li data-filtertext="Missed tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li>
-			<li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
-			<li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
-			<li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>			
-		</ul>
-	</div>
     <!-- end left panel -->
  </div>	
  
  <div id="DeadlineDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Deadline Detail</h2>
-        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+        <a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
         <button onClick="getFormInfo()" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
     </div>
     <!-- end head -->
@@ -136,18 +134,6 @@
     	<button onClick="deleteDeadline()" class="ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-delete ui-btn-b ui-btn-icon-bottom">Delete</button>
     </div>
     <!-- end tab content -->
-
-    <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
-    
-		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
-			<li data-filtertext="deadlines" data-icon="home"><a href="index.html">Deadlines</a></li>
-			<li data-filtertext="finished tasks"><a href="finished.html" data-ajax="false">Finished tasks</a></li>
-			<li data-filtertext="Missed tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li>
-			<li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
-			<li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
-			<li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>			
-		</ul>
-	</div>
     <!-- end left panel -->
  
 </div>

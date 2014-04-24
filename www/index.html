@@ -13,7 +13,7 @@
 <script src="js/iscroll.js"></script>
 <script src="js/deadlinesDB.js"></script>
 <script>
-var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="index.html">Deadlines</a></li><li data-filtertext="finished tasks"><a href="finished.html" data-ajax="false">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li></ul></div>';
+var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finished" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li></ul></div>';
 
 $(document).one('pagebeforecreate', function () {
     $.mobile.pageContainer.prepend(panel);
@@ -138,13 +138,59 @@ $(document).one('pagebeforecreate', function () {
  
 </div>
 
+<div id="finished" data-role="page" class="jqm-demos" data-quicklinks="true">
+	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
+		<h2>Finished tasks</h2>
+		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+	</div>
+	<!-- /header -->
+	<div role="main" class="ui-content jqm-content" >
+		<div data-demo-html="true">
+			<div data-role="tabs" id="tabs">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#all" data-ajax="false">All</a></li>
+						<li><a href="#homework" data-ajax="false">Homework</a></li>
+						<li><a href="#test" data-ajax="false">Test</a></li>
+					</ul>
+				</div>
+             
+				<div id="all" class="ui-body-d ui-content">
+					<ul id="allFinishedList" data-role="listview" data-inset="true">
+						<!--List will go here-->
+					</ul>
+				</div>
+				<div id="homework" class="ui-body-d ui-content">
+					<ul id="homeworkFinishedList" data-role="listview" data-inset="true">					
+                    	<!--List will go here-->
+					</ul>
+				</div>
+				<div id="test" class="ui-body-d ui-content">
+					<ul id="testFinishedList" data-role="listview" data-inset="true">
+						<!--List will go here-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+ </div>
+ <script >
+ $("#finished").on("pageshow", function(e, data){
+			alert('finish page loaded');
+           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+			db.transaction(populateDB, errorCB, successCB);
+			db.transaction(getFinishedDeadlines, errorCB);
+        });
+ </script>
+
 <script>
 $("#DeadlineDetail").on("pageshow", function(e, data){
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 			db.transaction(populateClassDB, errorCB, successCB);
 			db.transaction(getClasses, errorCB);
 			db.transaction(getDeadlineDetail, errorCB); 
-        });			
+        });						
 </script>
 
 </body>
