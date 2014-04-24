@@ -98,17 +98,6 @@
     </div>
     <!-- end head -->
     <div data-role="content" id="contentAddNewDeadline" class="ui-content" data-iscroll>
-    	<!--<script>
-			$("#page2").on("pageshow", function onPageShow(e,data){
-	
-	    		alert('Page 2 - ID: ' + getParameterByName('id'));
-			});
-
-		function getParameterByName(name) {
-    		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-		}
-        </script>-->
     	
     	<form id="formDeadlineInfo">
         	<label for="shortDescription">Short Description</label>
@@ -165,7 +154,7 @@
 
 <script>
 $("#DeadlineDetail").on("pageshow", function(e, data){
-            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 			db.transaction(populateClassDB, errorCB, successCB);
 			db.transaction(getClasses, errorCB);
 			db.transaction(getDeadlineDetail, errorCB); 
