@@ -20,7 +20,14 @@
 </head>
 
 <body>
-<div id="AddNewDeadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
+<div id="addNewDeadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
+	<script>
+		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+		db.transaction(populateDB, errorCB, successCB);
+	//alert('populate done');
+		db.transaction(populateClassDB, errorCB, successCB);
+		db.transaction(getClasses, errorCB);
+    </script>
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Add new deadlines</h2>
         <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
@@ -69,16 +76,6 @@
     <!-- end tab content -->
     
     <!-- end of footer-->
-    <div id="panel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a">
-		<ul class="jqm-list ui-alt-icon ui-nodisc-icon">
-			<li data-filtertext="deadlines" data-icon="home"><a href="index.html">Deadlines</a></li>
-			<li data-filtertext="finished tasks"><a href="finished.html" data-ajax="false">Finished tasks</a></li>
-			<li data-filtertext="Missed tasks"><a href="missed.html" data-ajax="false">Missed tasks</a></li>
-			<li data-filtertext="Add new deadlines"><a href="addNewDeadline.html" data-ajax="false">Add new deadline</a></li>
-			<li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li>
-			<li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li>			
-		</ul>
-	</div>
     <!-- end left panel -->
  
 </div>

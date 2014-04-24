@@ -63,7 +63,7 @@ function getHomeworkDeadlines_success(tx, results){
 		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
 		//////alert('result: ' + result);
 		if ( result == "true" ){
-			//////alert('prepend');				
+			//////alert('append');				
 			$('#homeworkList').append('<li><a href="#DeadlineDetail" id = "'+homeworkDeadline.id+'" data-transition = "slide">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
 		} 
 		
@@ -106,6 +106,166 @@ function getTestDeadlines_success(tx, results){
     });
 		////////alert('before append');
 }
+function getFinishedDeadlines(tx) {
+    
+    var sql = "select * from deadlines where finished = 'yes'";
+    tx.executeSql(sql, [], getAllFinishedDeadlines_success);
+    var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework'";
+    tx.executeSql(sql2, [], getHomeworkFinishedDeadlines_success);
+    var sql3 = "select * from deadlines where finished = 'yes' and type = 'Test'";
+    tx.executeSql(sql3, [], getTestFinishedDeadlines_success);
+}
+
+function getAllFinishedDeadlines_success(tx, results) {
+    var len = results.rows.length;
+    //var s = "";
+    for (var i = 0; i < len; i++) {
+        var allFinishedDeadline = results.rows.item(i);
+        $('#allFinishedList').append('<li><a href="#DeadlineDetail" id = "'+allFinishedDeadline.id+'" data-transition = "slide"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
+
+    }
+    $("#allFinishedList").listview().listview('refresh');
+	$('#allFinishedList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   ////alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
+	
+    //alert('before append');
+}
+
+function getHomeworkFinishedDeadlines_success(tx, results) {
+
+    var len = results.rows.length;
+    for (var i = 0; i < len; i++) {
+        var homeworkFinishedDeadline = results.rows.item(i);
+
+        $('#homeworkFinishedList').append('<li><a href="#DeadlineDetail" id = "'+homeworkFinishedDeadline.id+'" data-transition = "slide"><del>' + homeworkFinishedDeadline.class + '<br>' + homeworkFinishedDeadline.duedate + '    ' + homeworkFinishedDeadline.duetime + '<br>' + homeworkFinishedDeadline.description + '</del></a></li>');
+
+    }
+    $("#homeworkFinishedList").listview().listview('refresh');
+	$('#homeworkFinishedList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   ////alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
+    //alert('before append');
+}
+
+function getTestFinishedDeadlines_success(tx, results) {
+
+    var len = results.rows.length;
+    //var s = "";
+    for (var i = 0; i < len; i++) {
+        var testFinishedDeadline = results.rows.item(i);
+
+        $('#testFinishedList').append('<li><a href="#DeadlineDetail" id = "'+testFinishedDeadline.id+'" data-transition = "slide"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
+
+    }
+    $("#testFinishedList").listview().listview('refresh');
+	$('#testFinishedList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   ////alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
+    //alert('before append');
+}
+
+function getMissedDeadlines(tx){
+	//alert('get missed deadlines');
+	var sql = "select * from deadlines where finished = 'no'";
+	tx.executeSql(sql, [] , getAllMissedDeadlines_success);
+	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
+	tx.executeSql(sql2, [] , getHomeworkMissedDeadlines_success);
+	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
+	tx.executeSql(sql3, [] , getTestMissedDeadlines_success);
+}
+
+function getAllMissedDeadlines_success(tx, results){
+	var len = results.rows.length;
+	//var s = "";
+	for (var i=0; i<len; i++){
+		var allMissedDeadline = results.rows.item(i);
+		var result = isLate(allMissedDeadline.duedate, allMissedDeadline.duetime).toString();
+		if ( result == "false"){
+			$('#allMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+allMissedDeadline.id+'" data-transition = "slide">'+ allMissedDeadline.class +'<br>'+ allMissedDeadline.duedate+'  '+ allMissedDeadline.duetime+'<br>'+ allMissedDeadline.description +'</a></li>');
+		}
+	}
+	$("#allMissedList").listview().listview('refresh');
+	$('#allMissedList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   ////alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
+		////alert('before append');
+}
+
+function getHomeworkMissedDeadlines_success(tx, results){
+	
+	var len = results.rows.length;
+	for (var i=0; i<len; i++){
+		var homeworkMissedDeadline = results.rows.item(i);
+		var result = isLate(homeworkMissedDeadline.duedate, homeworkMissedDeadline.duetime).toString();
+		//alert('result: ' + result);
+		if ( result == "false" ){
+			//alert('prepend');				
+			$('#homeworkMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkMissedDeadline.id+'" data-transition = "slide">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
+		} 
+		else continue;;
+	}
+	$("#homeworkMissedList").listview().listview('refresh');
+	$('#homeworkMissedList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   ////alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
+		////alert('before append');
+}
+
+function getTestMissedDeadlines_success(tx, results){
+
+	var len = results.rows.length;
+	//var s = "";
+	for (var i=0; i<len; i++){
+		var testMissedDeadline = results.rows.item(i);
+		var result = isLate(testMissedDeadline.duedate, testMissedDeadline.duetime).toString();
+		if ( result == "false"){
+			$('#testMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+testMissedDeadline.id+'" data-transition = "slide">'+ testMissedDeadline.class + '<br>' + testMissedDeadline.duedate+'    '+ testMissedDeadline.duetime+'<br>'+ testMissedDeadline.description +'</a></li>');
+		}		
+	}
+	$("#testMissedList").listview().listview('refresh');
+	$('#testMissedList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   ////alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
+		////alert('before append');
+}
+
 
 
 function isLate(deadlineDate, deadlineTime){
@@ -243,8 +403,21 @@ function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, ad
 
 function updateSuccessCB(tx){
 	////alert("Saved successfully");
+		
+	$.mobile.changePage($("#deadlineList"));
 	
-	window.location.hash = "#deadlineList";
+	$("#deadlineList").load(".ui-content");	
+}
+
+function deleteDeadline(){
+	db.transaction(function(tx){
+		tx.executeSql("DELETE FROM deadlines WHERE id = ? ",[id], deleteSuccessCB, errorCB);
+	});
+}
+
+function deleteSuccessCB(tx){
+	alert("Deleted successfully");
+	window.location.hash ="#deadlineList";
 }
 
 function getParameterByName(name) {
