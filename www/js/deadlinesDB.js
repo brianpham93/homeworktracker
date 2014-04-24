@@ -36,13 +36,21 @@ function getAllDeadlines_success(tx, results){
 		//compare with current time
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#allList').append('<li><a href="?id='+allDeadline.id+'#DeadlineDetail" data-transition = "flow" >'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			$('#allList').append('<li><a href="#DeadlineDetail" id = "'+allDeadline.id+'" data-transition = "flow">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 		}
 	}
 	$("#allList").listview().listview('refresh');
+	$('#allList').children().each(function(){
+                var anchor = $(this).find('a');
+                if(anchor){
+                    anchor.click(function(){
+						   //alert(anchor.attr('id'));
+                        sessionStorage.setItem("selectedId", anchor.attr('id'));
+                    });
+                }
+    });
 		//////alert('before append');
 }
-
 
 
 function getHomeworkDeadlines_success(tx, results){
@@ -145,14 +153,17 @@ function getClasses_success(tx, results){
 
 function getDeadlineDetail(tx){
 	////////alert('get deadline detail');
-	id = GET.id;
+	//id = getParameterByName('id');
 	////////alert(id);
+	var id = sessionStorage.getItem("selectedId");
+	alert(id);
+    sessionStorage.removeItem("selectedId");
 	var sql = "select * from deadlines where id = '" + id +"'";
+	alert('before exe')
 	tx.executeSql(sql, [] , getDeadlineDetail_success);
 }
 
 function getDeadlineDetail_success(tx, results){
-
 	var len = results.rows.length;
 	//var s = "";
 	for (var i=0; i<len; i++){
@@ -249,3 +260,8 @@ GET = (function () {
 		});
 		return get;
 })();
+
+function getParameterByName(name) {
+    		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
