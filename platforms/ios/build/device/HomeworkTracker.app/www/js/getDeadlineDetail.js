@@ -131,6 +131,9 @@ function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, ad
 
 function updateSuccessCB(tx){
 	alert("Saved successfully");
+	$("#allList").listview().listview('refresh');
+	$("#homeworkList").listview().listview('refresh');
+	$("#testList").listview().listview('refresh');
 	window.location.href ="#deadlineList";
 }
 
