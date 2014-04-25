@@ -31,6 +31,7 @@ function getAllDeadlines_success(tx, results){
 
 	var len = results.rows.length;
 	//var s = "";
+	$('#allList').empty();
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
 		//compare with current time
@@ -59,9 +60,11 @@ function getHomeworkDeadlines_success(tx, results){
 	
 	////alert('get homework deadlines');
 	var len = results.rows.length;
+	$('#homeworkList').empty();
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
 		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
+		
 		////alert('result: ' + result);
 		if ( result == "true" ){
 			////alert('append');				
@@ -87,6 +90,7 @@ function getTestDeadlines_success(tx, results){
 
 	var len = results.rows.length;
 	//var s = "";
+	$('#testList').empty();
 	for (var i=0; i<len; i++){
 		var testDeadline = results.rows.item(i);
 		var result = isLate(testDeadline.duedate, testDeadline.duetime).toString();
@@ -120,6 +124,7 @@ function getFinishedDeadlines(tx) {
 function getAllFinishedDeadlines_success(tx, results) {
     var len = results.rows.length;
     //var s = "";
+	$('#allFinishedList').empty();
     for (var i = 0; i < len; i++) {
         var allFinishedDeadline = results.rows.item(i);
         $('#allFinishedList').append('<li><a href="#DeadlineDetail" id = "'+allFinishedDeadline.id+'" data-transition = "slide"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
@@ -142,6 +147,7 @@ function getAllFinishedDeadlines_success(tx, results) {
 function getHomeworkFinishedDeadlines_success(tx, results) {
 
     var len = results.rows.length;
+	$('#homeworkFinishedList').empty();
     for (var i = 0; i < len; i++) {
         var homeworkFinishedDeadline = results.rows.item(i);
 
@@ -165,6 +171,7 @@ function getTestFinishedDeadlines_success(tx, results) {
 
     var len = results.rows.length;
     //var s = "";
+	$('#testFinishedList').empty();
     for (var i = 0; i < len; i++) {
         var testFinishedDeadline = results.rows.item(i);
 
@@ -197,6 +204,7 @@ function getMissedDeadlines(tx){
 function getAllMissedDeadlines_success(tx, results){
 	var len = results.rows.length;
 	//var s = "";
+	$('#allMissedList').empty();
 	for (var i=0; i<len; i++){
 		var allMissedDeadline = results.rows.item(i);
 		var result = isLate(allMissedDeadline.duedate, allMissedDeadline.duetime).toString();
@@ -220,6 +228,7 @@ function getAllMissedDeadlines_success(tx, results){
 function getHomeworkMissedDeadlines_success(tx, results){
 	
 	var len = results.rows.length;
+	$('#homeworkMissedList').empty();
 	for (var i=0; i<len; i++){
 		var homeworkMissedDeadline = results.rows.item(i);
 		var result = isLate(homeworkMissedDeadline.duedate, homeworkMissedDeadline.duetime).toString();
@@ -247,6 +256,7 @@ function getTestMissedDeadlines_success(tx, results){
 
 	var len = results.rows.length;
 	//var s = "";
+	$('#testMissedList').empty();
 	for (var i=0; i<len; i++){
 		var testMissedDeadline = results.rows.item(i);
 		var result = isLate(testMissedDeadline.duedate, testMissedDeadline.duetime).toString();
