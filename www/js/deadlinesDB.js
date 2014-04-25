@@ -36,10 +36,11 @@ function getAllDeadlines_success(tx, results){
 		//compare with current time
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-
+<<<<<<< HEAD
 			$('#allList').append('<li><a href="?id='+allDeadline.id+'#DeadlineDetail" data-ajax = true data-transition = "flow" >'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
-
+=======
 			$('#allList').append('<li><a href="#DeadlineDetail" id = "'+allDeadline.id+'" data-transition = "slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+>>>>>>> 353e33d7769c45c304e4bd7673d7362ff1718686
 		}
 	}
 	$("#allList").listview().listview('refresh');
@@ -518,43 +519,6 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
    });
 }
 
-function saveClassToDB(){
-	var dbId = randomString(5);
-	alert(dbId);
-	var dbName = document.getElementById("className").value;
-	alert(dbName);
-	var dbLocation = document.getElementById("classLocation").value;
-	alert(dbLocation);
-	var dbDate = document.getElementById("classDate").value;
-	alert(dbDate);
-	var dbTime = document.getElementById("classTime").value;
-	alert(dbTime);
-	var dbTeacher = document.getElementById("classTeacher").value;
-	alert(dbTeacher);
-	var dbEmail = document.getElementById("classTeacherEmail").value;
-	alert(dbEmail);
-	var dbPhone = document.getElementById("classTeacherPhone").value;
-	alert(dbPhone);
-	insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone);
-
-}
-function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone) {
-	//alert('before insert');
-	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],insertSuccessCB, errorCB);
-		//alert(tx);
-   });
-}
-
-function updateClassToDB(){
-	id = sessionStorage.getItem("selectedId");
-	var sql = "select * from deadlines where id = '"+ id +"'";
-	tx.executeSql(sql, [] , getDeadlineDetail_success);
-}
-
-function insertSuccessCB(){
-	window.location.hash ="#classlist";
-}
 
 
 function updateSuccessCB(tx){
