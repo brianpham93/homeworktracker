@@ -113,11 +113,11 @@ function getTestDeadlines_success(tx, results){
 }
 function getFinishedDeadlines(tx) {
     
-    var sql = "select * from deadlines where finished = 'yes'";
+    var sql = "select * from deadlines where finished = 'yes' ORDER BY duedate";
     tx.executeSql(sql, [], getAllFinishedDeadlines_success);
-    var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework'";
+    var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework' ORDER BY duedate";
     tx.executeSql(sql2, [], getHomeworkFinishedDeadlines_success);
-    var sql3 = "select * from deadlines where finished = 'yes' and type = 'Test'";
+    var sql3 = "select * from deadlines where finished = 'yes' and type = 'Test' ORDER BY duedate";
     tx.executeSql(sql3, [], getTestFinishedDeadlines_success);
 }
 
@@ -127,7 +127,7 @@ function getAllFinishedDeadlines_success(tx, results) {
 	$('#allFinishedList').empty();
     for (var i = 0; i < len; i++) {
         var allFinishedDeadline = results.rows.item(i);
-        $('#allFinishedList').append('<li><a href="#DeadlineDetail" id = "'+allFinishedDeadline.id+'" data-transition = "slide"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
+        $('#allFinishedList').prepend('<li><a href="#DeadlineDetail" id = "'+allFinishedDeadline.id+'" data-transition = "slide"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#allFinishedList").listview().listview('refresh');
@@ -151,7 +151,7 @@ function getHomeworkFinishedDeadlines_success(tx, results) {
     for (var i = 0; i < len; i++) {
         var homeworkFinishedDeadline = results.rows.item(i);
 
-        $('#homeworkFinishedList').append('<li><a href="#DeadlineDetail" id = "'+homeworkFinishedDeadline.id+'" data-transition = "slide"><del>' + homeworkFinishedDeadline.class + '<br>' + homeworkFinishedDeadline.duedate + '    ' + homeworkFinishedDeadline.duetime + '<br>' + homeworkFinishedDeadline.description + '</del></a></li>');
+        $('#homeworkFinishedList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkFinishedDeadline.id+'" data-transition = "slide"><del>' + homeworkFinishedDeadline.class + '<br>' + homeworkFinishedDeadline.duedate + '    ' + homeworkFinishedDeadline.duetime + '<br>' + homeworkFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#homeworkFinishedList").listview().listview('refresh');
@@ -175,7 +175,7 @@ function getTestFinishedDeadlines_success(tx, results) {
     for (var i = 0; i < len; i++) {
         var testFinishedDeadline = results.rows.item(i);
 
-        $('#testFinishedList').append('<li><a href="#DeadlineDetail" id = "'+testFinishedDeadline.id+'" data-transition = "slide"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
+        $('#testFinishedList').prepend('<li><a href="#DeadlineDetail" id = "'+testFinishedDeadline.id+'" data-transition = "slide"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#testFinishedList").listview().listview('refresh');
@@ -193,11 +193,11 @@ function getTestFinishedDeadlines_success(tx, results) {
 
 function getMissedDeadlines(tx){
 	////alert('get missed deadlines');
-	var sql = "select * from deadlines where finished = 'no'";
+	var sql = "select * from deadlines where finished = 'no' ORDER BY duedate";
 	tx.executeSql(sql, [] , getAllMissedDeadlines_success);
-	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
+	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
 	tx.executeSql(sql2, [] , getHomeworkMissedDeadlines_success);
-	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
+	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' ORDER BY duedate";
 	tx.executeSql(sql3, [] , getTestMissedDeadlines_success);
 }
 
@@ -234,7 +234,7 @@ function getHomeworkMissedDeadlines_success(tx, results){
 		var result = isLate(homeworkMissedDeadline.duedate, homeworkMissedDeadline.duetime).toString();
 		////alert('result: ' + result);
 		if ( result == "false" ){
-			////alert('prepend');				
+			////alert('append');				
 			$('#homeworkMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkMissedDeadline.id+'" data-transition = "slide">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
 		} 
 		else continue;;

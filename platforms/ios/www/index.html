@@ -13,7 +13,7 @@
 <script src="js/iscroll.js"></script>
 <script src="js/deadlinesDB.js"></script>
 <script>
-var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finishedList" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missedList" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadlines" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="#classlist" data-transition = "slide" >Class management</a></li></ul></div>';
+var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finishedList" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missedList" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadline" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="#classlist" data-transition = "slide" >Class management</a></li></ul></div>';
 
 $(document).one('pagebeforecreate', function () {
     $.mobile.pageContainer.prepend(panel);
@@ -47,7 +47,7 @@ $(document).one('pagebeforecreate', function () {
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Deadlines</h2>
 		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+		<a href="#addNewDeadline" data-transition="slide" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
 	</div>
 	<!-- /header -->
     <!-- body -->
@@ -147,7 +147,7 @@ $(document).one('pagebeforecreate', function () {
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Finished tasks</h2>
 		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+		<a href="#addNewDeadline" data-transition="slide" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
 	</div>
 	<!-- /header -->
 	<div role="main" class="ui-content jqm-content" >
@@ -192,7 +192,7 @@ $(document).one('pagebeforecreate', function () {
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Missed tasks</h2>
 		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
-		<a href="addNewDeadline.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+		<a href="#addNewDeadline" data-transition="slide" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
 	</div>
 	<!-- /header -->
 	<div role="main" class="ui-content jqm-content" >
@@ -226,7 +226,7 @@ $(document).one('pagebeforecreate', function () {
 	</div>
  </div>
  
- <div id="addNewDeadlines" data-role="page" class="jqm-demos" data-quicklinks="true">
+ <div id="addNewDeadline" data-role="page" class="jqm-demos" data-quicklinks="true">
  	<script>
 		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 		db.transaction(populateDB, errorCB, successCB);
