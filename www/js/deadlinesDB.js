@@ -36,7 +36,7 @@ function getAllDeadlines_success(tx, results){
 		//compare with current time
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#allList').append('<li><a href="?id='+allDeadline.id+'#DeadlineDetail" data-transition = "flow" >'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			$('#allList').append('<li><a href="?id='+allDeadline.id+'#DeadlineDetail" data-ajax = true data-transition = "flow" >'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
 		}
 	}
 	$("#allList").listview().listview('refresh');
