@@ -597,7 +597,7 @@ t1398352184
 s1142
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/device/libCordova.a
-t1398352190
+t1398410479
 s1785496
 
 N/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-aqaraxkylckfrdedphnqtmolbqfo/CordovaLib_Prefix.pch.pch
@@ -610,7 +610,7 @@ s3179896
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies744638486c09b941^49307d486c09b941^---0#1#1#--18"Check dependencies36"5EBC0F3C-CF49-4230-92B9-EC8BBE71FE8F-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciescfbf0901aa0ab941^fdda6201aa0ab941^---0#1#1#--18"Check dependencies36"86CA7090-B4A8-4677-82D2-7BD462F0DEC3-
 
 CCompileC build/CordovaLib.build/Debug-iphoneos/CordovaLib.build/Objects-normal/armv7/CDVCommandDelegateImpl.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s420044988.210121

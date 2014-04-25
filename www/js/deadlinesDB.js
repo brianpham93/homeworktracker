@@ -113,11 +113,11 @@ function getTestDeadlines_success(tx, results){
 }
 function getFinishedDeadlines(tx) {
     
-    var sql = "select * from deadlines where finished = 'yes'";
+    var sql = "select * from deadlines where finished = 'yes' ORDER BY duedate";
     tx.executeSql(sql, [], getAllFinishedDeadlines_success);
-    var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework'";
+    var sql2 = "select * from deadlines where finished = 'yes' and type = 'Homework' ORDER BY duedate";
     tx.executeSql(sql2, [], getHomeworkFinishedDeadlines_success);
-    var sql3 = "select * from deadlines where finished = 'yes' and type = 'Test'";
+    var sql3 = "select * from deadlines where finished = 'yes' and type = 'Test' ORDER BY duedate";
     tx.executeSql(sql3, [], getTestFinishedDeadlines_success);
 }
 
@@ -193,11 +193,11 @@ function getTestFinishedDeadlines_success(tx, results) {
 
 function getMissedDeadlines(tx){
 	////alert('get missed deadlines');
-	var sql = "select * from deadlines where finished = 'no'";
+	var sql = "select * from deadlines where finished = 'no' ORDER BY duedate";
 	tx.executeSql(sql, [] , getAllMissedDeadlines_success);
-	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework'";
+	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
 	tx.executeSql(sql2, [] , getHomeworkMissedDeadlines_success);
-	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test'";
+	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' ORDER BY duedate";
 	tx.executeSql(sql3, [] , getTestMissedDeadlines_success);
 }
 
@@ -209,7 +209,7 @@ function getAllMissedDeadlines_success(tx, results){
 		var allMissedDeadline = results.rows.item(i);
 		var result = isLate(allMissedDeadline.duedate, allMissedDeadline.duetime).toString();
 		if ( result == "false"){
-			$('#allMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+allMissedDeadline.id+'" data-transition = "slide">'+ allMissedDeadline.class +'<br>'+ allMissedDeadline.duedate+'  '+ allMissedDeadline.duetime+'<br>'+ allMissedDeadline.description +'</a></li>');
+			$('#allMissedList').append('<li><a href="#DeadlineDetail" id = "'+allMissedDeadline.id+'" data-transition = "slide">'+ allMissedDeadline.class +'<br>'+ allMissedDeadline.duedate+'  '+ allMissedDeadline.duetime+'<br>'+ allMissedDeadline.description +'</a></li>');
 		}
 	}
 	$("#allMissedList").listview().listview('refresh');
@@ -234,8 +234,8 @@ function getHomeworkMissedDeadlines_success(tx, results){
 		var result = isLate(homeworkMissedDeadline.duedate, homeworkMissedDeadline.duetime).toString();
 		////alert('result: ' + result);
 		if ( result == "false" ){
-			////alert('prepend');				
-			$('#homeworkMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkMissedDeadline.id+'" data-transition = "slide">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
+			////alert('append');				
+			$('#homeworkMissedList').append('<li><a href="#DeadlineDetail" id = "'+homeworkMissedDeadline.id+'" data-transition = "slide">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
 		} 
 		else continue;;
 	}
@@ -261,7 +261,7 @@ function getTestMissedDeadlines_success(tx, results){
 		var testMissedDeadline = results.rows.item(i);
 		var result = isLate(testMissedDeadline.duedate, testMissedDeadline.duetime).toString();
 		if ( result == "false"){
-			$('#testMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+testMissedDeadline.id+'" data-transition = "slide">'+ testMissedDeadline.class + '<br>' + testMissedDeadline.duedate+'    '+ testMissedDeadline.duetime+'<br>'+ testMissedDeadline.description +'</a></li>');
+			$('#testMissedList').append('<li><a href="#DeadlineDetail" id = "'+testMissedDeadline.id+'" data-transition = "slide">'+ testMissedDeadline.class + '<br>' + testMissedDeadline.duedate+'    '+ testMissedDeadline.duetime+'<br>'+ testMissedDeadline.description +'</a></li>');
 		}		
 	}
 	$("#testMissedList").listview().listview('refresh');
