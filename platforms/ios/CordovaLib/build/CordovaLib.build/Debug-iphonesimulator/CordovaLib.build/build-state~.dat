@@ -4,8 +4,8 @@ r1
 cCheck dependencies
 cCpHeader Classes/NSDictionary+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
 cCpHeader Classes/CDVInvokedUrlCommand.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-cCpHeader Classes/NSData+Base64.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
 cCpHeader Classes/CDVPluginResult.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+cCpHeader Classes/NSData+Base64.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
 cCpHeader Classes/CDVPlugin.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
 cCpHeader Classes/CDVDebug.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
 cCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
@@ -381,107 +381,107 @@ t1398352178
 s9164
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h
-t1398352174
+t1398055084
 s1302
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-t1398352174
+t1398055084
 s3293
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-t1398352174
+t1398055084
 s2234
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-t1398352174
+t1398055084
 s1205
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-t1398352174
+t1398055084
 s1283
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-t1398352174
+t1398055084
 s1227
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-t1398352174
+t1398055084
 s1025
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-t1398352174
+t1398055084
 s2022
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-t1398352174
+t1398055084
 s986
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-t1398352174
+t1398055084
 s1743
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-t1398352174
+t1398055084
 s2194
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-t1398352174
+t1398055084
 s3091
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-t1398352174
+t1398055084
 s1032
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-t1398352174
+t1398055084
 s998
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-t1398352174
+t1398055084
 s909
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-t1398352174
+t1398055084
 s1052
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-t1398352174
+t1398055084
 s1057
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-t1398352174
+t1398055084
 s2764
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-t1398352174
+t1398055084
 s1442
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-t1398352174
+t1398055084
 s1204
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-t1398352174
+t1398055084
 s914
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-t1398352174
+t1398055084
 s893
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-t1398352174
+t1398055084
 s1498
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-t1398352174
+t1398055084
 s928
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-t1398352174
+t1398055084
 s1142
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a
-t1398352179
+t1398247321
 s862344
 
 N/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch
@@ -490,7 +490,7 @@ s3238992
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesbe17b7446c09b941^d95fea446c09b941^---0#1#1#--18"Check dependencies36"63604381-DCEE-40CF-9132-BDF6B994C53E-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies97fd5ead6009b941^02460fae6009b941^---0#1#1#--18"Check dependencies36"AD765A9C-0C65-4366-BD75-C3D91339E211-
 
 CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s420044978.629306

@@ -13,7 +13,7 @@
 <script src="js/iscroll.js"></script>
 <script src="js/deadlinesDB.js"></script>
 <script>
-var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finished" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missed" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadlines" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="classList.html" data-ajax="false">Class management</a></li></ul></div>';
+var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finished" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missed" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadlines" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="#classlist" data-transition = "slide" >Class management</a></li></ul></div>';
 
 $(document).one('pagebeforecreate', function () {
     $.mobile.pageContainer.prepend(panel);
@@ -280,6 +280,59 @@ $(document).one('pagebeforecreate', function () {
         </form>
     </div>
 </div>
+
+<div id="classlist" data-role="page" class="jqm-demos" data-quicklinks="true">
+	<script>
+		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+		db.transaction(populateClassDB, errorCB, successCB);
+		db.transaction(getClasses, errorCB);
+    </script>
+	<div id="headerClassList" class="jqm-header" data-role="header">
+    	<h1>Class Manager</h1>
+        <a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+		<a href="addNewClass.html" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-plus ui-btn-right">Add new</a>
+    </div>
+    <div id="content" class="jqm-content" data-role="content">
+    	<div class="ui-body-d ui-content">
+        	<ul id="classList" class="ui-listview" data-role="listview" data-inset="true">
+       		<!-- classes go here --> 	
+        	</ul>
+        </div>
+    	
+    </div>
+</div>
+ 
+<div id="classDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
+    <div id="headerClassDetail" class="jqm-header ui-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
+        <h1>Class Detail</h1>
+        <a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+       <button onClick="getClassFormInfo()" data-transition="slide" class="jqm-search-link ui-btn ui-btn-icon-notext ui-corner-all ui-nodisc-icon ui-alt-icon ui-icon-check ui-btn-right">Save</button>
+    </div>
+    <div id="content" data-role="content" data-iscroll class="ui-content jqm-content">
+        <label for="className">Name</label>
+        <input id="className" type="text" readonly>
+        <br>
+        <label for="classLocation">Location</label>
+        <input id="classLocation" type="text">
+        <br>
+        <label for="classDate">Class Date</label>
+        <input id="classDate" type="text">
+        <br>
+        <label for="classTime">Class Time</label>
+        <input id="classTime" type="time">
+        <br>
+        <label for="classTeacher">Teacher</label>
+        <input id="classTeacher" type="text">
+        <br>
+        <label for="classTeacherEmail">Email</label>
+        <input id="classTeacherEmail" type="email">
+        <br>
+        <label for="classTeacherPhone">Phone</label>
+        <input id="classTeacherPhone" type="tel">
+        <br>
+     
+    </div>
+</div> 
  
 <script>
 $("#DeadlineDetail").on("pageshow", function(e, data){
@@ -287,7 +340,13 @@ $("#DeadlineDetail").on("pageshow", function(e, data){
 			db.transaction(populateClassDB, errorCB, successCB);
 			db.transaction(getClasses, errorCB);
 			db.transaction(getDeadlineDetail, errorCB); 
-        });						
+        });
+		
+$("#classDetail").on("pageshow", function(e, data){
+           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+			db.transaction(populateClassDB, errorCB, successCB);
+			db.transaction(getClassDetail, errorCB); 
+        });
 </script>
 
 </body>
