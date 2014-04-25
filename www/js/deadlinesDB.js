@@ -17,7 +17,7 @@ function populateDB(tx) {
 
 
 function getDeadlinesList(tx){
-	////alert('get deadline');
+	
 	var sql = "select * from deadlines where finished = 'no' ORDER BY duedate";
 	tx.executeSql(sql, [] , getAllDeadlines_success);
 	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
@@ -36,11 +36,8 @@ function getAllDeadlines_success(tx, results){
 		//compare with current time
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-<<<<<<< HEAD
-			$('#allList').append('<li><a href="?id='+allDeadline.id+'#DeadlineDetail" data-ajax = true data-transition = "flow" >'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
-=======
 			$('#allList').append('<li><a href="#DeadlineDetail" id = "'+allDeadline.id+'" data-transition = "slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
->>>>>>> 353e33d7769c45c304e4bd7673d7362ff1718686
+
 		}
 	}
 	$("#allList").listview().listview('refresh');
@@ -48,8 +45,8 @@ function getAllDeadlines_success(tx, results){
                 var anchor = $(this).find('a');
                 if(anchor){
                     anchor.click(function(){
-						   //alert(anchor.attr('id'));
                         sessionStorage.setItem("selectedId", anchor.attr('id'));
+						  
                     });
                 }
     });
@@ -381,8 +378,8 @@ function getDeadlineDetail(tx){
 	////////alert('get deadline detail');
 	//id = getParameterByName('id');
 	////////alert(id);
-	id = sessionStorage.getItem("selectedId");
 	
+	id = sessionStorage.getItem("selectedId");
     sessionStorage.removeItem("selectedId");
 	var sql = "select * from deadlines where id = '" + id +"'";
 	
