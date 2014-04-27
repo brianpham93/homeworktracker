@@ -2,9 +2,7 @@
 var id = "";
 var db = null;
 
-
-function onDeviceReady() {
-	localNotifier.addNotification({
+localNotifier.addNotification({
     fireDate        : Math.round(new Date().getTime()/1000 + 5),
     alertBody       : "This is a new local notification.",
     repeatInterval  : "daily",
@@ -19,7 +17,8 @@ function onDeviceReady() {
     }           
 });
 
-		
+function onDeviceReady() {
+	
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	
 	db.transaction(populateDB, errorCB, successCB);
