@@ -6,12 +6,16 @@
     "config_munge": {
         "config.xml": {
             "/*": {
-                "<feature name=\"NativeTransitions\"><param name=\"ios-package\" value=\"NativeTransitions\" /><param name=\"onload\" value=\"true\" /></feature>": 1
+                "<feature name=\"NativeTransitions\"><param name=\"ios-package\" value=\"NativeTransitions\" /><param name=\"onload\" value=\"true\" /></feature>": 1,
+                "<feature name=\"LocalNotification\"><param name=\"ios-package\" value=\"LocalNotification\" /></feature>": 1
             }
         }
     },
     "installed_plugins": {
         "uk.co.ilee.nativetransitions": {
+            "PACKAGE_NAME": "ThangPhamQuoc"
+        },
+        "localnotification": {
             "PACKAGE_NAME": "ThangPhamQuoc"
         }
     },

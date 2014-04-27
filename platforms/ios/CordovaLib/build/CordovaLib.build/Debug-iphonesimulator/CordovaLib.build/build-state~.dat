@@ -1,1184 +1,0 @@
-TCordovaLib
-v6
-r1
-cCheck dependencies
-cCpHeader Classes/NSDictionary+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-cCpHeader Classes/CDVInvokedUrlCommand.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-cCpHeader Classes/CDVPluginResult.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-cCpHeader Classes/NSData+Base64.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-cCpHeader Classes/CDVPlugin.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-cCpHeader Classes/CDVDebug.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-cCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-cCpHeader Classes/CDVWhitelist.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-cCpHeader Classes/CDVURLProtocol.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-cCpHeader Classes/CDVViewController.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-cCpHeader Classes/CDVCommandDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-cCpHeader Classes/CDV.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h
-cCpHeader Classes/CDVAvailability.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-cCpHeader Classes/CDVLocalStorage.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-cCpHeader Classes/UIDevice+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-cCpHeader Classes/NSArray+Comparisons.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-cCpHeader Classes/CDVCommandQueue.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-cCpHeader Classes/CDVCommandDelegateImpl.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-cCpHeader Classes/CDVShared.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-cCpHeader Classes/CDVScreenOrientationDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-cCpHeader Classes/CDVConfigParser.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-cCpHeader Classes/CDVJSON.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-cCpHeader Classes/CDVWebViewDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-cCpHeader Classes/CDVUserAgentUtil.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-cCpHeader Classes/CDVTimer.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-cProcessPCH /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLibtool /Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a normal i386
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
-c000000005353A7340000000000000198
-t1397991220
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
-c00000000532DACF600000000000003B4
-t1395502326
-s948
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000532DAD08000000000000019E
-t1395502344
-s414
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDV.h
-c0000000053591FC80000000000000516
-t1398349768
-s1302
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-c0000000053591FC80000000000000CDD
-t1398349768
-s3293
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-c0000000053591FC800000000000008BA
-t1398349768
-s2234
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-c0000000053591FC800000000000004B5
-t1398349768
-s1205
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
-c0000000053591FC80000000000001491
-t1398349768
-s5265
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-c0000000053591FC80000000000000503
-t1398349768
-s1283
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
-c0000000053591FC80000000000001EB7
-t1398349768
-s7863
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
-c0000000053591FC800000000000004CB
-t1398349768
-s1227
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
-c0000000053591FC80000000000000EB2
-t1398349768
-s3762
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVDebug.h
-c0000000053591FC80000000000000401
-t1398349768
-s1025
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-c0000000053591FC800000000000007E6
-t1398349768
-s2022
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
-c0000000053591FC80000000000000DDE
-t1398349768
-s3550
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-c0000000053591FC800000000000003DA
-t1398349768
-s986
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m
-c0000000053591FC800000000000009A1
-t1398349768
-s2465
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-c0000000053591FC800000000000006CF
-t1398349768
-s1743
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
-c0000000053591FC80000000000004C7E
-t1398349768
-s19582
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-c0000000053591FC80000000000000892
-t1398349768
-s2194
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m
-c0000000053591FC800000000000016AE
-t1398349768
-s5806
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-c0000000053591FC80000000000000C13
-t1398349768
-s3091
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
-c0000000053591FC80000000000001B29
-t1398349768
-s6953
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-c0000000053591FC80000000000000408
-t1398349768
-s1032
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.h
-c0000000053591FC800000000000003E6
-t1398349768
-s998
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m
-c0000000053591FC800000000000006B6
-t1398349768
-s1718
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.h
-c0000000053591FC8000000000000038D
-t1398349768
-s909
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m
-c0000000053591FC80000000000000AA2
-t1398349768
-s2722
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-c0000000053591FC8000000000000041C
-t1398349768
-s1052
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
-c0000000053591FC8000000000000259E
-t1398349768
-s9630
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
-c0000000053591FC80000000000000421
-t1398349768
-s1057
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
-c0000000053591FC8000000000000133E
-t1398349768
-s4926
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h
-c0000000053591FC80000000000000ACC
-t1398349768
-s2764
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m
-c0000000053591FC80000000000008FB3
-t1398349768
-s36787
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
-c0000000053591FC800000000000005A2
-t1398349768
-s1442
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
-c0000000053591FC80000000000003764
-t1398349768
-s14180
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-c0000000053591FC800000000000004B4
-t1398349768
-s1204
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
-c0000000053591FC80000000000002814
-t1398349768
-s10260
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-c0000000053591FC80000000000000392
-t1398349768
-s914
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
-c0000000053591FC800000000000004D8
-t1398349768
-s1240
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-c0000000053591FC8000000000000037D
-t1398349768
-s893
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m
-c0000000053591FC800000000000022CC
-t1398349768
-s8908
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-c0000000053591FC800000000000005DA
-t1398349768
-s1498
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
-c0000000053591FC80000000000001059
-t1398349768
-s4185
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-c0000000053591FC800000000000003A0
-t1398349768
-s928
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
-c0000000053591FC80000000000000584
-t1398349768
-s1412
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-c0000000053591FC80000000000000476
-t1398349768
-s1142
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
-c0000000053591FC80000000000000620
-t1398349768
-s1568
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
-c0000000053591FC80000000000000346
-t1398349768
-s838
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o
-t1398352178
-s61352
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o
-t1398352178
-s61332
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o
-t1398352178
-s27416
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o
-t1398352177
-s18216
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o
-t1398352178
-s10544
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o
-t1398352178
-s106404
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o
-t1398352178
-s57088
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o
-t1398352177
-s36608
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o
-t1398352179
-s9016
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o
-t1398352179
-s22584
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o
-t1398352178
-s68864
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o
-t1398352179
-s50720
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o
-t1398352179
-s162968
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o
-t1398352179
-s67860
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o
-t1398352177
-s42396
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList
-c000000005359292E0000000000000C3F
-t1398352174
-s3135
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o
-t1398352178
-s7188
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o
-t1398352177
-s10880
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o
-t1398352177
-s17300
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o
-t1398352177
-s6744
-
-N/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o
-t1398352178
-s9164
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h
-t1398055084
-s1302
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-t1398055084
-s3293
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-t1398055084
-s2234
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-t1398055084
-s1205
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-t1398055084
-s1283
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-t1398055084
-s1227
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-t1398055084
-s1025
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-t1398055084
-s2022
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-t1398055084
-s986
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-t1398055084
-s1743
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-t1398055084
-s2194
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-t1398055084
-s3091
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-t1398055084
-s1032
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-t1398055084
-s998
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-t1398055084
-s909
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-t1398055084
-s1052
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-t1398055084
-s1057
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-t1398055084
-s2764
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-t1398055084
-s1442
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-t1398055084
-s1204
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-t1398055084
-s914
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-t1398055084
-s893
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-t1398055084
-s1498
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-t1398055084
-s928
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-t1398055084
-s1142
-
-N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a
-t1398247321
-s862344
-
-N/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch
-t1398352177
-s3238992
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies97fd5ead6009b941^02460fae6009b941^---0#1#1#--18"Check dependencies36"AD765A9C-0C65-4366-BD75-C3D91339E211-
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.629306
-e420044978.994368
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m232"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o [1mClasses/CDVCommandDelegateImpl.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0054a1b26009b941^e5effeb26009b941^---0#0#1#-19%DVTDocumentLocation2@95"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m0000000000000000^3849"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o [1mClasses/CDVCommandDelegateImpl.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o36"1A26738F-46FB-4B21-94AE-BE371F23B9F3-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.601746
-e420044978.965169
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDV.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m218"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o [1mClasses/CDVCommandQueue.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc53d9ab26009b941^5309f7b26009b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m0000000000000000^3807"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o [1mClasses/CDVCommandQueue.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandQueue.o36"8F03664F-15FE-4918-B7F6-A27CB9920017-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.833017
-e420044978.909151
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m218"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o [1mClasses/CDVConfigParser.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerfb73d5b26009b941^66d8e8b26009b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m0000000000000000^3807"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o [1mClasses/CDVConfigParser.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVConfigParser.o36"AEC446F5-B739-4938-99FC-4B2F861C5065-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.334315
-e420044977.588867
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m228"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o [1mClasses/CDVInvokedUrlCommand.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler23d755b16009b941^79e996b16009b941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m0000000000000000^3837"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o [1mClasses/CDVInvokedUrlCommand.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o36"7B2B0A7F-3BFE-4E55-9F00-E9928263A00C-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.910489
-e420044978.963738
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m202"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o [1mClasses/CDVJSON.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4260e9b26009b941^a2ebf6b26009b941^---0#0#1#-19%DVTDocumentLocation2@80"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m0000000000000000^3759"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o [1mClasses/CDVJSON.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVJSON.o36"D7638CB2-05F7-4E5A-B223-3D146EA4C0D0-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.902539
-e420044978.628669
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDV.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m218"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o [1mClasses/CDVLocalStorage.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilercd3ae7b16009b941^0801a1b26009b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m0000000000000000^3807"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o [1mClasses/CDVLocalStorage.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVLocalStorage.o36"BDF75E63-27FC-4DDE-B0DE-B3D7BFB8FBCB-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.589360
-e420044978.503547
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m206"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o [1mClasses/CDVPlugin.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler0b5f97b16009b941^d9e880b26009b941^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m0000000000000000^3771"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o [1mClasses/CDVPlugin.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o36"9A76F461-28FD-4377-BF22-06818463D33C-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.335535
-e420044977.658082
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection89"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m218"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o [1mClasses/CDVPluginResult.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera03256b16009b941^12bda8b16009b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m0000000000000000^3807"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o [1mClasses/CDVPluginResult.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o36"6E2E9157-CB43-4DA7-BACF-DA45247AF7B8-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044979.076247
-e420044979.176698
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m206"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o [1mClasses/CDVShared.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3dd713b36009b941^a7582db36009b941^---0#0#1#-19%DVTDocumentLocation2@82"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m0000000000000000^3771"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o [1mClasses/CDVShared.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVShared.o36"2C9A9352-9844-459E-86C5-E943F4C8C9F1-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.994888
-e420044979.075763
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection82"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m204"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o [1mClasses/CDVTimer.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5ce4feb26009b941^0a6713b36009b941^---0#0#1#-19%DVTDocumentLocation2@81"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m0000000000000000^3765"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o [1mClasses/CDVTimer.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVTimer.o36"EEF775E2-6647-4E15-8C30-47763B90959E-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.658564
-e420044978.543743
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m216"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o [1mClasses/CDVURLProtocol.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler2e04a9b16009b941^368f8bb26009b941^---0#0#1#-19%DVTDocumentLocation2@87"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m0000000000000000^3801"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o [1mClasses/CDVURLProtocol.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVURLProtocol.o36"1C0F099D-542C-4571-8BC6-231EFE900AD0-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.964785
-e420044979.275214
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m220"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o [1mClasses/CDVUserAgentUtil.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler6230f7b26009b941^107a46b36009b941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m0000000000000000^3813"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o [1mClasses/CDVUserAgentUtil.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVUserAgentUtil.o36"B13E6BD2-F8FB-47D5-B311-D0A1DC93329C-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.678289
-e420044979.238360
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDV.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVDebug.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m222"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o [1mClasses/CDVViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler89cfadb16009b941^f3203db36009b941^---0#0#1#-19%DVTDocumentLocation2@90"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m0000000000000000^3819"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o [1mClasses/CDVViewController.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVViewController.o36"D482867E-03FF-4FC4-BE3D-5ECB4A4B7E89-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.966446
-e420044979.285664
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m224"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o [1mClasses/CDVWebViewDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerfa98f7b26009b941^de2149b36009b941^---0#0#1#-19%DVTDocumentLocation2@91"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m0000000000000000^3825"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o [1mClasses/CDVWebViewDelegate.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWebViewDelegate.o36"FC5BD218-4588-4CC3-8075-0E1764C4A649-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.596065
-e420044977.902248
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m212"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o [1mClasses/CDVWhitelist.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler772d99b16009b941^caf9e6b16009b941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m0000000000000000^3789"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o [1mClasses/CDVWhitelist.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVWhitelist.o36"D81EEFC2-7619-4E6B-B94E-8BB1B20C4B09-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.544298
-e420044978.600227
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m226"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o [1mClasses/NSArray+Comparisons.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera08a8bb26009b941^dcf699b26009b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m0000000000000000^3831"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o [1mClasses/NSArray+Comparisons.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSArray+Comparisons.o36"4909048B-4B33-4B10-9DAF-02E3EF9AD251-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.334897
-e420044977.589867
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m214"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o [1mClasses/NSData+Base64.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler483756b16009b941^613497b16009b941^---0#0#1#-19%DVTDocumentLocation2@86"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m0000000000000000^3795"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o [1mClasses/NSData+Base64.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o36"AEC5B487-A5A7-4DB4-A7D4-DFF8E9E76D48-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.333889
-e420044977.595523
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m234"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o [1mClasses/NSDictionary+Extensions.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilered9d55b16009b941^707998b16009b941^---0#0#1#-19%DVTDocumentLocation2@96"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m0000000000000000^3855"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o [1mClasses/NSDictionary+Extensions.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o36"BBE5119D-2058-4C3E-8A2C-18F70554259C-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044977.592772
-e420044977.677794
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m246"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o [1mClasses/NSMutableArray+QueueAdditions.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbff397b16009b941^a393adb16009b941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m0000000000000000^3891"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o [1mClasses/NSMutableArray+QueueAdditions.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o36"1CBCE92E-9B8A-4AA1-A82E-871C30DA0869-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044978.504088
-e420044978.831704
-r1
-xCompileC
-xbuild/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o
-x/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection93"Compile /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m226"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o [1mClasses/UIDevice+Extensions.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler197581b26009b941^ac19d5b26009b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m0000000000000000^3831"[1mCompileC[0m build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o [1mClasses/UIDevice+Extensions.m[0m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG -include /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch -MMD -MT dependencies -MF /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.d --serialize-diagnostics /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.dia -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.m -o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/UIDevice+Extensions.o36"074F585B-8568-4B26-969F-5512BE291146-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDV.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h
-s420044974.100145
-e420044974.102073
-r1
-xCpHeader
-xClasses/CDV.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h120"[1mCpHeader[0m Classes/CDV.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h[0mbdc319ae6009b941^03791aae6009b941^---0#0#1#-19%DVTDocumentLocation2@88"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h0000000000000000^794"[1mCpHeader[0m Classes/CDV.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDV.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"A9340FAD-0532-4D7B-A289-45F34EBE9213-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVAvailability.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-s420044974.101573
-e420044974.103685
-r1
-xCpHeader
-xClasses/CDVAvailability.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h144"[1mCpHeader[0m Classes/CDVAvailability.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h[0m8b371aae6009b941^04af1aae6009b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h0000000000000000^830"[1mCpHeader[0m Classes/CDVAvailability.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVAvailability.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"589CCBA2-0E0F-41E7-86CF-3CEEBD5F96C7-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVCommandDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-s420044974.098058
-e420044974.100806
-r1
-xCpHeader
-xClasses/CDVCommandDelegate.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h150"[1mCpHeader[0m Classes/CDVCommandDelegate.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h[0mf83619ae6009b941^5c1b1aae6009b941^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h0000000000000000^839"[1mCpHeader[0m Classes/CDVCommandDelegate.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"F81FCF91-6AF3-427E-BCF1-BCCB5C7270DC-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVCommandDelegateImpl.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-s420044974.106016
-e420044974.111203
-r1
-xCpHeader
-xClasses/CDVCommandDelegateImpl.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h158"[1mCpHeader[0m Classes/CDVCommandDelegateImpl.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h[0m529c1bae6009b941^0a661cae6009b941^---0#0#1#-19%DVTDocumentLocation2@107"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h0000000000000000^851"[1mCpHeader[0m Classes/CDVCommandDelegateImpl.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"0EF1428B-5596-404B-97A1-F8E2371EE1CD-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVCommandQueue.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-s420044974.104065
-e420044974.106409
-r1
-xCpHeader
-xClasses/CDVCommandQueue.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h144"[1mCpHeader[0m Classes/CDVCommandQueue.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h[0m28d51aae6009b941^93fd1bae6009b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h0000000000000000^830"[1mCpHeader[0m Classes/CDVCommandQueue.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandQueue.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"8F95CF09-CB23-4145-9DC0-D7DFDCB8E307-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVConfigParser.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-s420044974.108755
-e420044974.111913
-r1
-xCpHeader
-xClasses/CDVConfigParser.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h144"[1mCpHeader[0m Classes/CDVConfigParser.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h[0m45f41bae6009b941^af951cae6009b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h0000000000000000^830"[1mCpHeader[0m Classes/CDVConfigParser.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVConfigParser.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"D78B19EF-D112-4C7D-87F8-280C36ACC4E4-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVDebug.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-s420044974.088575
-e420044974.099090
-r1
-xCpHeader
-xClasses/CDVDebug.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h130"[1mCpHeader[0m Classes/CDVDebug.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h[0m931818ae6009b941^1cec19ae6009b941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h0000000000000000^809"[1mCpHeader[0m Classes/CDVDebug.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVDebug.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"E8D2FF0D-79DC-464C-92AE-5AB3E9F2C31E-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVInvokedUrlCommand.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-s420044974.078686
-e420044974.083533
-r1
-xCpHeader
-xClasses/CDVInvokedUrlCommand.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h154"[1mCpHeader[0m Classes/CDVInvokedUrlCommand.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h[0me15f14ae6009b941^516c15ae6009b941^---0#0#1#-19%DVTDocumentLocation2@105"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h0000000000000000^845"[1mCpHeader[0m Classes/CDVInvokedUrlCommand.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"06EE7B2D-23DD-40ED-8C28-0BF2C5761B1A-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVJSON.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-s420044974.112129
-e420044974.114486
-r1
-xCpHeader
-xClasses/CDVJSON.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h128"[1mCpHeader[0m Classes/CDVJSON.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h[0m04e31cae6009b941^b4551dae6009b941^---0#0#1#-19%DVTDocumentLocation2@92"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h0000000000000000^806"[1mCpHeader[0m Classes/CDVJSON.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVJSON.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"01984737-DEE8-4AAE-94CA-BCBE090EAC2E-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVLocalStorage.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-s420044974.102192
-e420044974.106288
-r1
-xCpHeader
-xClasses/CDVLocalStorage.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h144"[1mCpHeader[0m Classes/CDVLocalStorage.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h[0m16841aae6009b941^b2481bae6009b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h0000000000000000^830"[1mCpHeader[0m Classes/CDVLocalStorage.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVLocalStorage.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"2F1C6407-CB1E-4AC8-913E-D79DBAB01A91-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVPlugin.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-s420044974.084934
-e420044974.092803
-r1
-xCpHeader
-xClasses/CDVPlugin.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h132"[1mCpHeader[0m Classes/CDVPlugin.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h[0m3e4116ae6009b941^87a317ae6009b941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h0000000000000000^812"[1mCpHeader[0m Classes/CDVPlugin.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPlugin.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"5F478135-E208-4B7A-94B7-4A07CCA1F842-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVPluginResult.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-s420044974.081186
-e420044974.085189
-r1
-xCpHeader
-xClasses/CDVPluginResult.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h144"[1mCpHeader[0m Classes/CDVPluginResult.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h[0m4f0415ae6009b941^477516ae6009b941^---0#0#1#-19%DVTDocumentLocation2@100"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h0000000000000000^830"[1mCpHeader[0m Classes/CDVPluginResult.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVPluginResult.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"11F755F1-6452-4446-809C-81EC70AADCF3-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVScreenOrientationDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-s420044974.107111
-e420044974.111571
-r1
-xCpHeader
-xClasses/CDVScreenOrientationDelegate.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h170"[1mCpHeader[0m Classes/CDVScreenOrientationDelegate.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h[0m51bb1bae6009b941^f27a1cae6009b941^---0#0#1#-19%DVTDocumentLocation2@113"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h0000000000000000^869"[1mCpHeader[0m Classes/CDVScreenOrientationDelegate.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVScreenOrientationDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"4CD96E30-A964-47FC-80DF-403C7700B835-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVShared.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-s420044974.106239
-e420044974.111847
-r1
-xCpHeader
-xClasses/CDVShared.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h132"[1mCpHeader[0m Classes/CDVShared.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h[0mf46b1bae6009b941^36221cae6009b941^---0#0#1#-19%DVTDocumentLocation2@94"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h0000000000000000^812"[1mCpHeader[0m Classes/CDVShared.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVShared.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"13621731-1E6A-4CF5-B170-C5FD6C8D70CF-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVTimer.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-s420044974.114180
-e420044974.116009
-r1
-xCpHeader
-xClasses/CDVTimer.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h130"[1mCpHeader[0m Classes/CDVTimer.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h[0mbd6e1dae6009b941^56bc1dae6009b941^---0#0#1#-19%DVTDocumentLocation2@93"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h0000000000000000^809"[1mCpHeader[0m Classes/CDVTimer.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVTimer.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"B9BF7D11-7331-4D3E-8162-B866B7A877BC-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVURLProtocol.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-s420044974.093776
-e420044974.096971
-r1
-xCpHeader
-xClasses/CDVURLProtocol.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h142"[1mCpHeader[0m Classes/CDVURLProtocol.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h[0m622f18ae6009b941^78d319ae6009b941^---0#0#1#-19%DVTDocumentLocation2@99"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h0000000000000000^827"[1mCpHeader[0m Classes/CDVURLProtocol.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVURLProtocol.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"7EFFA2F7-0139-4950-8366-667ED5EA2D37-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVUserAgentUtil.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-s420044974.113663
-e420044974.115671
-r1
-xCpHeader
-xClasses/CDVUserAgentUtil.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h146"[1mCpHeader[0m Classes/CDVUserAgentUtil.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h[0m56481dae6009b941^7db31dae6009b941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h0000000000000000^833"[1mCpHeader[0m Classes/CDVUserAgentUtil.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVUserAgentUtil.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"D9DCC8B4-865B-4556-B78F-29A3C238FB74-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVViewController.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-s420044974.096569
-e420044974.101026
-r1
-xCpHeader
-xClasses/CDVViewController.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h148"[1mCpHeader[0m Classes/CDVViewController.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h[0m7b4f19ae6009b941^98301aae6009b941^---0#0#1#-19%DVTDocumentLocation2@102"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h0000000000000000^836"[1mCpHeader[0m Classes/CDVViewController.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVViewController.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"072B2516-FE8F-4BB3-9DC8-018CA61BF533-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVWebViewDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-s420044974.113323
-e420044974.115331
-r1
-xCpHeader
-xClasses/CDVWebViewDelegate.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection101"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h150"[1mCpHeader[0m Classes/CDVWebViewDelegate.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h[0me63e1dae6009b941^e59b1dae6009b941^---0#0#1#-19%DVTDocumentLocation2@103"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h0000000000000000^839"[1mCpHeader[0m Classes/CDVWebViewDelegate.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWebViewDelegate.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"CD87EC8F-D3C4-4255-8BC7-255E771F5D11-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/CDVWhitelist.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-s420044974.092754
-e420044974.101168
-r1
-xCpHeader
-xClasses/CDVWhitelist.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h138"[1mCpHeader[0m Classes/CDVWhitelist.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h[0m8ae718ae6009b941^4a421aae6009b941^---0#0#1#-19%DVTDocumentLocation2@97"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h0000000000000000^821"[1mCpHeader[0m Classes/CDVWhitelist.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVWhitelist.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"AF2897BF-5B60-4A2D-817A-9B1936985237-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/NSArray+Comparisons.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-s420044974.103554
-e420044974.106029
-r1
-xCpHeader
-xClasses/NSArray+Comparisons.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h152"[1mCpHeader[0m Classes/NSArray+Comparisons.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h[0m0fb81aae6009b941^cc271bae6009b941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h0000000000000000^842"[1mCpHeader[0m Classes/NSArray+Comparisons.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSArray+Comparisons.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"E3406787-E09F-4363-9423-A31A5761CD3F-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/NSData+Base64.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-s420044974.082672
-e420044974.090919
-r1
-xCpHeader
-xClasses/NSData+Base64.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h140"[1mCpHeader[0m Classes/NSData+Base64.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h[0m030516ae6009b941^d7db16ae6009b941^---0#0#1#-19%DVTDocumentLocation2@98"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h0000000000000000^824"[1mCpHeader[0m Classes/NSData+Base64.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSData+Base64.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"92D904A3-CBD6-412F-AB75-CCBE63C66064-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/NSDictionary+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-s420044974.078479
-e420044974.083623
-r1
-xCpHeader
-xClasses/NSDictionary+Extensions.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h160"[1mCpHeader[0m Classes/NSDictionary+Extensions.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h[0m54c914ae6009b941^cafe15ae6009b941^---0#0#1#-19%DVTDocumentLocation2@108"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h0000000000000000^854"[1mCpHeader[0m Classes/NSDictionary+Extensions.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"41D504F0-BB9D-45A9-9C58-0E72243C8710-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/NSMutableArray+QueueAdditions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-s420044974.090871
-e420044974.096291
-r1
-xCpHeader
-xClasses/NSMutableArray+QueueAdditions.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h172"[1mCpHeader[0m Classes/NSMutableArray+QueueAdditions.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h[0mc1c817ae6009b941^6d5619ae6009b941^---0#0#1#-19%DVTDocumentLocation2@114"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h0000000000000000^872"[1mCpHeader[0m Classes/NSMutableArray+QueueAdditions.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"5D80B7D5-B0C2-417D-8952-5C571FA7498C-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CCpHeader Classes/UIDevice+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-s420044974.102374
-e420044974.105359
-r1
-xCpHeader
-xClasses/UIDevice+Extensions.h
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Copy /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h152"[1mCpHeader[0m Classes/UIDevice+Extensions.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h[0mb75f1aae6009b941^b5fa1aae6009b941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h0000000000000000^842"[1mCpHeader[0m Classes/UIDevice+Extensions.h [1m/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h[0m    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/UIDevice+Extensions.h /Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova36"3116C23C-D270-4FFE-91F0-4D63190B18F6-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CLibtool /Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a normal i386
-s420044979.288085
-e420044979.338184
-r1
-xLibtool
-x/Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a
-xnormal
-xi386
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"[1mLibtool[0m /Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a normal i386100"[1mLibtool[0m /Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a normal i386badb49b36009b941^af9356b36009b941^---0#0#1#--1116"[1mLibtool[0m /Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a normal i386    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export IPHONEOS_DEPLOYMENT_TARGET=5.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/thangpq/homeworktracker/platforms/ios/build/emulator -filelist /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/Cordova.LinkFileList -o /Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a36"1D9B07B1-CDDD-4DD1-A4A6-0735B28917E5-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-
-CProcessPCH /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s420044974.117197
-e420044977.332891
-r1
-xProcessPCH
-x/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch
-xCordovaLib_Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/CordovaLib_Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection32"Precompile CordovaLib_Prefix.pch299"[1mProcessPCH[0m /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4e2a1eae6009b941^ce3855b16009b941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/thangpq/homeworktracker/platforms/ios/CordovaLib/CordovaLib_Prefix.pch0000000000000000^3796"[1mProcessPCH[0m /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/thangpq/homeworktracker/platforms/ios/CordovaLib    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/platform-tools://Users/thangpq/Downloads/adt-bundle-mac-x86_64-20140321/sdk/tools"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=80 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-generated-files.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-own-target-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-all-target-headers.hmap -iquote /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Cordova-project-headers.hmap -I/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources/i386 -I/Users/thangpq/homeworktracker/platforms/ios/CordovaLib/build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/DerivedSources -F/Users/thangpq/homeworktracker/platforms/ios/build/emulator -DDEBUG --serialize-diagnostics /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.d -c /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/CordovaLib_Prefix.pch -o /var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch36"55C88647-9CED-4730-AA21-DDEB4AED620C-
-b33B0409C-D364-400A-AEC2-F9B2FABD0A1E
-

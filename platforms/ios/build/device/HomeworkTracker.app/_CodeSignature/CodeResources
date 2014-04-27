@@ -38,7 +38,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		DO7BLWZwWPDo/MvKjogVmWCXsH4=
+		0bfWuShBpxC9GyG3N9IcQ5APmKo=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		JNfskkLyodbgaqlqBoRaoGzarJs=
+		IXAl8C2BWcKVujtDFmS8jKVS0BY=
 		</data>
 		<key>www/css/images/ajax-loader.gif</key>
 		<data>
@@ -1022,7 +1022,7 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		SBE9YEHDR5QB9fF7mEIHjT5FMFQ=
+		dGv5tqff0tK3lEpPXRjVOzYCKxw=
 		</data>
 		<key>www/js/finishedDB.js</key>
 		<data>
@@ -1071,6 +1071,10 @@
 		<key>www/phonegap.js</key>
 		<data>
 		PdEhp1BvY4tJpLMiRKZUaiQlNg8=
+		</data>
+		<key>www/plugins/localnotification/www/localnotification.js</key>
+		<data>
+		osGV6xUE9Nzyk4ZmNTxm/bpq728=
 		</data>
 		<key>www/plugins/uk.co.ilee.nativetransitions/www/nativetransitions.js</key>
 		<data>
@@ -1274,7 +1278,7 @@
 		</data>
 		<key>www/statistics.html</key>
 		<data>
-		mvxJMAn56MNte2usT5fiyKOzwRQ=
+		uXCXOZgezUA2uHQNnPIzWTUCirw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1313,7 +1317,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		DO7BLWZwWPDo/MvKjogVmWCXsH4=
+		0bfWuShBpxC9GyG3N9IcQ5APmKo=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<data>
@@ -1409,7 +1413,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		JNfskkLyodbgaqlqBoRaoGzarJs=
+		IXAl8C2BWcKVujtDFmS8jKVS0BY=
 		</data>
 		<key>www/css/images/ajax-loader.gif</key>
 		<data>
@@ -2297,7 +2301,7 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		SBE9YEHDR5QB9fF7mEIHjT5FMFQ=
+		dGv5tqff0tK3lEpPXRjVOzYCKxw=
 		</data>
 		<key>www/js/finishedDB.js</key>
 		<data>
@@ -2346,6 +2350,10 @@
 		<key>www/phonegap.js</key>
 		<data>
 		PdEhp1BvY4tJpLMiRKZUaiQlNg8=
+		</data>
+		<key>www/plugins/localnotification/www/localnotification.js</key>
+		<data>
+		osGV6xUE9Nzyk4ZmNTxm/bpq728=
 		</data>
 		<key>www/plugins/uk.co.ilee.nativetransitions/www/nativetransitions.js</key>
 		<data>
@@ -2549,7 +2557,7 @@
 		</data>
 		<key>www/statistics.html</key>
 		<data>
-		mvxJMAn56MNte2usT5fiyKOzwRQ=
+		uXCXOZgezUA2uHQNnPIzWTUCirw=
 		</data>
 	</dict>
 	<key>rules</key>
