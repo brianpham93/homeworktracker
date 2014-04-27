@@ -381,108 +381,108 @@ t1398593709
 s9164
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDV.h
-t1398352174
+t1398593705
 s1302
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-t1398352174
+t1398593705
 s3293
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-t1398352174
+t1398593705
 s2234
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-t1398352174
+t1398593705
 s1205
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-t1398352174
+t1398593705
 s1283
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVConfigParser.h
-t1398352174
+t1398593705
 s1227
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVDebug.h
-t1398352174
+t1398593705
 s1025
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-t1398352174
+t1398593705
 s2022
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVJSON.h
-t1398352174
+t1398593705
 s986
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVLocalStorage.h
-t1398352174
+t1398593705
 s1743
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-t1398352174
-s2194
+t1398593705
+s2195
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-t1398352174
+t1398593705
 s3091
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-t1398352174
+t1398593705
 s1032
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVShared.h
-t1398352174
+t1398593705
 s998
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
-t1398352174
+t1398593705
 s909
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVURLProtocol.h
-t1398352174
+t1398593705
 s1052
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVUserAgentUtil.h
-t1398352174
+t1398593705
 s1057
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-t1398352174
+t1398593705
 s2764
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWebViewDelegate.h
-t1398352174
+t1398593705
 s1442
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-t1398352174
+t1398593705
 s1204
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSArray+Comparisons.h
-t1398352174
+t1398593705
 s914
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSData+Base64.h
-t1398352174
+t1398593705
 s893
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSDictionary+Extensions.h
-t1398352174
+t1398593705
 s1498
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-t1398352174
+t1398593705
 s928
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/include/Cordova/UIDevice+Extensions.h
-t1398352174
+t1398593705
 s1142
 
 N/Users/thangpq/homeworktracker/platforms/ios/build/emulator/libCordova.a
-t1398352179
-s862344
+t1398593709
+s865024
 
 N/var/folders/qq/_2ffpgcd5_z4d_7v6q94wl8w0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-cqgwcucbeyhsvnfknxdwxbzkkelj/CordovaLib_Prefix.pch.pch
 t1398593707
@@ -490,7 +490,7 @@ s3238996
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesa2edf827100db941^66c17829100db941^---0#1#1#--18"Check dependencies36"955258C9-EBD4-4D81-9619-25F2F71DA231-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies22c27b59120db941^7c62ad59120db941^---0#1#1#--18"Check dependencies36"1E590973-04D1-4E4F-AD67-3D597E77DBF5-
 
 CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/thangpq/homeworktracker/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s420286509.005463
