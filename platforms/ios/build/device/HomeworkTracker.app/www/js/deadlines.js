@@ -1,3 +1,5 @@
+
+
 (function( $, undefined ) {
 	//special click handling to make widget work remove after nav changes in 1.4
 	var href,

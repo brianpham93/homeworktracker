@@ -1,6 +1,4 @@
-window.addEventListener('load', function() {
-    FastClick.attach(document.body);
-}, false);<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -22,7 +20,7 @@ window.addEventListener('load', function() {
 </script>
 
 <script type="text/javascript">
-var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finishedList" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missedList" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadline" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Test score statistics"><a href="statistics.html" data-ajax="false">Test score statistics</a></li><li data-filtertext="Class Manager"><a href="#classlist" data-transition = "slide" >Class management</a></li></ul></div>';
+var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finishedList" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missedList" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadline" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Class Manager"><a href="#classlist" data-transition = "slide" >Class management</a></li></ul></div>';
 
 $(document).one('pagebeforecreate', function () {
     $.mobile.pageContainer.prepend(panel);

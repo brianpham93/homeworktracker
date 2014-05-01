@@ -533,9 +533,9 @@ function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbT
 function updateSuccessCB(tx){
 	//alert("Saved successfully");
 		
-	$.mobile.changePage($("#deadlineList"));
-	
-	$("#deadlineList").load(".ui-content");	
+	//$.mobile.changePage($("#deadlineList"));
+	window.location.hash ="#deadlineList";
+	//$("#deadlineList").load(".ui-content");	
 }
 
 function deleteDeadline(){
