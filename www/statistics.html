@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
   <head>
     <link rel="stylesheet" href="css/jqm-demos.css">
 	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
@@ -31,3 +32,60 @@
     </div>
    </body>
 </html>
+=======
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Deadlines</title>
+		<link rel="stylesheet" href="css/jqm-demos.css">
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/deadlines.js"></script>
+		<script src="js/jquery.mobile-1.4.2.min.js"></script>
+		<script src="js/jquery.mobile.router.js"></script>
+		<script src="js/iscroll.js"></script>
+	</head>
+	<body>
+		<div id = "header" data-role = "header" class="jqm-header ui-header"></div>
+		<div id="landmark-1" data-landmark-id ="1" data-role = "content" class="jqm-content ui-content">
+			<form>
+				<label for="email">
+					<b>Email</b>
+					<input type="email" id="email" name="email">
+				</label>
+
+				<label for="comment">
+					<b>Comment</b>
+					<textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+				</label>
+				
+				<input type="submit" value="Save">
+			</form>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('form').submit(function(){
+			var landmarkID = $(this).parent().attr('data-landmark-id');
+			var postData = $(this).serialize();
+			alert(landmarkID);
+			alert(postData);
+			
+			$.ajax({
+				type: 'POST',
+				data: postData+'&amp;lid='+landmarkID,
+				url: 'http://localhost:8080/project/save.php',
+				success: function(data){
+					alert(data);
+					alert('Your comment was successfully added');
+				},
+				error: function(){
+					alert(data);
+					alert('There was an error adding your comment');
+				}
+			});
+	
+			return false;
+		});
+	</script>
+</html>
+>>>>>>> FETCH_HEAD
