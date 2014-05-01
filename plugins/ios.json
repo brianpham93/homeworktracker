@@ -7,7 +7,9 @@
         "config.xml": {
             "/*": {
                 "<feature name=\"NativeTransitions\"><param name=\"ios-package\" value=\"NativeTransitions\" /><param name=\"onload\" value=\"true\" /></feature>": 1,
-                "<feature name=\"LocalNotification\"><param name=\"ios-package\" value=\"LocalNotification\" /></feature>": 1
+                "<feature name=\"LocalNotification\"><param name=\"ios-package\" value=\"LocalNotification\" /></feature>": 1,
+                "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>": 1,
+                "<feature name=\"LocalNotification\"><param name=\"ios-package\" onload=\"true\" value=\"APPLocalNotification\" /><param name=\"onload\" value=\"true\" /></feature>": 1
             }
         }
     },
@@ -17,7 +19,14 @@
         },
         "localnotification": {
             "PACKAGE_NAME": "ThangPhamQuoc"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "ThangPhamQuoc"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "ThangPhamQuoc"
+        }
+    }
 }

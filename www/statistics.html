@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--Load the AJAX API-->
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript">
-
-    // Load the Visualization API and the piechart package.
-    google.load('visualization', '1', {'packages':['corechart']});
-
-    // Set a callback to run when the Google Visualization API is loaded.
-    google.setOnLoadCallback(drawChart);
-    function drawChart() {
-  		var jsonData = $.ajax({
-  //			url: "getDataCSV.php",
-    			url: "http://thangpq.fall.vn/getDataJSON.php",
-    			dataType:"json",
-    			async: false
-  		}).responseText;
-
-  //		var arr = JSON.parse(jsonData);
-  //		var data = new google.visualization.arrayToDataTable(arr);
-  		var data = new google.visualization.DataTable(jsonData);
-
-        // Instantiate and draw our chart, passing in some options.
-  		var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-  //		var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
-        chart.draw(data, {width: 400, height: 240});
-    }
-
-    </script>
+    <link rel="stylesheet" href="css/jqm-demos.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/deadlines.js"></script>
+	<script src="js/jquery.mobile-1.4.2.min.js"></script>
+	<script src="js/jquery.mobile.router.js"></script>
+	<script src="js/iscroll.js"></script>
+    <script src="js/statistics.js"></script>
   </head>
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div id="chart_div"></div>
-  </body>
+    <div id="header" data-role="header" class="jqm-header ui-header"
+    <div id="landmark-1" data-landmark-id="1">
+    	<form>
+        	<label for="email">
+            <b>Email</b>
+            <input type="email" id="email" name="email">
+            </label>
+            
+            <label for="comment">
+            	<b>Comment</b>
+                <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+            </label>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+   </body>
 </html>

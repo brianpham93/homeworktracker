@@ -38,7 +38,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		0bfWuShBpxC9GyG3N9IcQ5APmKo=
+		rAT8VlHL8NzzvJJYb+YoN06rkts=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>www/config.xml</key>
 		<data>
-		LIN7lExeMfAwBLA7ZkdHj6p+kAI=
+		o3GqcYkPGQZmqJ2h11e7bFGk5VI=
 		</data>
 		<key>www/cordova.js</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		IXAl8C2BWcKVujtDFmS8jKVS0BY=
+		8Z+wKu2pDg/kfDZ0Fd5nNpc49BM=
 		</data>
 		<key>www/css/images/ajax-loader.gif</key>
 		<data>
@@ -1002,7 +1002,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		1lLnOztNAnTJV0gkwmjYdmOXJSU=
+		zBPOe5+VK3zucBsqf1ceiy3/j54=
 		</data>
 		<key>www/js/addNewClass.js</key>
 		<data>
@@ -1022,7 +1022,7 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		dGv5tqff0tK3lEpPXRjVOzYCKxw=
+		P9WSidAzST+YOrLDdwZL3u7TPzs=
 		</data>
 		<key>www/js/finishedDB.js</key>
 		<data>
@@ -1072,9 +1072,17 @@
 		<data>
 		PdEhp1BvY4tJpLMiRKZUaiQlNg8=
 		</data>
+		<key>www/plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js</key>
+		<data>
+		lEeTkbq9sOSK7JTBq9YvEqmcurY=
+		</data>
 		<key>www/plugins/localnotification/www/localnotification.js</key>
 		<data>
 		osGV6xUE9Nzyk4ZmNTxm/bpq728=
+		</data>
+		<key>www/plugins/org.apache.cordova.device/www/device.js</key>
+		<data>
+		0VB068Ut1MbjDx+uAiPrdNduO1Y=
 		</data>
 		<key>www/plugins/uk.co.ilee.nativetransitions/www/nativetransitions.js</key>
 		<data>
@@ -1317,7 +1325,7 @@
 		</data>
 		<key>config.xml</key>
 		<data>
-		0bfWuShBpxC9GyG3N9IcQ5APmKo=
+		rAT8VlHL8NzzvJJYb+YoN06rkts=
 		</data>
 		<key>de.lproj/Localizable.strings</key>
 		<data>
@@ -1405,7 +1413,7 @@
 		</data>
 		<key>www/config.xml</key>
 		<data>
-		LIN7lExeMfAwBLA7ZkdHj6p+kAI=
+		o3GqcYkPGQZmqJ2h11e7bFGk5VI=
 		</data>
 		<key>www/cordova.js</key>
 		<data>
@@ -1413,7 +1421,7 @@
 		</data>
 		<key>www/cordova_plugins.js</key>
 		<data>
-		IXAl8C2BWcKVujtDFmS8jKVS0BY=
+		8Z+wKu2pDg/kfDZ0Fd5nNpc49BM=
 		</data>
 		<key>www/css/images/ajax-loader.gif</key>
 		<data>
@@ -2281,7 +2289,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		1lLnOztNAnTJV0gkwmjYdmOXJSU=
+		zBPOe5+VK3zucBsqf1ceiy3/j54=
 		</data>
 		<key>www/js/addNewClass.js</key>
 		<data>
@@ -2301,7 +2309,7 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		dGv5tqff0tK3lEpPXRjVOzYCKxw=
+		P9WSidAzST+YOrLDdwZL3u7TPzs=
 		</data>
 		<key>www/js/finishedDB.js</key>
 		<data>
@@ -2351,9 +2359,17 @@
 		<data>
 		PdEhp1BvY4tJpLMiRKZUaiQlNg8=
 		</data>
+		<key>www/plugins/de.appplant.cordova.plugin.local-notification/www/local-notification.js</key>
+		<data>
+		lEeTkbq9sOSK7JTBq9YvEqmcurY=
+		</data>
 		<key>www/plugins/localnotification/www/localnotification.js</key>
 		<data>
 		osGV6xUE9Nzyk4ZmNTxm/bpq728=
+		</data>
+		<key>www/plugins/org.apache.cordova.device/www/device.js</key>
+		<data>
+		0VB068Ut1MbjDx+uAiPrdNduO1Y=
 		</data>
 		<key>www/plugins/uk.co.ilee.nativetransitions/www/nativetransitions.js</key>
 		<data>

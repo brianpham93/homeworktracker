@@ -26,6 +26,13 @@
     <feature name="LocalNotification">
         <param name="ios-package" value="LocalNotification" />
     </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="ios-package" onload="true" value="APPLocalNotification" />
+        <param name="onload" value="true" />
+    </feature>
     <name>HomeworkTracker</name>
     <description>
         HomeworkTracker
@@ -75,4 +82,5 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="http://127.0.0.1*" />
+    <access origin="http://thangpq.fall.vn" />
 </widget>
