@@ -1,12 +1,32 @@
 // JavaScript Document
 var id = "";
 var db = null;
+<<<<<<< HEAD
+=======
 
+localNotifier.addNotification({
+    fireDate        : Math.round(new Date().getTime()/1000 + 5),
+    alertBody       : "This is a new local notification.",
+    repeatInterval  : "daily",
+    soundName       : "horn.caf",
+    badge           : 0,
+    notificationId  : 123,
+    foreground      : function(notificationId){ 
+        alert("Hello World! This alert was triggered by notification " + notificationId); 
+    },
+    background  : function(notificationId){
+        alert("Hello World! This alert was triggered by notification " + notificationId);
+    }           
+});
 
-
+>>>>>>> parent of 2522709... Fixing Local Notification
 function onDeviceReady() {
 	
-	window.plugin.notification.local.add({ message: 'Great app!' });
+	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+	
+	db.transaction(populateDB, errorCB, successCB);
+	
+	db.transaction(getDeadlinesList, errorCB);
 }
 
 function populateDB(tx) {
@@ -126,7 +146,7 @@ function getAllFinishedDeadlines_success(tx, results) {
 	$('#allFinishedList').empty();
     for (var i = 0; i < len; i++) {
         var allFinishedDeadline = results.rows.item(i);
-        $('#allFinishedList').append('<li><a href="#DeadlineDetail" id = "'+allFinishedDeadline.id+'" data-transition = "slide"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
+        $('#allFinishedList').prepend('<li><a href="#DeadlineDetail" id = "'+allFinishedDeadline.id+'" data-transition = "slide"><del>' + allFinishedDeadline.class + '<br>' + allFinishedDeadline.duedate + '  ' + allFinishedDeadline.duetime + '<br>' + allFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#allFinishedList").listview().listview('refresh');
@@ -150,7 +170,7 @@ function getHomeworkFinishedDeadlines_success(tx, results) {
     for (var i = 0; i < len; i++) {
         var homeworkFinishedDeadline = results.rows.item(i);
 
-        $('#homeworkFinishedList').append('<li><a href="#DeadlineDetail" id = "'+homeworkFinishedDeadline.id+'" data-transition = "slide"><del>' + homeworkFinishedDeadline.class + '<br>' + homeworkFinishedDeadline.duedate + '    ' + homeworkFinishedDeadline.duetime + '<br>' + homeworkFinishedDeadline.description + '</del></a></li>');
+        $('#homeworkFinishedList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkFinishedDeadline.id+'" data-transition = "slide"><del>' + homeworkFinishedDeadline.class + '<br>' + homeworkFinishedDeadline.duedate + '    ' + homeworkFinishedDeadline.duetime + '<br>' + homeworkFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#homeworkFinishedList").listview().listview('refresh');
@@ -174,7 +194,7 @@ function getTestFinishedDeadlines_success(tx, results) {
     for (var i = 0; i < len; i++) {
         var testFinishedDeadline = results.rows.item(i);
 
-        $('#testFinishedList').append('<li><a href="#DeadlineDetail" id = "'+testFinishedDeadline.id+'" data-transition = "slide"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
+        $('#testFinishedList').prepend('<li><a href="#DeadlineDetail" id = "'+testFinishedDeadline.id+'" data-transition = "slide"><del>' + testFinishedDeadline.class + '<br>' + testFinishedDeadline.duedate + '    ' + testFinishedDeadline.duetime + '<br>' + testFinishedDeadline.description + '</del></a></li>');
 
     }
     $("#testFinishedList").listview().listview('refresh');
@@ -208,7 +228,7 @@ function getAllMissedDeadlines_success(tx, results){
 		var allMissedDeadline = results.rows.item(i);
 		var result = isLate(allMissedDeadline.duedate, allMissedDeadline.duetime).toString();
 		if ( result == "false"){
-			$('#allMissedList').append('<li><a href="#DeadlineDetail" id = "'+allMissedDeadline.id+'" data-transition = "slide">'+ allMissedDeadline.class +'<br>'+ allMissedDeadline.duedate+'  '+ allMissedDeadline.duetime+'<br>'+ allMissedDeadline.description +'</a></li>');
+			$('#allMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+allMissedDeadline.id+'" data-transition = "slide">'+ allMissedDeadline.class +'<br>'+ allMissedDeadline.duedate+'  '+ allMissedDeadline.duetime+'<br>'+ allMissedDeadline.description +'</a></li>');
 		}
 	}
 	$("#allMissedList").listview().listview('refresh');
@@ -234,7 +254,7 @@ function getHomeworkMissedDeadlines_success(tx, results){
 		////alert('result: ' + result);
 		if ( result == "false" ){
 			////alert('append');				
-			$('#homeworkMissedList').append('<li><a href="#DeadlineDetail" id = "'+homeworkMissedDeadline.id+'" data-transition = "slide">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
+			$('#homeworkMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkMissedDeadline.id+'" data-transition = "slide">'+ homeworkMissedDeadline.class + '<br>' + homeworkMissedDeadline.duedate+'    '+ homeworkMissedDeadline.duetime+'<br>'+ homeworkMissedDeadline.description +'</a></li>');
 		} 
 		else continue;;
 	}
@@ -260,7 +280,7 @@ function getTestMissedDeadlines_success(tx, results){
 		var testMissedDeadline = results.rows.item(i);
 		var result = isLate(testMissedDeadline.duedate, testMissedDeadline.duetime).toString();
 		if ( result == "false"){
-			$('#testMissedList').append('<li><a href="#DeadlineDetail" id = "'+testMissedDeadline.id+'" data-transition = "slide">'+ testMissedDeadline.class + '<br>' + testMissedDeadline.duedate+'    '+ testMissedDeadline.duetime+'<br>'+ testMissedDeadline.description +'</a></li>');
+			$('#testMissedList').prepend('<li><a href="#DeadlineDetail" id = "'+testMissedDeadline.id+'" data-transition = "slide">'+ testMissedDeadline.class + '<br>' + testMissedDeadline.duedate+'    '+ testMissedDeadline.duetime+'<br>'+ testMissedDeadline.description +'</a></li>');
 		}		
 	}
 	$("#testMissedList").listview().listview('refresh');

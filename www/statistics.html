@@ -1,91 +1,39 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
   <head>
-    <link rel="stylesheet" href="css/jqm-demos.css">
-	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
-	<script src="js/jquery.js"></script>
-	<script src="js/deadlines.js"></script>
-	<script src="js/jquery.mobile-1.4.2.min.js"></script>
-	<script src="js/jquery.mobile.router.js"></script>
-	<script src="js/iscroll.js"></script>
-    <script src="js/statistics.js"></script>
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+
+    // Load the Visualization API and the piechart package.
+    google.load('visualization', '1', {'packages':['corechart']});
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+  		var jsonData = $.ajax({
+  //			url: "getDataCSV.php",
+    			url: "http://thangpq.fall.vn/getDataJSON.php",
+    			dataType:"json",
+    			async: false
+  		}).responseText;
+
+  //		var arr = JSON.parse(jsonData);
+  //		var data = new google.visualization.arrayToDataTable(arr);
+  		var data = new google.visualization.DataTable(jsonData);
+
+        // Instantiate and draw our chart, passing in some options.
+  		var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+  //		var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 400, height: 240});
+    }
+
+    </script>
   </head>
 
   <body>
     <!--Div that will hold the pie chart-->
-    <div id="header" data-role="header" class="jqm-header ui-header"
-    <div id="landmark-1" data-landmark-id="1">
-    	<form>
-        	<label for="email">
-            <b>Email</b>
-            <input type="email" id="email" name="email">
-            </label>
-            
-            <label for="comment">
-            	<b>Comment</b>
-                <textarea id="comment" name="comment" cols="30" rows="10"></textarea>
-            </label>
-            
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-   </body>
+    <div id="chart_div"></div>
+  </body>
 </html>
-=======
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Deadlines</title>
-		<link rel="stylesheet" href="css/jqm-demos.css">
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
-		<script src="js/jquery.js"></script>
-		<script src="js/deadlines.js"></script>
-		<script src="js/jquery.mobile-1.4.2.min.js"></script>
-		<script src="js/jquery.mobile.router.js"></script>
-		<script src="js/iscroll.js"></script>
-	</head>
-	<body>
-		<div id = "header" data-role = "header" class="jqm-header ui-header"></div>
-		<div id="landmark-1" data-landmark-id ="1" data-role = "content" class="jqm-content ui-content">
-			<form>
-				<label for="email">
-					<b>Email</b>
-					<input type="email" id="email" name="email">
-				</label>
-
-				<label for="comment">
-					<b>Comment</b>
-					<textarea id="comment" name="comment" cols="30" rows="10"></textarea>
-				</label>
-				
-				<input type="submit" value="Save">
-			</form>
-		</div>
-	</body>
-	<script type="text/javascript">
-		$('form').submit(function(){
-			var landmarkID = $(this).parent().attr('data-landmark-id');
-			var postData = $(this).serialize();
-			alert(landmarkID);
-			alert(postData);
-			
-			$.ajax({
-				type: 'POST',
-				data: postData+'&amp;lid='+landmarkID,
-				url: 'http://localhost:8080/project/save.php',
-				success: function(data){
-					alert(data);
-					alert('Your comment was successfully added');
-				},
-				error: function(){
-					alert(data);
-					alert('There was an error adding your comment');
-				}
-			});
-	
-			return false;
-		});
-	</script>
-</html>
->>>>>>> FETCH_HEAD
