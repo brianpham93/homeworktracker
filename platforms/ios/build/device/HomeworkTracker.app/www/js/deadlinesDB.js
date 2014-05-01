@@ -1,25 +1,8 @@
 // JavaScript Document
 var id = "";
 var db = null;
-<<<<<<< HEAD
-=======
 
-localNotifier.addNotification({
-    fireDate        : Math.round(new Date().getTime()/1000 + 5),
-    alertBody       : "This is a new local notification.",
-    repeatInterval  : "daily",
-    soundName       : "horn.caf",
-    badge           : 0,
-    notificationId  : 123,
-    foreground      : function(notificationId){ 
-        alert("Hello World! This alert was triggered by notification " + notificationId); 
-    },
-    background  : function(notificationId){
-        alert("Hello World! This alert was triggered by notification " + notificationId);
-    }           
-});
 
->>>>>>> parent of 2522709... Fixing Local Notification
 function onDeviceReady() {
 	
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);

@@ -2,20 +2,6 @@
 var id = "";
 var db = null;
 
-localNotifier.addNotification({
-    fireDate        : Math.round(new Date().getTime()/1000 + 5),
-    alertBody       : "This is a new local notification.",
-    repeatInterval  : "daily",
-    soundName       : "horn.caf",
-    badge           : 0,
-    notificationId  : 123,
-    foreground      : function(notificationId){ 
-        alert("Hello World! This alert was triggered by notification " + notificationId); 
-    },
-    background  : function(notificationId){
-        alert("Hello World! This alert was triggered by notification " + notificationId);
-    }           
-});
 
 function onDeviceReady() {
 	
