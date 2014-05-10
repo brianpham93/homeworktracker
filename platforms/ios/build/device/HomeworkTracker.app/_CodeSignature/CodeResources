@@ -108,22 +108,6 @@
 		<data>
 		LUJ3txzytSByCRYLhax7yg/JkOk=
 		</data>
-		<key>www/addNewClass.html</key>
-		<data>
-		Qc1aZ2hB4VfbK4hf12dYUu++0i8=
-		</data>
-		<key>www/addNewDeadline.html</key>
-		<data>
-		lXus80KvVt5t1VLkWFMLmUk8YAY=
-		</data>
-		<key>www/classDetail.html</key>
-		<data>
-		0reWALlZFaMhGbB48RlbnObP0HI=
-		</data>
-		<key>www/classList.html</key>
-		<data>
-		nry1Z5WoOZCS/wBic8lFpteaT1k=
-		</data>
 		<key>www/config.xml</key>
 		<data>
 		LIN7lExeMfAwBLA7ZkdHj6p+kAI=
@@ -984,14 +968,6 @@
 		<data>
 		KNfyuPuTvHChOIx/stMn4sW6Ba8=
 		</data>
-		<key>www/deadlineDetail.html</key>
-		<data>
-		T1rnuFhNunmjlAt9/nBt6PeYnOA=
-		</data>
-		<key>www/finished.html</key>
-		<data>
-		Jh1MlbTOgrUYRVdzq3rzwvEZkSw=
-		</data>
 		<key>www/icon.png</key>
 		<data>
 		WQPi1/S8xecJqY25wk/ScyAA5XU=
@@ -1002,19 +978,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		u0AZxpukqZur+VK3Rl1GAEV0A+s=
-		</data>
-		<key>www/js/addNewClass.js</key>
-		<data>
-		fuejuYdSvnknSdXI8aOUSJ79Sc8=
-		</data>
-		<key>www/js/classDB.js</key>
-		<data>
-		+pAMaSpnOzmiQvoHpJJjDZkiqAE=
-		</data>
-		<key>www/js/database.js</key>
-		<data>
-		UhvDeLra/JJPl/dFOBfNrDofsNI=
+		hWZ+tyb//ZmXGJ+PAD26Q0XvZCs=
 		</data>
 		<key>www/js/deadlines.js</key>
 		<data>
@@ -1022,27 +986,11 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		QBoysxOqiLxGU6+I0fnQ6eYgJes=
+		JRctpyhawDMXIT0+zrAEjk2CgUM=
 		</data>
 		<key>www/js/fastclick.js</key>
 		<data>
 		GsPVekcRLSRd6GYRskvAbulostc=
-		</data>
-		<key>www/js/finishedDB.js</key>
-		<data>
-		kyz2SE5S/NKB4wWlR6B4M3W/z9M=
-		</data>
-		<key>www/js/getClassDetail.js</key>
-		<data>
-		VRqlnunpMKtBPLcD1VlTepZc7GY=
-		</data>
-		<key>www/js/getDeadlineDetail.js</key>
-		<data>
-		XZdWUY6ktyeq43ipZf3MTiTsY1U=
-		</data>
-		<key>www/js/index.js</key>
-		<data>
-		sGxwEeQULe93K3f5sH5uWvDyTgI=
 		</data>
 		<key>www/js/iscroll.js</key>
 		<data>
@@ -1060,17 +1008,77 @@
 		<data>
 		fus8DDUarULIAZuu7IB7w2E2OL4=
 		</data>
-		<key>www/js/missedDB.js</key>
+		<key>www/js/local-notification.js</key>
+		<data>
+		A3iiYImn1FSgd+MbcbUiofPGu3U=
+		</data>
+		<key>www/js/oldJS/addNewClass.js</key>
+		<data>
+		fuejuYdSvnknSdXI8aOUSJ79Sc8=
+		</data>
+		<key>www/js/oldJS/classDB.js</key>
+		<data>
+		+pAMaSpnOzmiQvoHpJJjDZkiqAE=
+		</data>
+		<key>www/js/oldJS/database.js</key>
+		<data>
+		UhvDeLra/JJPl/dFOBfNrDofsNI=
+		</data>
+		<key>www/js/oldJS/finishedDB.js</key>
+		<data>
+		kyz2SE5S/NKB4wWlR6B4M3W/z9M=
+		</data>
+		<key>www/js/oldJS/getClassDetail.js</key>
+		<data>
+		VRqlnunpMKtBPLcD1VlTepZc7GY=
+		</data>
+		<key>www/js/oldJS/getDeadlineDetail.js</key>
+		<data>
+		XZdWUY6ktyeq43ipZf3MTiTsY1U=
+		</data>
+		<key>www/js/oldJS/index.js</key>
+		<data>
+		sGxwEeQULe93K3f5sH5uWvDyTgI=
+		</data>
+		<key>www/js/oldJS/missedDB.js</key>
 		<data>
 		qZTsc8U42EhXZ5gGJ17MjU96Qwk=
 		</data>
-		<key>www/js/nativetransitions.js</key>
+		<key>www/js/oldJS/nativetransitions.js</key>
 		<data>
 		ujKqDQbzOFbtRYhc6d3N1fh5c5Q=
 		</data>
-		<key>www/missed.html</key>
+		<key>www/old html/addNewClass.html</key>
+		<data>
+		Qc1aZ2hB4VfbK4hf12dYUu++0i8=
+		</data>
+		<key>www/old html/addNewDeadline.html</key>
+		<data>
+		lXus80KvVt5t1VLkWFMLmUk8YAY=
+		</data>
+		<key>www/old html/classDetail.html</key>
+		<data>
+		0reWALlZFaMhGbB48RlbnObP0HI=
+		</data>
+		<key>www/old html/classList.html</key>
+		<data>
+		nry1Z5WoOZCS/wBic8lFpteaT1k=
+		</data>
+		<key>www/old html/deadlineDetail.html</key>
+		<data>
+		T1rnuFhNunmjlAt9/nBt6PeYnOA=
+		</data>
+		<key>www/old html/finished.html</key>
+		<data>
+		Jh1MlbTOgrUYRVdzq3rzwvEZkSw=
+		</data>
+		<key>www/old html/missed.html</key>
 		<data>
 		PQgHqasi2R/bX7SL/J/wBA5hxUI=
+		</data>
+		<key>www/old html/statistics.html</key>
+		<data>
+		uXCXOZgezUA2uHQNnPIzWTUCirw=
 		</data>
 		<key>www/phonegap.js</key>
 		<data>
@@ -1279,10 +1287,6 @@
 		<key>www/spec/lib/jasmine-1.2.0/jasmine.js</key>
 		<data>
 		UbuCXRtZstykBBa58lepG51icZw=
-		</data>
-		<key>www/statistics.html</key>
-		<data>
-		uXCXOZgezUA2uHQNnPIzWTUCirw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1391,22 +1395,6 @@
 		<data>
 		LUJ3txzytSByCRYLhax7yg/JkOk=
 		</data>
-		<key>www/addNewClass.html</key>
-		<data>
-		Qc1aZ2hB4VfbK4hf12dYUu++0i8=
-		</data>
-		<key>www/addNewDeadline.html</key>
-		<data>
-		lXus80KvVt5t1VLkWFMLmUk8YAY=
-		</data>
-		<key>www/classDetail.html</key>
-		<data>
-		0reWALlZFaMhGbB48RlbnObP0HI=
-		</data>
-		<key>www/classList.html</key>
-		<data>
-		nry1Z5WoOZCS/wBic8lFpteaT1k=
-		</data>
 		<key>www/config.xml</key>
 		<data>
 		LIN7lExeMfAwBLA7ZkdHj6p+kAI=
@@ -2267,14 +2255,6 @@
 		<data>
 		KNfyuPuTvHChOIx/stMn4sW6Ba8=
 		</data>
-		<key>www/deadlineDetail.html</key>
-		<data>
-		T1rnuFhNunmjlAt9/nBt6PeYnOA=
-		</data>
-		<key>www/finished.html</key>
-		<data>
-		Jh1MlbTOgrUYRVdzq3rzwvEZkSw=
-		</data>
 		<key>www/icon.png</key>
 		<data>
 		WQPi1/S8xecJqY25wk/ScyAA5XU=
@@ -2285,19 +2265,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		u0AZxpukqZur+VK3Rl1GAEV0A+s=
-		</data>
-		<key>www/js/addNewClass.js</key>
-		<data>
-		fuejuYdSvnknSdXI8aOUSJ79Sc8=
-		</data>
-		<key>www/js/classDB.js</key>
-		<data>
-		+pAMaSpnOzmiQvoHpJJjDZkiqAE=
-		</data>
-		<key>www/js/database.js</key>
-		<data>
-		UhvDeLra/JJPl/dFOBfNrDofsNI=
+		hWZ+tyb//ZmXGJ+PAD26Q0XvZCs=
 		</data>
 		<key>www/js/deadlines.js</key>
 		<data>
@@ -2305,27 +2273,11 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		QBoysxOqiLxGU6+I0fnQ6eYgJes=
+		JRctpyhawDMXIT0+zrAEjk2CgUM=
 		</data>
 		<key>www/js/fastclick.js</key>
 		<data>
 		GsPVekcRLSRd6GYRskvAbulostc=
-		</data>
-		<key>www/js/finishedDB.js</key>
-		<data>
-		kyz2SE5S/NKB4wWlR6B4M3W/z9M=
-		</data>
-		<key>www/js/getClassDetail.js</key>
-		<data>
-		VRqlnunpMKtBPLcD1VlTepZc7GY=
-		</data>
-		<key>www/js/getDeadlineDetail.js</key>
-		<data>
-		XZdWUY6ktyeq43ipZf3MTiTsY1U=
-		</data>
-		<key>www/js/index.js</key>
-		<data>
-		sGxwEeQULe93K3f5sH5uWvDyTgI=
 		</data>
 		<key>www/js/iscroll.js</key>
 		<data>
@@ -2343,17 +2295,77 @@
 		<data>
 		fus8DDUarULIAZuu7IB7w2E2OL4=
 		</data>
-		<key>www/js/missedDB.js</key>
+		<key>www/js/local-notification.js</key>
+		<data>
+		A3iiYImn1FSgd+MbcbUiofPGu3U=
+		</data>
+		<key>www/js/oldJS/addNewClass.js</key>
+		<data>
+		fuejuYdSvnknSdXI8aOUSJ79Sc8=
+		</data>
+		<key>www/js/oldJS/classDB.js</key>
+		<data>
+		+pAMaSpnOzmiQvoHpJJjDZkiqAE=
+		</data>
+		<key>www/js/oldJS/database.js</key>
+		<data>
+		UhvDeLra/JJPl/dFOBfNrDofsNI=
+		</data>
+		<key>www/js/oldJS/finishedDB.js</key>
+		<data>
+		kyz2SE5S/NKB4wWlR6B4M3W/z9M=
+		</data>
+		<key>www/js/oldJS/getClassDetail.js</key>
+		<data>
+		VRqlnunpMKtBPLcD1VlTepZc7GY=
+		</data>
+		<key>www/js/oldJS/getDeadlineDetail.js</key>
+		<data>
+		XZdWUY6ktyeq43ipZf3MTiTsY1U=
+		</data>
+		<key>www/js/oldJS/index.js</key>
+		<data>
+		sGxwEeQULe93K3f5sH5uWvDyTgI=
+		</data>
+		<key>www/js/oldJS/missedDB.js</key>
 		<data>
 		qZTsc8U42EhXZ5gGJ17MjU96Qwk=
 		</data>
-		<key>www/js/nativetransitions.js</key>
+		<key>www/js/oldJS/nativetransitions.js</key>
 		<data>
 		ujKqDQbzOFbtRYhc6d3N1fh5c5Q=
 		</data>
-		<key>www/missed.html</key>
+		<key>www/old html/addNewClass.html</key>
+		<data>
+		Qc1aZ2hB4VfbK4hf12dYUu++0i8=
+		</data>
+		<key>www/old html/addNewDeadline.html</key>
+		<data>
+		lXus80KvVt5t1VLkWFMLmUk8YAY=
+		</data>
+		<key>www/old html/classDetail.html</key>
+		<data>
+		0reWALlZFaMhGbB48RlbnObP0HI=
+		</data>
+		<key>www/old html/classList.html</key>
+		<data>
+		nry1Z5WoOZCS/wBic8lFpteaT1k=
+		</data>
+		<key>www/old html/deadlineDetail.html</key>
+		<data>
+		T1rnuFhNunmjlAt9/nBt6PeYnOA=
+		</data>
+		<key>www/old html/finished.html</key>
+		<data>
+		Jh1MlbTOgrUYRVdzq3rzwvEZkSw=
+		</data>
+		<key>www/old html/missed.html</key>
 		<data>
 		PQgHqasi2R/bX7SL/J/wBA5hxUI=
+		</data>
+		<key>www/old html/statistics.html</key>
+		<data>
+		uXCXOZgezUA2uHQNnPIzWTUCirw=
 		</data>
 		<key>www/phonegap.js</key>
 		<data>
@@ -2562,10 +2574,6 @@
 		<key>www/spec/lib/jasmine-1.2.0/jasmine.js</key>
 		<data>
 		UbuCXRtZstykBBa58lepG51icZw=
-		</data>
-		<key>www/statistics.html</key>
-		<data>
-		uXCXOZgezUA2uHQNnPIzWTUCirw=
 		</data>
 	</dict>
 	<key>rules</key>

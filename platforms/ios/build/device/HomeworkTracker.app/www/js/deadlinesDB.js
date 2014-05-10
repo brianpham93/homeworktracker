@@ -2,14 +2,14 @@
 var id = "";
 var db = null;
 
-
 function onDeviceReady() {
-	
+
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	
 	db.transaction(populateDB, errorCB, successCB);
 	
 	db.transaction(getDeadlinesList, errorCB);
+
 }
 
 function populateDB(tx) {
@@ -331,7 +331,7 @@ function getClasses_success(tx, results){
 	
 	var len = results.rows.length;
 	//avoid duplicate class list 
-	$('#classList').empty();
+	$('#classlist').empty();
 	$('#classAddNew').empty();
 	$('#class').empty();
 	//
@@ -339,10 +339,10 @@ function getClasses_success(tx, results){
 		var classDB = results.rows.item(i);
 		$('#class').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
 		$('#classAddNew').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
-		$('#classList').append('<li><a href="#classDetail" id = "'+classDB.id+'" data-transition = "slide" >'+ classDB.name +'</a></li>');		
+		$('#classlist').append('<li><a href="#classDetail" id = "'+classDB.id+'" data-transition = "slide" >'+ classDB.name +'</a></li>');		
 	}
-	$("#classList").listview().listview('refresh');
-	$('#classList').children().each(function(){
+	$("#classlist").listview().listview('refresh');
+	$('#classlist').children().each(function(){
                 var anchor = $(this).find('a');
                 if(anchor){
                     anchor.click(function(){
@@ -473,6 +473,40 @@ function getClassFormInfo(){
 	updateClassToDB(name,location,date,time,teacher,email,phone);
 }
 
+function saveClassToDB(){
+	var dbId = randomString(5);
+	//alert(dbId);
+	var dbName = document.getElementById("newClassName").value;
+	//alert(dbName);
+	var dbLocation = document.getElementById("newClassLocation").value;
+	//alert(dbLocation);
+	var dbDate = document.getElementById("newClassDate").value;
+	//alert(dbDate);
+	var dbTime = document.getElementById("newClassTime").value;
+	//alert(dbTime);
+	var dbTeacher = document.getElementById("newClassTeacher").value;
+	//alert(dbTeacher);
+	var dbEmail = document.getElementById("newClassTeacherEmail").value;
+	//alert(dbEmail);
+	var dbPhone = document.getElementById("newClassTeacherPhone").value;
+	//alert(dbPhone);
+	insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone);
+
+}
+
+function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone) {
+	//alert('before insert');
+	db.transaction(function(tx){
+		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],insertClassSuccessCB, errorCB);
+		//alert(tx);
+   });
+}
+
+function insertClassSuccessCB(){
+	window.location.hash ="#classlist";
+}
+
+
 function updateClassToDB(name,location,date,time,teacher,email,phone){
 	db.transaction(function(tx){
 		tx.executeSql("UPDATE classes SET name = ?, location = ?, classdate = ?, classtime =?, teacher = ?, email = ?, phone = ? WHERE id = ?",[name,location,date,time,teacher,email,phone, id], updateClassSuccessCB, errorCB);
@@ -554,7 +588,7 @@ function deleteSuccessCB(tx){
 }
 
 function updateClassSuccessCB(tx){
-	window.location.hash ="#classlist";
+	window.location.hash ="#classlistpage";
 }
 
 function getParameterByName(name) {
