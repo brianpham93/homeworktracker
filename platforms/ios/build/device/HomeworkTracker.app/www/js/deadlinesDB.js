@@ -495,7 +495,7 @@ function saveClassToDB(){
 }
 
 function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone) {
-	//alert('before insert');
+	alert('before insert');
 	db.transaction(function(tx){
 		tx.executeSql('INSERT INTO classes (id, name, location, classdate, classtime, teacher, email, phone) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone],insertClassSuccessCB, errorCB);
 		//alert(tx);
@@ -503,7 +503,7 @@ function insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEma
 }
 
 function insertClassSuccessCB(){
-	window.location.hash ="#classlist";
+	window.location.hash ="#classlistpage";
 }
 
 

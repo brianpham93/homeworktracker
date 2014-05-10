@@ -356,6 +356,14 @@ $(document).one('pagebeforecreate', function () {
 </div>
  
 <script>
+$("#deadlineList").on("pagebeforeshow", function(e, data){
+           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+	
+			db.transaction(populateDB, errorCB, successCB);
+	
+			db.transaction(getDeadlinesList, errorCB);
+        });
+
 $("#DeadlineDetail").on("pagebeforeshow", function(e, data){
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 			db.transaction(populateClassDB, errorCB, successCB);
@@ -369,13 +377,7 @@ $("#classDetail").on("pagebeforeshow", function(e, data){
 			db.transaction(getClassDetail, errorCB); 
         });
 		
-$("#deadlineList").on("pagebeforeshow", function(e, data){
-           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-	
-			db.transaction(populateDB, errorCB, successCB);
-	
-			db.transaction(getDeadlinesList, errorCB);
-        });
+
 $("#finishedList").on("pagebeforeshow", function(e, data){
 			
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
