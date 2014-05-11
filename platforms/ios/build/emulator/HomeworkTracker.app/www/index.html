@@ -373,48 +373,50 @@ $(document).one('pagebeforecreate', function () {
 </div>
  
 <script>
+
 $("#deadlineList").on("pagebeforeshow", function(e, data){
-           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-	
-			db.transaction(populateDB, errorCB, successCB);
-	
-			db.transaction(getDeadlinesList, errorCB);
+            alert("deadline");
+            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+    
+            db.transaction(populateDB, errorCB, successCB);
+    
+            db.transaction(getDeadlinesList, errorCB);
         });
 
 $("#DeadlineDetail").on("pagebeforeshow", function(e, data){
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-			db.transaction(populateClassDB, errorCB, successCB);
-			db.transaction(getClasses, errorCB);
-			db.transaction(getDeadlineDetail, errorCB); 
+            db.transaction(populateClassDB, errorCB, successCB);
+            db.transaction(getClasses, errorCB);
+            db.transaction(getDeadlineDetail, errorCB); 
         });
-		
+        
 $("#classDetail").on("pagebeforeshow", function(e, data){
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-			db.transaction(populateClassDB, errorCB, successCB);
-			db.transaction(getClassDetail, errorCB); 
+            db.transaction(populateClassDB, errorCB, successCB);
+            db.transaction(getClassDetail, errorCB); 
         });
-		
+        
 
 $("#finishedList").on("pagebeforeshow", function(e, data){
-			
+            
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-			db.transaction(populateDB, errorCB, successCB);
-	
-			db.transaction(getFinishedDeadlines, errorCB);
+            db.transaction(populateDB, errorCB, successCB);
+    
+            db.transaction(getFinishedDeadlines, errorCB);
         });
 $("#missedList").on("pagebeforeshow", function(e, data){
-			
+            
            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-			db.transaction(populateDB, errorCB, successCB);
-	
-			db.transaction(getMissedDeadlines, errorCB);
+            db.transaction(populateDB, errorCB, successCB);
+    
+            db.transaction(getMissedDeadlines, errorCB);
         });
 $("#classlistpage").on("pagebeforeshow", function(e, data){
-			
+            
             db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-			db.transaction(populateClassDB, errorCB, populateClassSuccessCB);
-			
-			db.transaction(getClasses, errorCB);
+            db.transaction(populateClassDB, errorCB, populateClassSuccessCB);
+            
+            db.transaction(getClasses, errorCB);
         });
 
 </script>

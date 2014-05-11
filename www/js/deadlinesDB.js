@@ -2,17 +2,26 @@
 var id = "";
 var db = null;
 
-// DB manipulation
+window.onload = function(){
+	alert('do something');
+	var now                  = new Date().getTime(),
+    _3_seconds_from_now = new Date(now + 3*1000);
 
-// function onDeviceReady() {
-
-// 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-	
-// 	db.transaction(populateDB, errorCB, successCB);
-	
-// 	db.transaction(getDeadlinesList, errorCB);
-
-// }
+	window.plugin.notification.local.add({
+	    id:      'abc',
+	    title:   'Do your homework',
+	    message: 'Dont forget to finish your homework today',
+	    repeat:  'minutely',
+	    date:    _3_seconds_from_now,
+	    badge: 1,
+	    foreground      : function('abc'){
+	      alert('abc');
+	    },
+      	background  : function('abc'){
+	      alert('abc');
+      	}         
+	});
+}
 
 function populateDB(tx) {
 	
