@@ -182,12 +182,7 @@ $(document).one('pagebeforecreate', function () {
  
  
 <div id="missedList" data-role="page" class="jqm-demos" data-quicklinks="true">
-	<!--<script>
-		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-		db.transaction(populateDB, errorCB, successCB);
 
-		db.transaction(getMissedDeadlines, errorCB);
-    </script>-->
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Missed tasks</h2>
 		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
@@ -375,7 +370,6 @@ $(document).one('pagebeforecreate', function () {
 <script>
 
 $("#deadlineList").on("pagebeforeshow", function(e, data){
-            alert("deadline");
             db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
     
             db.transaction(populateDB, errorCB, successCB);

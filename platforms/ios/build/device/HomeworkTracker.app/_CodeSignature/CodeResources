@@ -978,7 +978,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		hE1SWh/shrzG9zCVdk6LYmIEMcQ=
+		y6QuDOu9mprwkCF9rjNYFjADsc0=
 		</data>
 		<key>www/js/classDB.js</key>
 		<data>
@@ -986,7 +986,7 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		czFTw2YTuyFdJOzT0jOgJTRBAbM=
+		fYgwQtVn455jGvP/sLuYuBrr1QQ=
 		</data>
 		<key>www/js/fastclick.js</key>
 		<data>
@@ -1051,6 +1051,150 @@
 		<key>www/js/oldJS/nativetransitions.js</key>
 		<data>
 		ujKqDQbzOFbtRYhc6d3N1fh5c5Q=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/css/font-awesome.min.css</key>
+		<data>
+		jTQbeC10+0p/1kAjKEDEx7TchZk=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf</key>
+		<data>
+		tbT5voX5HxB5noegg9odBQ+EJzQ=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot</key>
+		<data>
+		dhl0j+NMZPsVelf21O82ePY6j14=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg</key>
+		<data>
+		RvzAGU11oN2sCgOK7kGyNFZ4SBQ=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf</key>
+		<data>
+		fwnJfzM5FwNK0I+nKV6RbJ9y/T8=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff</key>
+		<data>
+		BMO/Vth6CCiTW9a0ruhZmV8yFpM=
+		</data>
+		<key>www/lib/onsen/css/onsenui.css</key>
+		<data>
+		jbl8OdmXXzXrHXKRPkclikWdgYU=
+		</data>
+		<key>www/lib/onsen/css/polyfill/sliding_menu_polyfill.css</key>
+		<data>
+		xy4OWwcmUcLzxTU1gxmcLS/BcgA=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-android4_4.css</key>
+		<data>
+		cOK2/pi0gaM84OXg9eCl0uwa4Qg=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-android4_4.min.css</key>
+		<data>
+		2mu+2ez/7v/EoRkBAYLkbn9pH7E=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-blue.css</key>
+		<data>
+		j3cs8Y87V6pBo0INa4YWE9pXP5s=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-blue.min.css</key>
+		<data>
+		TKOJBnnplFVh6X119rq982vC2FI=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-green.css</key>
+		<data>
+		aamqrmlBGk6m5T+a9fwlZzxi1l4=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-green.min.css</key>
+		<data>
+		kBShJKzd2LOckcj+LnQ3gVvSS8k=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-ios7.css</key>
+		<data>
+		nrH9huOlTLKrZBr8m7zAjWIYYeg=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-ios7.min.css</key>
+		<data>
+		W4739juBBbIH7cxlqaVuVQ5z6ws=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-orange.css</key>
+		<data>
+		ihgHWwGRXhRQno6VakJfRi7rJwE=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-orange.min.css</key>
+		<data>
+		BWA7Bi3yNJNRyZTXDewPMEGSm/I=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-pink.css</key>
+		<data>
+		fl63Bv92fCfMcvUi2HVOX9TOdTM=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-pink.min.css</key>
+		<data>
+		Jvta3K58mjeEc6y9TssBdmLMFek=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-purple.css</key>
+		<data>
+		D4KarVDzFUouPF+j1uWniUHrGdY=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-purple.min.css</key>
+		<data>
+		hitU+zDEA03zRSaZ5G5vgjABcdY=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-yellow.css</key>
+		<data>
+		FukaMjIv5BrKnviBRciOx/PudjU=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-yellow.min.css</key>
+		<data>
+		xJe2eQgtxRfoitQGzSrWop1eO0s=
+		</data>
+		<key>www/lib/onsen/img/search.svg</key>
+		<data>
+		OBmyDg4Mf7dtsPhsDBKO7VyJUdM=
+		</data>
+		<key>www/lib/onsen/js/angular/README.md</key>
+		<data>
+		XIEHD+DRgWg2D3IFgKWqnytfevs=
+		</data>
+		<key>www/lib/onsen/js/angular/angular-animate.js</key>
+		<data>
+		2V+LFq1DyBEmraVyFdeNWGAKcME=
+		</data>
+		<key>www/lib/onsen/js/angular/angular-csp.css</key>
+		<data>
+		DqnWCp3X6uSaf6zIooxAc7xSAZ4=
+		</data>
+		<key>www/lib/onsen/js/angular/angular-touch.js</key>
+		<data>
+		cgtMBfBmgOUPHcCkIz462Ajg6wU=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.js</key>
+		<data>
+		xe45vqFsdoNQ16zIJs+OxE9BErM=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.min.js</key>
+		<data>
+		ZS+5AiCr7YfCENMQVTU/wsbiNjg=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.min.js.gzip</key>
+		<data>
+		A2WTziSIsHiy5MJI1uO7WG1samo=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.min.js.map</key>
+		<data>
+		beJRFKpeNHzePfSEOHG/2NQ1Oq8=
+		</data>
+		<key>www/lib/onsen/js/angular/bower.json</key>
+		<data>
+		EZ8JuNBZbv+U9vYEBdezMsKkzsM=
+		</data>
+		<key>www/lib/onsen/js/onsenui.js</key>
+		<data>
+		laPgdWFUJejNv0bq/ESOO4sdvaA=
+		</data>
+		<key>www/lib/onsen/js/onsenui_all.js</key>
+		<data>
+		K1PG2Ag2xfHF4jTcyjlWPjzTOUM=
 		</data>
 		<key>www/old html/addNewClass.html</key>
 		<data>
@@ -2269,7 +2413,7 @@
 		</data>
 		<key>www/index.html</key>
 		<data>
-		hE1SWh/shrzG9zCVdk6LYmIEMcQ=
+		y6QuDOu9mprwkCF9rjNYFjADsc0=
 		</data>
 		<key>www/js/classDB.js</key>
 		<data>
@@ -2277,7 +2421,7 @@
 		</data>
 		<key>www/js/deadlinesDB.js</key>
 		<data>
-		czFTw2YTuyFdJOzT0jOgJTRBAbM=
+		fYgwQtVn455jGvP/sLuYuBrr1QQ=
 		</data>
 		<key>www/js/fastclick.js</key>
 		<data>
@@ -2342,6 +2486,150 @@
 		<key>www/js/oldJS/nativetransitions.js</key>
 		<data>
 		ujKqDQbzOFbtRYhc6d3N1fh5c5Q=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/css/font-awesome.min.css</key>
+		<data>
+		jTQbeC10+0p/1kAjKEDEx7TchZk=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/FontAwesome.otf</key>
+		<data>
+		tbT5voX5HxB5noegg9odBQ+EJzQ=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.eot</key>
+		<data>
+		dhl0j+NMZPsVelf21O82ePY6j14=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.svg</key>
+		<data>
+		RvzAGU11oN2sCgOK7kGyNFZ4SBQ=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.ttf</key>
+		<data>
+		fwnJfzM5FwNK0I+nKV6RbJ9y/T8=
+		</data>
+		<key>www/lib/onsen/css/font_awesome/fonts/fontawesome-webfont.woff</key>
+		<data>
+		BMO/Vth6CCiTW9a0ruhZmV8yFpM=
+		</data>
+		<key>www/lib/onsen/css/onsenui.css</key>
+		<data>
+		jbl8OdmXXzXrHXKRPkclikWdgYU=
+		</data>
+		<key>www/lib/onsen/css/polyfill/sliding_menu_polyfill.css</key>
+		<data>
+		xy4OWwcmUcLzxTU1gxmcLS/BcgA=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-android4_4.css</key>
+		<data>
+		cOK2/pi0gaM84OXg9eCl0uwa4Qg=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-android4_4.min.css</key>
+		<data>
+		2mu+2ez/7v/EoRkBAYLkbn9pH7E=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-blue.css</key>
+		<data>
+		j3cs8Y87V6pBo0INa4YWE9pXP5s=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-blue.min.css</key>
+		<data>
+		TKOJBnnplFVh6X119rq982vC2FI=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-green.css</key>
+		<data>
+		aamqrmlBGk6m5T+a9fwlZzxi1l4=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-green.min.css</key>
+		<data>
+		kBShJKzd2LOckcj+LnQ3gVvSS8k=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-ios7.css</key>
+		<data>
+		nrH9huOlTLKrZBr8m7zAjWIYYeg=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-ios7.min.css</key>
+		<data>
+		W4739juBBbIH7cxlqaVuVQ5z6ws=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-orange.css</key>
+		<data>
+		ihgHWwGRXhRQno6VakJfRi7rJwE=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-orange.min.css</key>
+		<data>
+		BWA7Bi3yNJNRyZTXDewPMEGSm/I=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-pink.css</key>
+		<data>
+		fl63Bv92fCfMcvUi2HVOX9TOdTM=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-pink.min.css</key>
+		<data>
+		Jvta3K58mjeEc6y9TssBdmLMFek=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-purple.css</key>
+		<data>
+		D4KarVDzFUouPF+j1uWniUHrGdY=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-purple.min.css</key>
+		<data>
+		hitU+zDEA03zRSaZ5G5vgjABcdY=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-yellow.css</key>
+		<data>
+		FukaMjIv5BrKnviBRciOx/PudjU=
+		</data>
+		<key>www/lib/onsen/css/topcoat-mobile-onsen-yellow.min.css</key>
+		<data>
+		xJe2eQgtxRfoitQGzSrWop1eO0s=
+		</data>
+		<key>www/lib/onsen/img/search.svg</key>
+		<data>
+		OBmyDg4Mf7dtsPhsDBKO7VyJUdM=
+		</data>
+		<key>www/lib/onsen/js/angular/README.md</key>
+		<data>
+		XIEHD+DRgWg2D3IFgKWqnytfevs=
+		</data>
+		<key>www/lib/onsen/js/angular/angular-animate.js</key>
+		<data>
+		2V+LFq1DyBEmraVyFdeNWGAKcME=
+		</data>
+		<key>www/lib/onsen/js/angular/angular-csp.css</key>
+		<data>
+		DqnWCp3X6uSaf6zIooxAc7xSAZ4=
+		</data>
+		<key>www/lib/onsen/js/angular/angular-touch.js</key>
+		<data>
+		cgtMBfBmgOUPHcCkIz462Ajg6wU=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.js</key>
+		<data>
+		xe45vqFsdoNQ16zIJs+OxE9BErM=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.min.js</key>
+		<data>
+		ZS+5AiCr7YfCENMQVTU/wsbiNjg=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.min.js.gzip</key>
+		<data>
+		A2WTziSIsHiy5MJI1uO7WG1samo=
+		</data>
+		<key>www/lib/onsen/js/angular/angular.min.js.map</key>
+		<data>
+		beJRFKpeNHzePfSEOHG/2NQ1Oq8=
+		</data>
+		<key>www/lib/onsen/js/angular/bower.json</key>
+		<data>
+		EZ8JuNBZbv+U9vYEBdezMsKkzsM=
+		</data>
+		<key>www/lib/onsen/js/onsenui.js</key>
+		<data>
+		laPgdWFUJejNv0bq/ESOO4sdvaA=
+		</data>
+		<key>www/lib/onsen/js/onsenui_all.js</key>
+		<data>
+		K1PG2Ag2xfHF4jTcyjlWPjzTOUM=
 		</data>
 		<key>www/old html/addNewClass.html</key>
 		<data>

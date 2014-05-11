@@ -1,6 +1,8 @@
 // JavaScript Document
 var id = "";
 var db = null;
+var tmpDueDate = '1900-01-01';
+var tmpDueTime = '00:00';
 
 
 function populateDB(tx) {
@@ -30,8 +32,14 @@ function getAllDeadlines_success(tx, results){
 		//compare with current time
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#allList').append('<li><a href="#DeadlineDetail" id = "'+allDeadline.id+'" data-transition = "slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
-
+			var result2 = isLaterThan(allDeadline.duedate, allDeadline.duetime, tmpDueDate, tmpDueTime).toString();
+			//alert(result2);
+			if (result2 == "true") {
+				$('#allList').append('<li><a href="#DeadlineDetail" id = "'+allDeadline.id+'" data-transition = "slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			}
+			else $('#allList').prepend('<li><a href="#DeadlineDetail" id = "'+allDeadline.id+'" data-transition = "slide">'+ allDeadline.class +'<br>'+ allDeadline.duedate+'  '+ allDeadline.duetime+'<br>'+ allDeadline.description +'</a></li>');
+			tmpDueDate = allDeadline.duedate;
+			tmpDueTime = allDeadline.duetime;
 		}
 	}
 	$("#allList").listview().listview('refresh');
@@ -356,7 +364,13 @@ function saveDeadlineToDB(){
 	//alert(dbAdditionalInfo);
 	var dbFinished = document.getElementById("finishedAddNew").value;
 	//alert(dbFinished);
-	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
+	if (dbDescription == null || dbDescription == "" || dbDueDate == null || dbDueDate == "" || dbDueTime == null || dbDueTime == "" ){
+		alert("Please fill enough information");			
+	} else {
+		insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
+	}
+	
+	
 
 }
 
@@ -441,15 +455,35 @@ function isLate(deadlineDate, deadlineTime){
 	}	
 }
 
+function isLaterThan(firstDeadlineDate, firstDeadlineTime, secondDeadlineDate, secondDeadlineTime){
+	
+	var frstDeadlinePart = firstDeadlineDate.split('-');
+	var frstDeadlineTime = firstDeadlineTime.split(':');
+
+	var scndDeadlinePart = secondDeadlineDate.split('-');
+	var scndDeadlineTime = secondDeadlineTime.split(':');
+	
+	if ( frstDeadlinePart[0] < scndDeadlinePart[0] ){// previous year
+		return false;
+	} else if ( ( frstDeadlinePart[0] == scndDeadlinePart[0] ) && ( frstDeadlinePart[1] < scndDeadlinePart[1])){ // previous month
+		return false;
+	} else if ( ( frstDeadlinePart[0] == scndDeadlinePart[0] ) && ( frstDeadlinePart[1] == scndDeadlinePart[1]) && (frstDeadlinePart[2] < scndDeadlinePart[2])){// previous date
+		return false;
+	} else if ( ( frstDeadlinePart[0] == scndDeadlinePart[0] ) && ( frstDeadlinePart[1] == scndDeadlinePart[1]) && (frstDeadlinePart[2] == scndDeadlinePart[2]) && (frstDeadlineTime[0] < scndDeadlineTime[0])){ // previous hour
+		return  false;
+	} else if ( ( frstDeadlinePart[0] == scndDeadlinePart[0] ) && ( frstDeadlinePart[1] == scndDeadlinePart[1]) && (frstDeadlinePart[2] == scndDeadlinePart[2]) && (frstDeadlineTime[0] == scndDeadlineTime[0]) && (frstDeadlineTime[1] < scndDeadlineTime[1])) { // previous minute
+		return false;
+	} else {
+		return true;
+	}	
+}
+
 
 
 //CLASS DB 
 
 function populateClassDB(tx) {
-	//////////alert('starting populate');
 	 tx.executeSql('CREATE TABLE IF NOT EXISTS classes (id varchar(10) primary key, name varchar(50), location varchar(50), classdate varchar(50), classtime time, teacher varchar(50), email varchar(200), phone varchar(10))');
-	 ////////alert('populate done');
-	 //////////alert(tx);
 }
 
 function getClasses(tx){
@@ -572,7 +606,10 @@ function saveClassToDB(){
 	//alert(dbEmail);
 	var dbPhone = document.getElementById("newClassTeacherPhone").value;
 	//alert(dbPhone);
-	insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone);
+	if ( dbName == null || dbName == "" || dbDate == null || dbDate == "" || dbTime == null || dbTime == "" || dbTeacher == null || dbTeacher == ""){
+		alert("Please fill enough information")	;
+	}
+	else insertClassToDB(dbId,dbName,dbLocation,dbDate, dbTime, dbTeacher, dbEmail, dbPhone);
 
 }
 
