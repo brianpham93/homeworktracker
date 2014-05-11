@@ -15,6 +15,14 @@
                         {
                             "xml": "<feature name=\"LocalNotification\"><param name=\"ios-package\" value=\"LocalNotification\" /></feature>",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Device\"><param name=\"ios-package\" value=\"CDVDevice\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocalNotification\"><param name=\"ios-package\" onload=\"true\" value=\"APPLocalNotification\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -27,7 +35,14 @@
         },
         "localnotification": {
             "PACKAGE_NAME": "ThangPhamQuoc"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "ThangPhamQuoc"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "org.apache.cordova.device": {
+            "PACKAGE_NAME": "ThangPhamQuoc"
+        }
+    }
 }

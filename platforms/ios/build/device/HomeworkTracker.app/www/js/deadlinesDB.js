@@ -1,9 +1,6 @@
 // JavaScript Document
 var id = "";
 var db = null;
-var tmpDueDate = '1900-01-01';
-var tmpDueTime = '00:00';
-
 
 function populateDB(tx) {
 	
@@ -27,6 +24,8 @@ function getAllDeadlines_success(tx, results){
 	var len = results.rows.length;
 	//var s = "";
 	$('#allList').empty();
+	var tmpDueDate = '1900-01-01';
+	var tmpDueTime = '00:00';
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
 		//compare with current time
@@ -61,14 +60,23 @@ function getHomeworkDeadlines_success(tx, results){
 	////alert('get homework deadlines');
 	var len = results.rows.length;
 	$('#homeworkList').empty();
+	var tmpDueDate = '1900-01-01';
+	var tmpDueTime = '00:00';
 	for (var i=0; i<len; i++){
 		var homeworkDeadline = results.rows.item(i);
 		var result = isLate(homeworkDeadline.duedate, homeworkDeadline.duetime).toString();
 		
 		////alert('result: ' + result);
 		if ( result == "true" ){
-			////alert('append');				
-			$('#homeworkList').append('<li><a href="#DeadlineDetail" id = "'+homeworkDeadline.id+'" data-transition = "slide">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
+			////alert('append');	
+			var result2 = isLaterThan(homeworkDeadline.duedate, homeworkDeadline.duetime, tmpDueDate, tmpDueTime).toString();
+			if (result2 == "true"){
+				$('#homeworkList').append('<li><a href="#DeadlineDetail" id = "'+homeworkDeadline.id+'" data-transition = "slide">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');
+
+			}
+			else $('#homeworkList').prepend('<li><a href="#DeadlineDetail" id = "'+homeworkDeadline.id+'" data-transition = "slide">'+ homeworkDeadline.class + '<br>' + homeworkDeadline.duedate+'    '+ homeworkDeadline.duetime+'<br>'+ homeworkDeadline.description +'</a></li>');			
+			tmpDueDate = homeworkDeadline.duedate;
+			tmpDueTime = homeworkDeadline.duetime;
 		} 
 		
 	}
@@ -89,13 +97,20 @@ function getHomeworkDeadlines_success(tx, results){
 function getTestDeadlines_success(tx, results){
 
 	var len = results.rows.length;
+	var tmpDueDate = '1900-01-01';
+	var tmpDueTime = '00:00';
 	//var s = "";
 	$('#testList').empty();
 	for (var i=0; i<len; i++){
 		var testDeadline = results.rows.item(i);
 		var result = isLate(testDeadline.duedate, testDeadline.duetime).toString();
 		if ( result == "true"){
-			$('#testList').append('<li><a href="#DeadlineDetail" id = "'+testDeadline.id+'" data-transition = "slide">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+			var result2 = isLaterThan(testDeadline.duedate, testDeadline.duetime, tmpDueDate, tmpDueTime).toString();
+			if (result2 == "true") {
+				$('#testList').append('<li><a href="#DeadlineDetail" id = "'+testDeadline.id+'" data-transition = "slide">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+			} else $('#testList').prepend('<li><a href="#DeadlineDetail" id = "'+testDeadline.id+'" data-transition = "slide">'+ testDeadline.class + '<br>' + testDeadline.duedate+'    '+ testDeadline.duetime+'<br>'+ testDeadline.description +'</a></li>');
+			tmpDueTime = testDeadline.duetime;
+			tmpDueDate = testDeadline.duedate;				
 		}
 				
 	}

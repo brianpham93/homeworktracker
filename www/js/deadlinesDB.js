@@ -14,7 +14,6 @@ function getDeadlinesList(tx){
 	tx.executeSql(sql, [] , getAllDeadlines_success);
 	var sql2 = "select * from deadlines where finished = 'no' and type = 'Homework' ORDER BY duedate";
 	tx.executeSql(sql2, [] , getHomeworkDeadlines_success);
-	////alert('get test deadline');
 	var sql3 = "select * from deadlines where finished = 'no' and type = 'Test' ORDER BY duedate";
 	tx.executeSql(sql3, [] , getTestDeadlines_success);
 }
@@ -28,6 +27,7 @@ function getAllDeadlines_success(tx, results){
 	var tmpDueTime = '00:00';
 	for (var i=0; i<len; i++){
 		var allDeadline = results.rows.item(i);
+		//window.plugin.notification.local.add({ message: 'Great app!' });
 		//compare with current time
 		var result = isLate(allDeadline.duedate, allDeadline.duetime).toString();
 		if ( result == "true"){
@@ -659,23 +659,5 @@ function updateClassSuccessCB(tx){
 function errorCB(tx, err) {
 	alert("Error processing SQL: "+err);
 }
-
-// function randomString(L){
-//     var s= '';
-//     var randomchar=function(){
-//     	var n= Math.floor(Math.random()*62);
-//     	if(n<10) return n; //1-10
-//     	if(n<36) return String.fromCharCode(n+55); //A-Z
-//     	return String.fromCharCode(n+61); //a-z
-//     }
-//     while(s.length< L) s+= randomchar();
-//     return s;
-// }
-
-
-// function getParameterByName(name) {
-//     		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-//     		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
-// }
 
 
