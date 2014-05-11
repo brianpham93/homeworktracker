@@ -331,7 +331,7 @@ function getClasses_success(tx, results){
 	
 	var len = results.rows.length;
 	//avoid duplicate class list 
-	$('#classList').empty();
+	$('#classlist').empty();
 	$('#classAddNew').empty();
 	$('#class').empty();
 	//
@@ -339,10 +339,10 @@ function getClasses_success(tx, results){
 		var classDB = results.rows.item(i);
 		$('#class').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
 		$('#classAddNew').append('<option value="'+ classDB.name + '">'+ classDB.name +'</option>');
-		$('#classList').append('<li><a href="#classDetail" id = "'+classDB.id+'" data-transition = "slide" >'+ classDB.name +'</a></li>');		
+		$('#classlist').append('<li><a href="#classDetail" id = "'+classDB.id+'" data-transition = "slide" >'+ classDB.name +'</a></li>');		
 	}
-	$("#classList").listview().listview('refresh');
-	$('#classList').children().each(function(){
+	$("#classlist").listview().listview('refresh');
+	$('#classlist').children().each(function(){
                 var anchor = $(this).find('a');
                 if(anchor){
                     anchor.click(function(){
@@ -570,9 +570,6 @@ function updateSuccessCB(tx){
 	//$.mobile.changePage($("#deadlineList"));
 	window.location.hash ="#deadlineList";
 	//$("#deadlineList").load(".ui-content");	
-}
-function populateClassSuccessCB(tx){
-	//alert("populate class done");
 }
 
 function deleteDeadline(){

@@ -2,8 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Deadlines</title>
 <link rel="stylesheet" href="css/jqm-demos.css">
 <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
@@ -19,7 +18,6 @@
 	    FastClick.attach(document.body);
 	}, false);
 </script>
-
 
 <script type="text/javascript">
 var panel = '<div id="mypanel" data-role="panel" class="jqm-navmenu-panel" data-position="left" data-display="overlay" data-theme="a"><ul class="jqm-list ui-alt-icon ui-nodisc-icon list"><li data-filtertext="deadlines" data-icon="home"><a href="#deadlineList" data-transition = "slide">Deadlines</a></li><li data-filtertext="finished tasks"><a href="#finishedList" data-transition = "slide">Finished tasks</a></li><li data-filtertext="Missed tasks"><a href="#missedList" data-transition = "slide" >Missed tasks</a></li><li data-filtertext="Add new deadlines"><a href="#addNewDeadline" data-transition = "slide">Add new deadline</a></li><li data-filtertext="Class Manager"><a href="#classlistpage" data-transition = "slide" >Class management</a></li></ul></div>';
@@ -43,8 +41,6 @@ $(document).one('pagebeforecreate', function () {
 </style>
 </head>
 <body>
-
-<!-- DEADLINE LIST -->	
 <div id="deadlineList" data-role="page" class="jqm-demos" data-quicklinks="true">
 	<!-- header -->
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
@@ -86,10 +82,11 @@ $(document).one('pagebeforecreate', function () {
 			</div>
 		</div>
 	</div>
+	<!-- end tab content -->
+    <!-- left panel -->
+    <!-- end left panel -->
  </div>	
  
-<!-- DEADLINE DETAIL -->
-
 <div id="DeadlineDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h2>Deadline Detail</h2>
@@ -140,9 +137,12 @@ $(document).one('pagebeforecreate', function () {
  
 </div>
 
-<!-- FINISHED DEADLINE LIST -->
-
 <div id="finishedList" data-role="page" class="jqm-demos" data-quicklinks="true">
+<!--<script>
+	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+	db.transaction(populateDB, errorCB, successCB);
+	db.transaction(getFinishedDeadlines, errorCB);
+</script>-->
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Finished tasks</h2>
 		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
@@ -180,10 +180,14 @@ $(document).one('pagebeforecreate', function () {
 	</div>
  </div>
  
-
-<!-- MISSED DEADLINE LIST --> 
  
 <div id="missedList" data-role="page" class="jqm-demos" data-quicklinks="true">
+	<!--<script>
+		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+		db.transaction(populateDB, errorCB, successCB);
+
+		db.transaction(getMissedDeadlines, errorCB);
+    </script>-->
 	<div data-role="header" class="jqm-header" data-position="fixed" data-tap-toggle="false" data-transition="none">
 		<h2>Missed tasks</h2>
 		<a href="#mypanel" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
@@ -221,8 +225,6 @@ $(document).one('pagebeforecreate', function () {
 	</div>
  </div>
  
-<!-- ADD NEW DEADLINE -->
-
  <div id="addNewDeadline" data-role="page" class="jqm-demos" data-quicklinks="true">
  	<script>
 		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
@@ -273,9 +275,6 @@ $(document).one('pagebeforecreate', function () {
     </div>
 </div>
 
-
-<!-- CLASS LIST -->
-
 <div id="classlistpage" data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div class="jqm-header ui-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h1>Class List</h1>
@@ -293,8 +292,6 @@ $(document).one('pagebeforecreate', function () {
     </div>
 </div>
  
-<!-- CLASS DETAIL -->
-
 <div id="classDetail" data-role="page" class="jqm-demos" data-quicklinks="true">
     <div id="headerClassDetail" class="jqm-header ui-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
         <h1>Class Detail</h1>
@@ -326,9 +323,6 @@ $(document).one('pagebeforecreate', function () {
      
     </div>
 </div> 
-
-<!-- ADD NEW CLASS -->
-
 
 <div id="addNewClass" data-role="page" class="jqm-demos" data-quicklinks="true">
 	<div id="headerAddNewClass" class="jqm-header" data-role="header" data-position="fixed" data-tap-toggle="false" data-transition="none">
