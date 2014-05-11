@@ -2,6 +2,8 @@
 var id = "";
 var db = null;
 
+// DB manipulation
+
 function onDeviceReady() {
 
 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
@@ -54,7 +56,6 @@ function getAllDeadlines_success(tx, results){
                 }
     });
 	
-		//////alert('before append');
 }
 
 
@@ -84,7 +85,7 @@ function getHomeworkDeadlines_success(tx, results){
                     });
                 }
     });
-		//////alert('before append');
+	
 }
 
 
@@ -106,12 +107,11 @@ function getTestDeadlines_success(tx, results){
                 var anchor = $(this).find('a');
                 if(anchor){
                     anchor.click(function(){
-						   //alert(anchor.attr('id'));
+						
                         sessionStorage.setItem("selectedId", anchor.attr('id'));
                     });
                 }
     });
-		//////alert('before append');
 }
 function getFinishedDeadlines(tx) {
     
@@ -143,7 +143,6 @@ function getAllFinishedDeadlines_success(tx, results) {
                 }
     });
 	
-    ////alert('before append');
 }
 
 function getHomeworkFinishedDeadlines_success(tx, results) {
@@ -166,7 +165,6 @@ function getHomeworkFinishedDeadlines_success(tx, results) {
                     });
                 }
     });
-    ////alert('before append');
 }
 
 function getTestFinishedDeadlines_success(tx, results) {
@@ -190,7 +188,6 @@ function getTestFinishedDeadlines_success(tx, results) {
                     });
                 }
     });
-    ////alert('before append');
 }
 
 function getMissedDeadlines(tx){
@@ -279,6 +276,154 @@ function getTestMissedDeadlines_success(tx, results){
 		
 }
 
+function getDeadlineDetail(tx){
+	
+	id = sessionStorage.getItem("selectedId");
+    sessionStorage.removeItem("selectedId");
+	var sql = "select * from deadlines where id = '" + id +"'";
+	
+	tx.executeSql(sql, [] , getDeadlineDetail_success);
+}
+
+function getDeadlineDetail_success(tx, results){
+	var len = results.rows.length;
+	//var s = "";
+	for (var i=0; i<len; i++){
+		var deadline = results.rows.item(i);
+		var description = deadline.description;
+		var classDeadline = deadline.class;
+		//////alert(classDeadline);
+		var duedate = deadline.duedate;
+		var duetime = deadline.duetime;
+		var type = deadline.type;
+		var additionalInfo = deadline.additionalInfo;
+		var finished = deadline.finished;
+		//////alert(finished);
+		document.getElementById("shortDescription").value = description;
+		document.getElementById("dueDate").value = duedate;
+		document.getElementById("dueTime").value = duetime;
+		document.getElementById("additionalInfo").value = additionalInfo;
+		
+		var selectClass = $("#class"); 
+		$("#class").val(classDeadline);
+		selectClass.selectmenu().selectmenu("refresh");
+
+		var selectType = $("#type");
+		$("#type").val(type);
+		selectType.selectmenu().selectmenu("refresh");
+		
+		//////alert('before select finished');
+		var selectFinished = $("#finished");
+		$("#finished").val(finished);
+		selectFinished.flipswitch().flipswitch("refresh");
+			
+	}
+		//////////alert('before append');
+}
+
+function getFormInfo(){
+	////alert(id);
+	var description = document.getElementById("shortDescription").value;
+	////alert(description);
+	var classDeadline = document.getElementById("class").value;
+	////alert(classDeadline);
+	var duedate = document.getElementById("dueDate").value;
+	////alert(duedate);
+	var duetime = document.getElementById("dueTime").value;
+	////alert(duetime);
+	var type = document.getElementById("type").value;
+	////alert(type);
+	var additionalInfo = document.getElementById("additionalInfo").value;
+	////alert(additionalInfo);
+	var finished = document.getElementById("finished").value;	
+	////alert(finished);
+	updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished);
+	
+}
+
+
+
+function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
+	db.transaction(populateDB, errorCB, successCB);
+	db.transaction(function(tx){
+		tx.executeSql("UPDATE deadlines SET description = ?, class = ?, duedate = ?, duetime =?, type = ?, additionalInfo = ?, finished = ? WHERE id = ?",[description,classDeadline,duedate, duetime, type, additionalInfo, finished, id], updateSuccessCB, errorCB);
+		});
+}
+
+function saveDeadlineToDB(){
+	var dbId = randomString(5);
+	//alert(dbId);
+	var dbDescription = document.getElementById("shortDescriptionAddNew").value;
+	//alert(dbDescription);
+	var dbClass = document.getElementById("classAddNew").value;
+	//alert(dbClass);
+	var dbDueDate = document.getElementById("dueDateAddNew").value;
+	//alert(dbDueDate);
+	var dbDueTime = document.getElementById("dueTimeAddNew").value;
+	//alert(dbDueTime);
+	var dbType = document.getElementById("typeAddNew").value;
+	//alert(dbType);
+	var dbAdditionalInfo = document.getElementById("additionalInfoAddNew").value;
+	//alert(dbAdditionalInfo);
+	var dbFinished = document.getElementById("finishedAddNew").value;
+	//alert(dbFinished);
+	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
+
+}
+
+function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
+	////alert('insert called');
+	
+	////alert('before insert');
+	db.transaction(function(tx){
+		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished], insertSuccessCB, errorCB);
+		//alert(tx);
+   });
+}
+
+
+function deleteDeadline(){
+	db.transaction(function(tx){
+		tx.executeSql("DELETE FROM deadlines WHERE id = ? ",[id], deleteSuccessCB, errorCB);
+	});
+}
+// CALL BACK //
+
+function errorCB(tx, err) {
+	alert("Error processing SQL: "+err);
+}
+
+function successCB(tx){
+}
+
+function updateSuccessCB(tx){
+	window.location.hash ="#deadlineList";
+}
+function insertSuccessCB(){
+	window.location.hash ="#deadlineList";
+}
+
+function deleteSuccessCB(tx){
+	//alert("Deleted successfully");
+	window.location.hash ="#deadlineList";
+}
+// External func
+function getParameterByName(name) {
+    		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function randomString(L){
+    var s= '';
+    var randomchar=function(){
+    	var n= Math.floor(Math.random()*62);
+    	if(n<10) return n; //1-10
+    	if(n<36) return String.fromCharCode(n+55); //A-Z
+    	return String.fromCharCode(n+61); //a-z
+    }
+    while(s.length< L) s+= randomchar();
+    return s;
+}
 
 
 function isLate(deadlineDate, deadlineTime){
@@ -307,12 +452,9 @@ function isLate(deadlineDate, deadlineTime){
 	}	
 }
 
-function errorCB(tx, err) {
-	alert("Error processing SQL: "+err);
-}
 
-function successCB(tx){
-}
+
+//CLASS DB 
 
 function populateClassDB(tx) {
 	//////////alert('starting populate');
@@ -386,74 +528,6 @@ function getClassDetail_success(tx, results){
 		////////alert('before append');
 }
 
-function getDeadlineDetail(tx){
-	////////alert('get deadline detail');
-	//id = getParameterByName('id');
-	////////alert(id);
-	
-	id = sessionStorage.getItem("selectedId");
-    sessionStorage.removeItem("selectedId");
-	var sql = "select * from deadlines where id = '" + id +"'";
-	
-	tx.executeSql(sql, [] , getDeadlineDetail_success);
-}
-
-function getDeadlineDetail_success(tx, results){
-	var len = results.rows.length;
-	//var s = "";
-	for (var i=0; i<len; i++){
-		var deadline = results.rows.item(i);
-		var description = deadline.description;
-		var classDeadline = deadline.class;
-		//////alert(classDeadline);
-		var duedate = deadline.duedate;
-		var duetime = deadline.duetime;
-		var type = deadline.type;
-		var additionalInfo = deadline.additionalInfo;
-		var finished = deadline.finished;
-		//////alert(finished);
-		document.getElementById("shortDescription").value = description;
-		document.getElementById("dueDate").value = duedate;
-		document.getElementById("dueTime").value = duetime;
-		document.getElementById("additionalInfo").value = additionalInfo;
-		
-		var selectClass = $("#class"); 
-		$("#class").val(classDeadline);
-		selectClass.selectmenu().selectmenu("refresh");
-
-		var selectType = $("#type");
-		$("#type").val(type);
-		selectType.selectmenu().selectmenu("refresh");
-		
-		//////alert('before select finished');
-		var selectFinished = $("#finished");
-		$("#finished").val(finished);
-		selectFinished.flipswitch().flipswitch("refresh");
-			
-	}
-		//////////alert('before append');
-}
-
-function getFormInfo(){
-	////alert(id);
-	var description = document.getElementById("shortDescription").value;
-	////alert(description);
-	var classDeadline = document.getElementById("class").value;
-	////alert(classDeadline);
-	var duedate = document.getElementById("dueDate").value;
-	////alert(duedate);
-	var duetime = document.getElementById("dueTime").value;
-	////alert(duetime);
-	var type = document.getElementById("type").value;
-	////alert(type);
-	var additionalInfo = document.getElementById("additionalInfo").value;
-	////alert(additionalInfo);
-	var finished = document.getElementById("finished").value;	
-	////alert(finished);
-	updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished);
-	
-}
-
 function getClassFormInfo(){
 	//alert(id);
 	var name = document.getElementById("className").value;
@@ -514,87 +588,34 @@ function updateClassToDB(name,location,date,time,teacher,email,phone){
 		});
 }
 
-function updateDeadlineToDB(description,classDeadline,duedate, duetime, type, additionalInfo, finished){
-	db.transaction(populateDB, errorCB, successCB);
-	db.transaction(function(tx){
-		tx.executeSql("UPDATE deadlines SET description = ?, class = ?, duedate = ?, duetime =?, type = ?, additionalInfo = ?, finished = ? WHERE id = ?",[description,classDeadline,duedate, duetime, type, additionalInfo, finished, id], updateSuccessCB, errorCB);
-		});
-}
-function randomString(L){
-    var s= '';
-    var randomchar=function(){
-    	var n= Math.floor(Math.random()*62);
-    	if(n<10) return n; //1-10
-    	if(n<36) return String.fromCharCode(n+55); //A-Z
-    	return String.fromCharCode(n+61); //a-z
-    }
-    while(s.length< L) s+= randomchar();
-    return s;
-}
-function saveDeadlineToDB(){
-	var dbId = randomString(5);
-	//alert(dbId);
-	var dbDescription = document.getElementById("shortDescriptionAddNew").value;
-	//alert(dbDescription);
-	var dbClass = document.getElementById("classAddNew").value;
-	//alert(dbClass);
-	var dbDueDate = document.getElementById("dueDateAddNew").value;
-	//alert(dbDueDate);
-	var dbDueTime = document.getElementById("dueTimeAddNew").value;
-	//alert(dbDueTime);
-	var dbType = document.getElementById("typeAddNew").value;
-	//alert(dbType);
-	var dbAdditionalInfo = document.getElementById("additionalInfoAddNew").value;
-	//alert(dbAdditionalInfo);
-	var dbFinished = document.getElementById("finishedAddNew").value;
-	//alert(dbFinished);
-	insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished);
-
-}
-
-function insertDeadlineToDB(dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished) {
-	////alert('insert called');
-	
-	////alert('before insert');
-	db.transaction(function(tx){
-		tx.executeSql('INSERT INTO deadlines (id, description, class, dueDate, dueTime, type, additionalInfo, finished) VALUES (?,?,?,?,?,?,?,?)',[dbId,dbDescription,dbClass,dbDueDate, dbDueTime, dbType, dbAdditionalInfo, dbFinished], insertSuccessCB, errorCB);
-		//alert(tx);
-   });
-}
-
-
-
-function updateSuccessCB(tx){
-	//alert("Saved successfully");
-		
-	//$.mobile.changePage($("#deadlineList"));
-	window.location.hash ="#deadlineList";
-	//$("#deadlineList").load(".ui-content");	
-}
 function populateClassSuccessCB(tx){
 	//alert("populate class done");
-}
-
-function deleteDeadline(){
-	db.transaction(function(tx){
-		tx.executeSql("DELETE FROM deadlines WHERE id = ? ",[id], deleteSuccessCB, errorCB);
-	});
-}
-
-function insertSuccessCB(){
-	window.location.hash ="#deadlineList";
-}
-
-function deleteSuccessCB(tx){
-	//alert("Deleted successfully");
-	window.location.hash ="#deadlineList";
 }
 
 function updateClassSuccessCB(tx){
 	window.location.hash ="#classlistpage";
 }
 
-function getParameterByName(name) {
-    		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
-    		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+function errorCB(tx, err) {
+	alert("Error processing SQL: "+err);
 }
+
+// function randomString(L){
+//     var s= '';
+//     var randomchar=function(){
+//     	var n= Math.floor(Math.random()*62);
+//     	if(n<10) return n; //1-10
+//     	if(n<36) return String.fromCharCode(n+55); //A-Z
+//     	return String.fromCharCode(n+61); //a-z
+//     }
+//     while(s.length< L) s+= randomchar();
+//     return s;
+// }
+
+
+// function getParameterByName(name) {
+//     		var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+//     		return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+// }
+
+
