@@ -4,15 +4,15 @@ var db = null;
 
 // DB manipulation
 
-function onDeviceReady() {
+// function onDeviceReady() {
 
-	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+// 	db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 	
-	db.transaction(populateDB, errorCB, successCB);
+// 	db.transaction(populateDB, errorCB, successCB);
 	
-	db.transaction(getDeadlinesList, errorCB);
+// 	db.transaction(getDeadlinesList, errorCB);
 
-}
+// }
 
 function populateDB(tx) {
 	
