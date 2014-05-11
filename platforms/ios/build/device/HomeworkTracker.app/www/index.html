@@ -7,11 +7,11 @@
 <link rel="stylesheet" href="css/jqm-demos.css">
 <link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
 <script src="js/jquery.js"></script>
-<script src="js/deadlines.js"></script>
+<script src="js/index.js"></script>
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
 <script src="js/jquery.mobile.router.js"></script>
-<script src="js/iscroll.js"></script>
 <script src="js/deadlinesDB.js"></script>
+<script src="js/iscroll.js"></script>
 <script src="js/fastclick.js"></script>
 <script type="text/javascript">
 	window.addEventListener('load', function() {
@@ -229,7 +229,6 @@ $(document).one('pagebeforecreate', function () {
  	<script>
 		db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
 		db.transaction(populateDB, errorCB, successCB);
-	////alert('populate done');
 		db.transaction(populateClassDB, errorCB, successCB);
 		db.transaction(getClasses, errorCB);
     </script>
@@ -394,9 +393,9 @@ $("#missedList").on("pagebeforeshow", function(e, data){
         });
 $("#classlistpage").on("pagebeforeshow", function(e, data){
 			
-           db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
-			db.transaction(populateClassDB, errorCB, successCB);
-	
+            db = window.openDatabase("HomeworkTracker3", "2.0", "HomeworkTracker3", 2000);
+			db.transaction(populateClassDB, errorCB, populateClassSuccessCB);
+			
 			db.transaction(getClasses, errorCB);
         });
 
