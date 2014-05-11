@@ -517,13 +517,32 @@ function getClassDetail_success(tx, results){
 		var teacher = classDB.teacher;
 		var email = classDB.email;
 		var phone = classDB.phone;
+
 		document.getElementById("className").value = name;
 		document.getElementById("classLocation").value = location;
-		document.getElementById("classDate").value = date;
 		document.getElementById("classTime").value = time;
 		document.getElementById("classTeacher").value = teacher;
 		document.getElementById("classTeacherEmail").value = email;
 		document.getElementById("classTeacherPhone").value = phone;
+
+		if ( date ==='Monday'){
+			document.getElementById("classDate").selectedIndex = "0";
+		} else if ( date === 'Tuesday'){
+			document.getElementById("classDate").selectedIndex = "1";
+		} else if ( date === 'Wednesday'){
+			document.getElementById("classDate").selectedIndex = "2";
+		} else if ( date === 'Thursday'){
+			document.getElementById("classDate").selectedIndex = "3";
+		} else if ( date === 'Friday'){
+			document.getElementById("classDate").selectedIndex = "4";
+		} else if ( date === 'Saturday'){
+			document.getElementById("classDate").selectedIndex = "5";
+		} else if ( date === 'Sunday'){
+			document.getElementById("classDate").selectedIndex = "6";
+		} else{
+			
+		}
+		$('#classDate').selectmenu().selectmenu('refresh', true);
 	}
 		////////alert('before append');
 }
